@@ -1,0 +1,5 @@
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\LetsGo_DAL\bin\Debug\LetsGo_DAL.dll
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\LetsGo_DAL\bin\Debug\LetsGo_DAL.pdb
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\LetsGo_DAL\obj\Debug\LetsGo_DAL.csprojResolveAssemblyReference.cache
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\LetsGo_DAL\obj\Debug\LetsGo_DAL.dll
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\LetsGo_DAL\obj\Debug\LetsGo_DAL.pdb

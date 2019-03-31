@@ -1,0 +1,42 @@
+1. Creacion de clases
+cls_Nombredelaclase_BLL O DAL
+
+2. Nombres de variables
+si es privada
+_InicialdelTipodeVariableNombredelavariable
+
+el nombre de la variable en minuscula
+EJ:
+_inumero
+
+
+si es publica
+InicialdelTipodeVariableNombredelavariable
+
+la inicial del nombre de la variable en Mayuscula
+EJ:
+iNumero
+
+
+3. variable de 2 palabras
+si es privada
+_InicialdelTipodeVariableNombredelavariable_segundoNombredelavariable
+
+el nombre de la variable en minuscula
+EJ:
+_inumero_mayor
+
+
+si es publica
+InicialdelTipodeVariablePrimerNombredelavariable_SegundoNombredelavariable
+
+la inicial del nombre de la variable en Mayuscula
+EJ:
+iNumero_Mayor
+
+
+4. creacion del objeto dal y bll
+
+         obj_NombredelaClase
+
+cls_BD_DAL obj_BD_DAL = new cls_BD_DAL();

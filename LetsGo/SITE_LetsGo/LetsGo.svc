@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="false" Service="SVC_LetsGo.CONTRACT.LetsGo_Contract" %>

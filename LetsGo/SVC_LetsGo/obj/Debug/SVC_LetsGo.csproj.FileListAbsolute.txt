@@ -1,0 +1,10 @@
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\SVC_LetsGo\obj\Debug\SVC_LetsGo.csprojResolveAssemblyReference.cache
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\SVC_LetsGo\bin\Debug\SVC_LetsGo.dll.config
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\SVC_LetsGo\bin\Debug\SVC_LetsGo.dll
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\SVC_LetsGo\bin\Debug\SVC_LetsGo.pdb
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\SVC_LetsGo\bin\Debug\LetsGo_BLL.dll
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\SVC_LetsGo\bin\Debug\LetsGo_DAL.dll
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\SVC_LetsGo\bin\Debug\LetsGo_BLL.pdb
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\SVC_LetsGo\bin\Debug\LetsGo_DAL.pdb
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\SVC_LetsGo\obj\Debug\SVC_LetsGo.dll
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\SVC_LetsGo\obj\Debug\SVC_LetsGo.pdb
