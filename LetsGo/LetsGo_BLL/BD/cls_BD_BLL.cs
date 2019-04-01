@@ -13,23 +13,6 @@ namespace LetsGo_BLL.BD
 {
     public class cls_BD_BLL
     {
-        public void CrearConexion(ref cls_BD_DAL Obj_BD_DAL)
-        {
-            try
-            {
-                Obj_BD_DAL.sCadena_Conexion = ConfigurationManager.ConnectionStrings["Windows_AUT"].ConnectionString;
-                Obj_BD_DAL.obj_sql_cnx = new SqlConnection(Obj_BD_DAL.sCadena_Conexion);
-                Obj_BD_DAL.sMsj_Error = string.Empty;
-            }
-            catch (Exception ex)
-            {
-                Obj_BD_DAL.sMsj_Error = ex.Message.ToString();
-                Obj_BD_DAL.obj_sql_cnx = null;
-                Obj_BD_DAL.sCadena_Conexion = string.Empty;
-            }
-        }
-
-
         public DataTable ExecuteDataAdapter(string sNombre_SP, string sNombreParametro,
                                              SqlDbType DbType, string sValorParametro,
                                              ref string sMsjError)
