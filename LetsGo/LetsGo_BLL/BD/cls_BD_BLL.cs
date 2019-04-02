@@ -13,6 +13,27 @@ namespace LetsGo_BLL.BD
 {
     public class cls_BD_BLL
     {
+        public void CrearConexion(ref cls_BD_DAL Obj_BD_DAL)
+        {
+            try
+            {
+                Obj_BD_DAL.sCadena_Conexion = ConfigurationManager.ConnectionStrings["Windows_AUT"].ConnectionString;
+                Obj_BD_DAL.obj_sql_cnx = new SqlConnection(Obj_BD_DAL.sCadena_Conexion);
+                Obj_BD_DAL.sMsj_Error = string.Empty;
+            }
+            catch (Exception ex)
+            {
+                Obj_BD_DAL.sMsj_Error = ex.Message.ToString();
+                Obj_BD_DAL.obj_sql_cnx = null;
+                Obj_BD_DAL.sCadena_Conexion = string.Empty;
+            }
+        }
+
+        internal void ExecuteDataAdapter(string v1, string v2, string v3, string v4)
+        {
+            throw new NotImplementedException();
+        }
+
         public DataTable ExecuteDataAdapter(string sNombre_SP, string sNombreParametro,
                                              SqlDbType DbType, string sValorParametro,
                                              ref string sMsjError)
@@ -65,7 +86,26 @@ namespace LetsGo_BLL.BD
                     obj_BD_DAL.obj_sql_cnx.Dispose();
                 }
             }
-        }            
+        }
+
+        public void Crear_DT_Parametros(ref cls_BD_DAL Obj_BD_DAL)
+        {
+            try
+            {
+                Obj_BD_DAL.dt_Parametros = new DataTable("PARAMETROS");
+                Obj_BD_DAL.dt_Parametros.Columns.Add("NombreParametro");
+                Obj_BD_DAL.dt_Parametros.Columns.Add("TipoParametros");
+                Obj_BD_DAL.dt_Parametros.Columns.Add("ValorParametro");
+                Obj_BD_DAL.sMsj_Error = string.Empty;
+            }
+            catch (Exception ex)
+            {
+                Obj_BD_DAL.sMsj_Error = ex.Message.ToString();
+                Obj_BD_DAL.dt_Parametros = null;
+            }
+
+        }
 
     }
+
 }
