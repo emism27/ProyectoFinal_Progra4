@@ -41,8 +41,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BD\cls_BD_DAL.cs" />
-    <Compile Include="Catalogos_Mantenimientos\Cls_Tipo_Vehiculo_DAL.cs" />
-    <Compile Include="Catalogos_Mantenimientos\Cls_USUARIO_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_ADMINISTRADOR_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_BANCO_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_CLIENTE_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_COMISION_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_CONDUCTOR_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_CUENTA_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_DETALLE_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_EMPRESA_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_ENCABEZADO_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_ESTADOS_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_MARCA_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_MODELO_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_PREGUNTAS_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_RATING_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_SOLICITUD_VIAJE_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_TARJETA_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_TIPO_TARJETA_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_TIPO_VEHICULO_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_VEHICULO_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_VIAJE_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
