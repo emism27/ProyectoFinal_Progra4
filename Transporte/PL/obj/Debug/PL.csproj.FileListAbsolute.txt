@@ -1,0 +1,15 @@
+c:\users\kinderson\documents\visual studio 2012\Projects\Transporte\PL\bin\PL.dll
+c:\users\kinderson\documents\visual studio 2012\Projects\Transporte\PL\bin\PL.pdb
+c:\users\kinderson\documents\visual studio 2012\Projects\Transporte\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
+c:\users\kinderson\documents\visual studio 2012\Projects\Transporte\PL\obj\Debug\PL.dll
+c:\users\kinderson\documents\visual studio 2012\Projects\Transporte\PL\obj\Debug\PL.pdb
+C:\Users\Kinderson\Desktop\Transporte\PL\bin\PL.dll
+C:\Users\Kinderson\Desktop\Transporte\PL\bin\PL.pdb
+C:\Users\Kinderson\Desktop\Transporte\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
+C:\Users\Kinderson\Desktop\Transporte\PL\obj\Debug\PL.dll
+C:\Users\Kinderson\Desktop\Transporte\PL\obj\Debug\PL.pdb
+C:\Users\Kinderson\Desktop\New folder (2)\Transporte\PL\bin\PL.dll
+C:\Users\Kinderson\Desktop\New folder (2)\Transporte\PL\bin\PL.pdb
+C:\Users\Kinderson\Desktop\New folder (2)\Transporte\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
+C:\Users\Kinderson\Desktop\New folder (2)\Transporte\PL\obj\Debug\PL.dll
+C:\Users\Kinderson\Desktop\New folder (2)\Transporte\PL\obj\Debug\PL.pdb

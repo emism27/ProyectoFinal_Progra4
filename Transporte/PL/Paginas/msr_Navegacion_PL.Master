@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="msr_Navegacion_PL.master.cs" Inherits="PL.Paginas.msr_Navegacion_PL" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Let's Go</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link href="../Estilos/CSS/Master.css" rel="stylesheet" />
+
+</head>
+
+<body>
+   
+    <div id="wrapper">
+
+      <!-- Main -->
+        <div id="main">
+          <div class="inner">
+
+            <!-- Header -->
+            <header id="header">
+                <div id="headerContent">
+                    <ul class="sidenav">
+                      <li><a class="active" href="wfrm_Principal_PL.aspx">Inicio</a></li>
+                      <li><a href="#alarm">Alerta</a></li>
+                      <li><a href="#security">Seguridad</a></li>
+                      <li><a href="#report">Reporte</a></li>
+                      <li class="dropdown">
+                        <a class="dropbtn">Catalogo y Mantenimiento</a>
+                        <div class="dropdown-content">
+                          <a href="wfrm_Usuario_Catalogo_PL.aspx">Usuario</a>
+                          <a href="wfrm_Solicitud_Catalogo_PL.aspx">Solicitud</a>
+                          <a href="wfrm_Viaje_Catalogo_PL.aspx">Viaje</a>
+                          <a href="wfrm_Transaccion_Catalogo_PL.aspx">Transacción</a>
+                          <a href="wfrm_Conductor_Catalogo_PL.aspx">Conductor</a>
+                          <a href="wfrm_Rating_Catalogo_PL.aspx">Rating</a>
+                          <a href="wfrm_Detalle_Estado_Viaje_Catalogo_PL.aspx">Detalle</a>
+                          <a href="wfrm_Tarjeta_Catalogo_PL.aspx">Tarjeta</a>
+                          <a href="wfrm_Metodo_Pago_Catalogo_PL.aspx">Método de Pago</a>
+                          <a href="wfrm_Cuenta_Pago_Catalogo_PL.aspx">Cuenta</a>
+                          <a href="wfrm_Vehiculo_Catalogo_PL.aspx">Vehículo</a>
+                          <a href="wfrm_Tipo_Vehiculo_Catalogo_PL.aspx">Tipo de Vehículo</a>
+                          <a href="wfrm_Estado_Viaje_Catalogo_PL.aspx">Estado</a>
+                        </div>
+                      </li>
+                      <li><a href="#">Acerca de</a></li>
+                    </ul>
+                </div>
+            </header>
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    
+                </asp:ContentPlaceHolder>
+
+          </div>
+        </div>
+
+    </div>
+</body>
+</html>

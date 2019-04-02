@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{47CE3218-323B-485E-A2E6-993A845825C8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PL</RootNamespace>
+    <AssemblyName>PL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Estilos\CSS\Login.css" />
+    <Content Include="Estilos\CSS\main.css" />
+    <Content Include="Estilos\CSS\Master.css" />
+    <Content Include="Estilos\CSS\noscript.css" />
+    <Content Include="Estilos\JS\breakpoints.min.js" />
+    <Content Include="Estilos\JS\browser.min.js" />
+    <Content Include="Estilos\JS\jquery.dropotron.min.js" />
+    <Content Include="Estilos\JS\jquery.min.js" />
+    <Content Include="Estilos\JS\jquery.scrollex.min.js" />
+    <Content Include="Estilos\JS\jquery.scrolly.min.js" />
+    <Content Include="Estilos\JS\main.js" />
+    <Content Include="Estilos\JS\util.js" />
+    <Content Include="Paginas\vfrm_Login_PL.aspx" />
+    <Content Include="Paginas\wform_Inicio_PL.aspx" />
+    <Content Include="Paginas\wfrm_Conductor_Catalogo_PL.aspx" />
+    <Content Include="Paginas\wfrm_Conductor_Matenimiento_PL.aspx" />
+    <Content Include="Paginas\wfrm_Cuenta_Pago_Catalogo_PL.aspx" />
+    <Content Include="Paginas\wfrm_Cuenta_Pago_Mantenimiento_PL.aspx" />
+    <Content Include="Paginas\wfrm_Detalle_Estado_Viaje_Catalogo_PL.aspx" />
+    <Content Include="Paginas\wfrm_Detalle_Estado_Viaje_Mantenimiento_PL.aspx" />
+    <Content Include="Paginas\wfrm_Estado_Viaje_Catalogo_PL.aspx" />
+    <Content Include="Paginas\wfrm_Estado_Viaje_Mantenimiento_PL.aspx" />
+    <Content Include="Paginas\wfrm_Metodo_Pago_Catalogo_PL.aspx" />
+    <Content Include="Paginas\wfrm_Metodo_Pago_Mantenimiento_PL.aspx" />
+    <Content Include="Paginas\wfrm_Principal_PL.aspx" />
+    <Content Include="Paginas\wfrm_Rating_Catalogo_PL.aspx" />
+    <Content Include="Paginas\wfrm_Rating_Mantenimiento_PL.aspx" />
+    <Content Include="Paginas\wfrm_Solicitud_Catalogo_PL.aspx" />
+    <Content Include="Paginas\wfrm_Solicitud_Mantenimiento_PL.aspx" />
+    <Content Include="Paginas\wfrm_Tarjeta_Catalogo_PL.aspx" />
+    <Content Include="Paginas\wfrm_Tarjeta_Mantenimiento_PL.aspx" />
+    <Content Include="Paginas\wfrm_Tipo_Vehiculo_Catalogo_PL.aspx" />
+    <Content Include="Paginas\wfrm_Tipo_Vehiculo_Mantenimiento_PL.aspx" />
+    <Content Include="Paginas\wfrm_Transaccion_Catalogo_PL.aspx" />
+    <Content Include="Paginas\wfrm_Transaccion_Mantenimiento_PL.aspx" />
+    <Content Include="Paginas\wfrm_Usuario_Catalogo_PL.aspx" />
+    <Content Include="Paginas\wfrm_Usuario_Mantenimiento_PL.aspx" />
+    <Content Include="Paginas\wfrm_Vehiculo_Catalogo_PL.aspx" />
+    <Content Include="Paginas\wfrm_Vehiculo_Mantenimiento_PL.aspx" />
+    <Content Include="Paginas\wfrm_Viaje_Catalogo_PL.aspx" />
+    <Content Include="Paginas\wfrm_Viaje_Mantenimiento_PL.aspx" />
+    <Content Include="Recursos\Add.png" />
+    <Content Include="Recursos\banner.jpg" />
+    <Content Include="Recursos\Delete.png" />
+    <Content Include="Recursos\Edit.png" />
+    <Content Include="Recursos\Exit.png" />
+    <Content Include="Recursos\main-banner.jpg" />
+    <Content Include="Recursos\pic01.jpg" />
+    <Content Include="Recursos\pic02.jpg" />
+    <Content Include="Recursos\pic03.jpg" />
+    <Content Include="Recursos\pic04.jpg" />
+    <Content Include="Recursos\Refresh.png" />
+    <Content Include="Recursos\Save.png" />
+    <Content Include="Recursos\Search.png" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Paginas\msr_Navegacion_PL.Master.cs">
+      <DependentUpon>msr_Navegacion_PL.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\msr_Navegacion_PL.Master.designer.cs">
+      <DependentUpon>msr_Navegacion_PL.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\vfrm_Login_PL.aspx.cs">
+      <DependentUpon>vfrm_Login_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\vfrm_Login_PL.aspx.designer.cs">
+      <DependentUpon>vfrm_Login_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wform_Inicio_PL.aspx.cs">
+      <DependentUpon>wform_Inicio_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wform_Inicio_PL.aspx.designer.cs">
+      <DependentUpon>wform_Inicio_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Conductor_Catalogo_PL.aspx.cs">
+      <DependentUpon>wfrm_Conductor_Catalogo_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Conductor_Catalogo_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Conductor_Catalogo_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Conductor_Matenimiento_PL.aspx.cs">
+      <DependentUpon>wfrm_Conductor_Matenimiento_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Conductor_Matenimiento_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Conductor_Matenimiento_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Cuenta_Pago_Catalogo_PL.aspx.cs">
+      <DependentUpon>wfrm_Cuenta_Pago_Catalogo_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Cuenta_Pago_Catalogo_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Cuenta_Pago_Catalogo_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Cuenta_Pago_Mantenimiento_PL.aspx.cs">
+      <DependentUpon>wfrm_Cuenta_Pago_Mantenimiento_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Cuenta_Pago_Mantenimiento_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Cuenta_Pago_Mantenimiento_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Detalle_Estado_Viaje_Catalogo_PL.aspx.cs">
+      <DependentUpon>wfrm_Detalle_Estado_Viaje_Catalogo_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Detalle_Estado_Viaje_Catalogo_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Detalle_Estado_Viaje_Catalogo_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Detalle_Estado_Viaje_Mantenimiento_PL.aspx.cs">
+      <DependentUpon>wfrm_Detalle_Estado_Viaje_Mantenimiento_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Detalle_Estado_Viaje_Mantenimiento_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Detalle_Estado_Viaje_Mantenimiento_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Estado_Viaje_Catalogo_PL.aspx.cs">
+      <DependentUpon>wfrm_Estado_Viaje_Catalogo_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Estado_Viaje_Catalogo_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Estado_Viaje_Catalogo_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Estado_Viaje_Mantenimiento_PL.aspx.cs">
+      <DependentUpon>wfrm_Estado_Viaje_Mantenimiento_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Estado_Viaje_Mantenimiento_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Estado_Viaje_Mantenimiento_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Metodo_Pago_Catalogo_PL.aspx.cs">
+      <DependentUpon>wfrm_Metodo_Pago_Catalogo_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Metodo_Pago_Catalogo_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Metodo_Pago_Catalogo_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Metodo_Pago_Mantenimiento_PL.aspx.cs">
+      <DependentUpon>wfrm_Metodo_Pago_Mantenimiento_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Metodo_Pago_Mantenimiento_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Metodo_Pago_Mantenimiento_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Principal_PL.aspx.cs">
+      <DependentUpon>wfrm_Principal_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Principal_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Principal_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Rating_Catalogo_PL.aspx.cs">
+      <DependentUpon>wfrm_Rating_Catalogo_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Rating_Catalogo_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Rating_Catalogo_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Rating_Mantenimiento_PL.aspx.cs">
+      <DependentUpon>wfrm_Rating_Mantenimiento_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Rating_Mantenimiento_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Rating_Mantenimiento_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Solicitud_Catalogo_PL.aspx.cs">
+      <DependentUpon>wfrm_Solicitud_Catalogo_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Solicitud_Catalogo_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Solicitud_Catalogo_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Solicitud_Mantenimiento_PL.aspx.cs">
+      <DependentUpon>wfrm_Solicitud_Mantenimiento_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Solicitud_Mantenimiento_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Solicitud_Mantenimiento_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Tarjeta_Catalogo_PL.aspx.cs">
+      <DependentUpon>wfrm_Tarjeta_Catalogo_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Tarjeta_Catalogo_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Tarjeta_Catalogo_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Tarjeta_Mantenimiento_PL.aspx.cs">
+      <DependentUpon>wfrm_Tarjeta_Mantenimiento_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Tarjeta_Mantenimiento_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Tarjeta_Mantenimiento_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Tipo_Vehiculo_Catalogo_PL.aspx.cs">
+      <DependentUpon>wfrm_Tipo_Vehiculo_Catalogo_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Tipo_Vehiculo_Catalogo_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Tipo_Vehiculo_Catalogo_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Tipo_Vehiculo_Mantenimiento_PL.aspx.cs">
+      <DependentUpon>wfrm_Tipo_Vehiculo_Mantenimiento_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Tipo_Vehiculo_Mantenimiento_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Tipo_Vehiculo_Mantenimiento_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Transaccion_Catalogo_PL.aspx.cs">
+      <DependentUpon>wfrm_Transaccion_Catalogo_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Transaccion_Catalogo_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Transaccion_Catalogo_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Transaccion_Mantenimiento_PL.aspx.cs">
+      <DependentUpon>wfrm_Transaccion_Mantenimiento_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Transaccion_Mantenimiento_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Transaccion_Mantenimiento_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Usuario_Catalogo_PL.aspx.cs">
+      <DependentUpon>wfrm_Usuario_Catalogo_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Usuario_Catalogo_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Usuario_Catalogo_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Usuario_Mantenimiento_PL.aspx.cs">
+      <DependentUpon>wfrm_Usuario_Mantenimiento_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Usuario_Mantenimiento_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Usuario_Mantenimiento_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Vehiculo_Catalogo_PL.aspx.cs">
+      <DependentUpon>wfrm_Vehiculo_Catalogo_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Vehiculo_Catalogo_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Vehiculo_Catalogo_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Vehiculo_Mantenimiento_PL.aspx.cs">
+      <DependentUpon>wfrm_Vehiculo_Mantenimiento_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Vehiculo_Mantenimiento_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Vehiculo_Mantenimiento_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Viaje_Catalogo_PL.aspx.cs">
+      <DependentUpon>wfrm_Viaje_Catalogo_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Viaje_Catalogo_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Viaje_Catalogo_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Viaje_Mantenimiento_PL.aspx.cs">
+      <DependentUpon>wfrm_Viaje_Mantenimiento_PL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\wfrm_Viaje_Mantenimiento_PL.aspx.designer.cs">
+      <DependentUpon>wfrm_Viaje_Mantenimiento_PL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Paginas\msr_Navegacion_PL.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59690/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
