@@ -11,7 +11,7 @@ namespace LetsGo_BLL.Catalogos_Mantenimientos
 {
     public class Cls_Tipo_Vehiculo_BLL
     {
-        public void Listar_Tipo_Vehiculo(ref Cls_Tipo_Vehiculo_DAL Obj_Tipo_Vehiculo_DAL)
+        public void Listar_Tipo_Vehiculo()
         {
             try
             {
