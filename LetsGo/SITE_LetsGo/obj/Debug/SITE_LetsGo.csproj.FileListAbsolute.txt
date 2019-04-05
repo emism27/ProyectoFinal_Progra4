@@ -10,3 +10,15 @@ C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\SITE_LetsGo\bin\
 C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\SITE_LetsGo\bin\SVC_LetsGo.pdb
 C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\SITE_LetsGo\bin\LetsGo_BLL.pdb
 C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\SITE_LetsGo\bin\LetsGo_DAL.pdb
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\bin\SITE_LetsGo.dll.config
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\bin\SITE_LetsGo.dll
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\bin\SITE_LetsGo.pdb
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\bin\SVC_LetsGo.dll
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\bin\LetsGo_BLL.dll
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\bin\LetsGo_DAL.dll
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\bin\SVC_LetsGo.pdb
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\bin\LetsGo_BLL.pdb
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\bin\LetsGo_DAL.pdb
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\obj\Debug\SITE_LetsGo.csprojResolveAssemblyReference.cache
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\obj\Debug\SITE_LetsGo.dll
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\obj\Debug\SITE_LetsGo.pdb
