@@ -88,6 +88,159 @@ namespace LetsGo_BLL.BD
             }
         }
 
+        public bool ExecuteNonQuery(string sNombre_SP, DataTable dtParametros, ref string sMsjError)
+        {
+
+            cls_BD_DAL obj_BD_DAL = new cls_BD_DAL();
+
+            try
+            {
+                obj_BD_DAL.sCadena_Conexion = ConfigurationManager.ConnectionStrings[1].ToString();
+
+                obj_BD_DAL.obj_sql_cnx = new SqlConnection(obj_BD_DAL.sCadena_Conexion);
+
+                if (obj_BD_DAL.obj_sql_cnx.State == ConnectionState.Closed)
+                {
+                    obj_BD_DAL.obj_sql_cnx.Open();
+                }
+
+                obj_BD_DAL.obj_sql_cmd = new SqlCommand(sNombre_SP, obj_BD_DAL.obj_sql_cnx);
+
+
+                obj_BD_DAL.obj_sql_cmd.CommandType = CommandType.StoredProcedure;
+
+                if (dtParametros.Rows.Count > 0)
+                {
+                    foreach (DataRow dr in dtParametros.Rows)
+                    {
+                        SqlDbType dbt = SqlDbType.VarChar;
+                        switch (dr[1].ToString())
+                        {
+                            case "1":
+                                dbt = SqlDbType.Int;
+                                break;
+                            case "2":
+                                {
+                                    dbt = SqlDbType.VarChar;
+                                    break;
+                                }
+                            default:
+                                break;
+                        }
+
+                        obj_BD_DAL.obj_sql_cmd.Parameters.Add(dr[0].ToString(), dbt).Value = dr[2].ToString();
+                    }
+
+                    obj_BD_DAL.obj_sql_cmd.ExecuteNonQuery();
+
+                }
+
+
+
+                sMsjError = String.Empty;
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+
+                sMsjError = ex.Message.ToString();
+                return false;
+            }
+            finally
+            {
+                if (obj_BD_DAL.obj_sql_cnx != null)
+                {
+                    if (obj_BD_DAL.obj_sql_cnx.State == ConnectionState.Open)
+                    {
+                        obj_BD_DAL.obj_sql_cnx.Close();
+                    }
+
+                    obj_BD_DAL.obj_sql_cnx.Dispose();
+                }
+            }
+        }
+
+
+        public string ExecuteScalar(string sNombre_SP, DataTable dtParametros, ref string sMsjError)
+        {
+
+            cls_BD_DAL obj_BD_DAL = new cls_BD_DAL();
+
+            try
+            {
+                obj_BD_DAL.sCadena_Conexion = ConfigurationManager.ConnectionStrings[1].ToString();
+
+                obj_BD_DAL.obj_sql_cnx = new SqlConnection(obj_BD_DAL.sCadena_Conexion);
+
+                if (obj_BD_DAL.obj_sql_cnx.State == ConnectionState.Closed)
+                {
+                    obj_BD_DAL.obj_sql_cnx.Open();
+                }
+
+                obj_BD_DAL.obj_sql_cmd = new SqlCommand(sNombre_SP, obj_BD_DAL.obj_sql_cnx);
+
+
+                obj_BD_DAL.obj_sql_cmd.CommandType = CommandType.StoredProcedure;
+
+                if (dtParametros.Rows.Count > 0)
+                {
+                    foreach (DataRow dr in dtParametros.Rows)
+                    {
+                        SqlDbType dbt = SqlDbType.VarChar;
+                        switch (dr[1].ToString())
+                        {
+                            case "1":
+                                dbt = SqlDbType.Int;
+                                break;
+                            case "2":
+                                {
+                                    dbt = SqlDbType.VarChar;
+                                    break;
+                                }
+                            default:
+                                break;
+                        }
+
+                        obj_BD_DAL.obj_sql_cmd.Parameters.Add(dr[0].ToString(), dbt).Value = dr[2].ToString();
+                    }
+
+
+                }
+
+                string sValorScalar = obj_BD_DAL.obj_sql_cmd.ExecuteScalar().ToString();
+
+
+                sMsjError = String.Empty;
+
+                return sValorScalar;
+
+
+
+            }
+            catch (Exception ex)
+            {
+
+                sMsjError = ex.Message.ToString();
+                return null;
+            }
+            finally
+            {
+                if (obj_BD_DAL.obj_sql_cnx != null)
+                {
+                    if (obj_BD_DAL.obj_sql_cnx.State == ConnectionState.Open)
+                    {
+                        obj_BD_DAL.obj_sql_cnx.Close();
+                    }
+
+                    obj_BD_DAL.obj_sql_cnx.Dispose();
+                }
+            }
+        }
+
+
+
+
         public void Crear_DT_Parametros(ref cls_BD_DAL Obj_BD_DAL)
         {
             try

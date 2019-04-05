@@ -5,3 +5,10 @@ C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\LetsGo_BLL\bin\D
 C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\LetsGo_BLL\obj\Debug\LetsGo_BLL.csprojResolveAssemblyReference.cache
 C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\LetsGo_BLL\obj\Debug\LetsGo_BLL.dll
 C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LetsGo\LetsGo_BLL\obj\Debug\LetsGo_BLL.pdb
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\LetsGo_BLL\obj\Debug\LetsGo_BLL.csprojResolveAssemblyReference.cache
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\LetsGo_BLL\obj\Debug\LetsGo_BLL.dll
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\LetsGo_BLL\obj\Debug\LetsGo_BLL.pdb
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\LetsGo_BLL\bin\Debug\LetsGo_BLL.dll
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\LetsGo_BLL\bin\Debug\LetsGo_BLL.pdb
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\LetsGo_BLL\bin\Debug\LetsGo_DAL.dll
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\LetsGo_BLL\bin\Debug\LetsGo_DAL.pdb
