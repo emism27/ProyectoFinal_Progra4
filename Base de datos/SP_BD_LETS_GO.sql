@@ -324,69 +324,71 @@ AND [ID_Vehiculo] LIKE '%' + ISNULL(@ID_Vehiculo, [ID_Vehiculo]) + '%'
 	-------------------------------SP TBL_CUENTA
 
 --Select
-    create procedure [SCH_CUENTA].[sp_select_TBL_CUENTA]
+    create procedure SCH_CUENTA.[sp_select_TBL_CUENTA]
     as
-    select [ID_Cuenta] ,[Nombre] ,[Apellido_1] ,[Apellido_2] ,[Telefono] ,[Email] ,[ID_Pregunta_Seguridad] ,[Respuesta_Seguridad] from [SCH_CUENTA].[TBL_CUENTA]
+    select [ID_Cuenta] ,[Nombre] ,[Apellido_1] ,[Apellido_2] ,[Pass] ,[Telefono] ,[Email] ,[ID_Pregunta_Seguridad] ,[Respuesta_Seguridad] from SCH_CUENTA.[TBL_CUENTA]
     go
 --Insert
-    create procedure [SCH_CUENTA].[sp_insert_TBL_CUENTA]
+    create procedure SCH_CUENTA.[sp_insert_TBL_CUENTA]
     (
-        @ID_Cuenta int ,@Nombre varchar (30) ,@Apellido_1 varchar (30) ,@Apellido_2 varchar (30) ,@Telefono int ,@Email varchar (30) ,@ID_Pregunta_Seguridad tinyint ,@Respuesta_Seguridad varchar (30)
+        @ID_Cuenta int ,@Nombre varchar (30) ,@Apellido_1 varchar (30) ,@Apellido_2 varchar (30) ,@Pass varchar (15) ,@Telefono int ,@Email varchar (30) ,@ID_Pregunta_Seguridad tinyint ,@Respuesta_Seguridad varchar (30)
     )
     as
-    IF NOT EXISTS (SELECT [ID_Cuenta] ,[Nombre] ,[Apellido_1] ,[Apellido_2] ,[Telefono] ,[Email] ,[ID_Pregunta_Seguridad] ,[Respuesta_Seguridad]
-                    FROM [SCH_CUENTA].[TBL_CUENTA]
+    IF NOT EXISTS (SELECT [ID_Cuenta] ,[Nombre] ,[Apellido_1] ,[Apellido_2] ,[Pass] ,[Telefono] ,[Email] ,[ID_Pregunta_Seguridad] ,[Respuesta_Seguridad]
+                    FROM SCH_CUENTA.[TBL_CUENTA]
                     WHERE [ID_Cuenta] = @ID_Cuenta
 AND [Nombre] = @Nombre
 AND [Apellido_1] = @Apellido_1
 AND [Apellido_2] = @Apellido_2
+AND [Pass] = @Pass
 AND [Telefono] = @Telefono
 AND [Email] = @Email
 AND [ID_Pregunta_Seguridad] = @ID_Pregunta_Seguridad
 AND [Respuesta_Seguridad] = @Respuesta_Seguridad)
     BEGIN
-        INSERT INTO [SCH_CUENTA].[TBL_CUENTA]
-                ([ID_Cuenta] ,[Nombre] ,[Apellido_1] ,[Apellido_2] ,[Telefono] ,[Email] ,[ID_Pregunta_Seguridad] ,[Respuesta_Seguridad])
-        VALUES (@ID_Cuenta ,@Nombre ,@Apellido_1 ,@Apellido_2 ,@Telefono ,@Email ,@ID_Pregunta_Seguridad ,@Respuesta_Seguridad)
+        INSERT INTO SCH_CUENTA.[TBL_CUENTA]
+                ([ID_Cuenta] ,[Nombre] ,[Apellido_1] ,[Apellido_2] ,[Pass] ,[Telefono] ,[Email] ,[ID_Pregunta_Seguridad] ,[Respuesta_Seguridad])
+        VALUES (@ID_Cuenta ,@Nombre ,@Apellido_1 ,@Apellido_2 ,@Pass ,@Telefono ,@Email ,@ID_Pregunta_Seguridad ,@Respuesta_Seguridad)
     END
     -- Devuelve la ultima llave generada
     SELECT MAX ([ID_Cuenta])
-    FROM [SCH_CUENTA].[TBL_CUENTA]
+    FROM SCH_CUENTA.[TBL_CUENTA]
     go
 --Update
-    create procedure [SCH_CUENTA].[sp_update_TBL_CUENTA]
+    create procedure SCH_CUENTA.[sp_update_TBL_CUENTA]
     (
-        @ID_Cuenta int ,@Nombre varchar (30) ,@Apellido_1 varchar (30) ,@Apellido_2 varchar (30) ,@Telefono int ,@Email varchar (30) ,@ID_Pregunta_Seguridad tinyint ,@Respuesta_Seguridad varchar (30)
+        @ID_Cuenta int ,@Nombre varchar (30) ,@Apellido_1 varchar (30) ,@Apellido_2 varchar (30) ,@Pass varchar (15) ,@Telefono int ,@Email varchar (30) ,@ID_Pregunta_Seguridad tinyint ,@Respuesta_Seguridad varchar (30)
     )
     as
-    update [SCH_CUENTA].[TBL_CUENTA]
-    set [Nombre] = @Nombre,[Apellido_1] = @Apellido_1,[Apellido_2] = @Apellido_2,[Telefono] = @Telefono,[Email] = @Email,[ID_Pregunta_Seguridad] = @ID_Pregunta_Seguridad,[Respuesta_Seguridad] = @Respuesta_Seguridad
+    update SCH_CUENTA.[TBL_CUENTA]
+    set [Nombre] = @Nombre,[Apellido_1] = @Apellido_1,[Apellido_2] = @Apellido_2,[Pass] = @Pass,[Telefono] = @Telefono,[Email] = @Email,[ID_Pregunta_Seguridad] = @ID_Pregunta_Seguridad,[Respuesta_Seguridad] = @Respuesta_Seguridad
     where [ID_Cuenta] = @ID_Cuenta
     -- Devuelve la ultima llave generada
     SELECT MAX ([ID_Cuenta])
-    FROM [SCH_CUENTA].[TBL_CUENTA]
+    FROM SCH_CUENTA.[TBL_CUENTA]
     go
 --Delete
-    create procedure [SCH_CUENTA].[sp_delete_TBL_CUENTA]
+    create procedure SCH_CUENTA.[sp_delete_TBL_CUENTA]
     (
         @ID_Cuenta int
     )
     as
-    delete from [SCH_CUENTA].[TBL_CUENTA]
+    delete from SCH_CUENTA.[TBL_CUENTA]
     where [ID_Cuenta] = @ID_Cuenta
     go
 -- Filtrar
-    create procedure [SCH_CUENTA].[sp_search_TBL_CUENTA]
+    create procedure SCH_CUENTA.[sp_search_TBL_CUENTA]
     (
-        @ID_Cuenta int ,@Nombre varchar (30) ,@Apellido_1 varchar (30) ,@Apellido_2 varchar (30) ,@Telefono int ,@Email varchar (30) ,@ID_Pregunta_Seguridad tinyint ,@Respuesta_Seguridad varchar (30)
+        @ID_Cuenta int ,@Nombre varchar (30) ,@Apellido_1 varchar (30) ,@Apellido_2 varchar (30) ,@Pass varchar (15) ,@Telefono int ,@Email varchar (30) ,@ID_Pregunta_Seguridad tinyint ,@Respuesta_Seguridad varchar (30)
     )
     as
-    SELECT [ID_Cuenta] ,[Nombre] ,[Apellido_1] ,[Apellido_2] ,[Telefono] ,[Email] ,[ID_Pregunta_Seguridad] ,[Respuesta_Seguridad]
-    FROM [SCH_CUENTA].[TBL_CUENTA]
+    SELECT [ID_Cuenta] ,[Nombre] ,[Apellido_1] ,[Apellido_2] ,[Pass] ,[Telefono] ,[Email] ,[ID_Pregunta_Seguridad] ,[Respuesta_Seguridad]
+    FROM SCH_CUENTA.[TBL_CUENTA]
     WHERE [ID_Cuenta] LIKE '%' + ISNULL(@ID_Cuenta, [ID_Cuenta]) + '%'
 AND [Nombre] LIKE '%' + ISNULL(@Nombre, [Nombre]) + '%'
 AND [Apellido_1] LIKE '%' + ISNULL(@Apellido_1, [Apellido_1]) + '%'
 AND [Apellido_2] LIKE '%' + ISNULL(@Apellido_2, [Apellido_2]) + '%'
+AND [Pass] LIKE '%' + ISNULL(@Pass, [Pass]) + '%'
 AND [Telefono] LIKE '%' + ISNULL(@Telefono, [Telefono]) + '%'
 AND [Email] LIKE '%' + ISNULL(@Email, [Email]) + '%'
 AND [ID_Pregunta_Seguridad] LIKE '%' + ISNULL(@ID_Pregunta_Seguridad, [ID_Pregunta_Seguridad]) + '%'
