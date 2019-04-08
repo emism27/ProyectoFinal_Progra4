@@ -1,0 +1,5 @@
+C:\Users\Kinderson\Desktop\Let's_Go\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
+C:\Users\Kinderson\Desktop\Let's_Go\PL\bin\PL.dll
+C:\Users\Kinderson\Desktop\Let's_Go\PL\bin\PL.pdb
+C:\Users\Kinderson\Desktop\Let's_Go\PL\obj\Debug\PL.dll
+C:\Users\Kinderson\Desktop\Let's_Go\PL\obj\Debug\PL.pdb
