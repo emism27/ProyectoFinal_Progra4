@@ -41,11 +41,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BD\cls_BD_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_Conductor_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_Tipo_Vehiculo_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_Vehiculo_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Catalogos_Mantenimientos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
