@@ -127,7 +127,6 @@
     <Content Include="Styles\JS\main.js" />
     <Content Include="Styles\JS\util.js" />
     <Content Include="Web.config" />
-    <Content Include="`Scripts\Validaciones_Tipo_Vehiculo.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Administrador_Listar.aspx.cs">
