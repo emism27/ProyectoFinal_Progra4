@@ -6,42 +6,26 @@ using System.Threading.Tasks;
 using LetsGo_DAL.Catalogos_Mantenimientos;
 using LetsGo_BLL.BD;
 using LetsGo_DAL.BD;
+using System.Data;
 
 namespace LetsGo_BLL.Catalogos_Mantenimientos
 {
     public class Cls_Tipo_Vehiculo_BLL
     {
 
-        public void Listar_Tipo_Vehiculo()
+        public DataTable Listar_Tipo_Vehiculo(ref string sMsjError)
         {
-            try
-            {
-                cls_BD_BLL Obj_BD_BLL = new cls_BD_BLL();
-                cls_BD_DAL Obj_BD_DAL = new cls_BD_DAL();
-
-                Obj_BD_DAL.SNomb_Sp = "sp_Listar_Departamentos";
-                Obj_BD_DAL.SNombTabla = "Departamentos";
-
-                Obj_BD_BLL.ExecuteDataAdapter(ref Obj_BD_DAL);
-
-                if (Obj_BD_DAL.SMsjError == string.Empty)
-                {
-                    Obj_Departamentos_DAL.Obj_DT = Obj_BD_DAL.Obj_DS.Tables[0];
-                    Obj_Departamentos_DAL.sMsjError = string.Empty;
-                }
-                else
-                {
-                    Obj_Departamentos_DAL.sMsjError = Obj_BD_DAL.SMsjError;
-                }
-
-            }
-            catch (Exception ex)
-            {
-                Obj_Departamentos_DAL.sMsjError = ex.Message.ToString();
-            }
+            cls_BD_BLL Obj_BD_BLL = new cls_BD_BLL();
+            return Obj_BD_BLL.ExecuteDataAdapter("sp_Listar_Departamentos",string.Empty, SqlDbType.VarChar, string.Empty, ref sMsjError);
         }
 
+        public DataTable Filtrar_Tipo_Vehiculo(string sValorParametro, ref string sMsjError)
+        {
+            cls_BD_BLL Obj_BD_BLL = new cls_BD_BLL();
+            return Obj_BD_BLL.ExecuteDataAdapter("sp_Filtar_Departamentos", "@Descripcion", SqlDbType.VarChar, sValorParametro, ref sMsjError);
+        }
 
+       
 
         //public void Listar_Tipo_Vehiculo()
         //{

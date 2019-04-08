@@ -29,11 +29,6 @@ namespace LetsGo_BLL.BD
             }
         }
 
-        internal void ExecuteDataAdapter(string v1, string v2, string v3, string v4)
-        {
-            throw new NotImplementedException();
-        }
-
         public DataTable ExecuteDataAdapter(string sNombre_SP, string sNombreParametro,
                                              SqlDbType DbType, string sValorParametro,
                                              ref string sMsjError)
