@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Catalogos_Mantenimientos\Class1.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_ADMINISTRADOR_DAL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_BANCO_DAL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_CLIENTE_DAL.cs" />
