@@ -114,6 +114,7 @@
     <Content Include="Recursos\Refresh.png" />
     <Content Include="Recursos\Save.png" />
     <Content Include="Recursos\Search.png" />
+    <Content Include="Scripts_Validaciones\js_Validacion_Tipo_Vehiculo.js" />
     <Content Include="Styles\CSS\Login.css" />
     <Content Include="Styles\CSS\MasterPage.css" />
     <Content Include="Styles\CSS\noscript.css" />
