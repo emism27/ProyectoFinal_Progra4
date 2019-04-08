@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4263A29A-6545-49A4-ADEC-A64EA9769544}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL_LetsGO</RootNamespace>
+    <AssemblyName>DAL_LetsGO</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalogos_Mantenimientos\Class1.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_ADMINISTRADOR_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_BANCO_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_CLIENTE_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_COMISION_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_CONDUCTOR_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_CUENTA_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_DETALLE_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_EMPRESA_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_ENCABEZADO_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_ESTADOS_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_MARCA_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_MODELO_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_PREGUNTAS_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_RATING_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_SOLICITUD_VIAJE_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_TARJETA_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_TIPO_TARJETA_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_TIPO_VEHICULO_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_VEHICULO_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_VIAJE_DAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
