@@ -3,3 +3,9 @@ C:\Users\Kinderson\Desktop\Let's_Go\PL\bin\PL.dll
 C:\Users\Kinderson\Desktop\Let's_Go\PL\bin\PL.pdb
 C:\Users\Kinderson\Desktop\Let's_Go\PL\obj\Debug\PL.dll
 C:\Users\Kinderson\Desktop\Let's_Go\PL\obj\Debug\PL.pdb
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\PL.dll.config
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\PL.dll
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\PL.pdb
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.dll
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.pdb

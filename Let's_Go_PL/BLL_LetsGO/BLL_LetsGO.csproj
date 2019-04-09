@@ -32,6 +32,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,8 +44,62 @@
   <ItemGroup>
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_CLIENTE_BLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\svc_Cat_y_Mat\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Service References\svc_Cat_y_Mat\BLL_LetsGO.svc_Cat_y_Mat.Elimina_DatosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svc_Cat_y_Mat\BLL_LetsGO.svc_Cat_y_Mat.FiltrarDatosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svc_Cat_y_Mat\BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosConIdentityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svc_Cat_y_Mat\BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosSinIdentityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svc_Cat_y_Mat\BLL_LetsGO.svc_Cat_y_Mat.ListarDatosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svc_Cat_y_Mat\BLL_LetsGO.svc_Cat_y_Mat.Modifica_DatosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svc_Cat_y_Mat\LetsGo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svc_Cat_y_Mat\LetsGo1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svc_Cat_y_Mat\LetsGo2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svc_Cat_y_Mat\LetsGo_Contract.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\svc_Cat_y_Mat\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\svc_Cat_y_Mat\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\svc_Cat_y_Mat\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\svc_Cat_y_Mat\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

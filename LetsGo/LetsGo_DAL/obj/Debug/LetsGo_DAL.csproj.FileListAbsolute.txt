@@ -8,3 +8,8 @@ C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\LetsGo_DAL\bin\Debu
 C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\LetsGo_DAL\obj\Debug\LetsGo_DAL.csprojResolveAssemblyReference.cache
 C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\LetsGo_DAL\obj\Debug\LetsGo_DAL.dll
 C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\LetsGo_DAL\obj\Debug\LetsGo_DAL.pdb
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\LetsGo_DAL\bin\Debug\LetsGo_DAL.dll
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\LetsGo_DAL\bin\Debug\LetsGo_DAL.pdb
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\LetsGo_DAL\obj\Debug\LetsGo_DAL.csprojResolveAssemblyReference.cache
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\LetsGo_DAL\obj\Debug\LetsGo_DAL.dll
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\LetsGo_DAL\obj\Debug\LetsGo_DAL.pdb

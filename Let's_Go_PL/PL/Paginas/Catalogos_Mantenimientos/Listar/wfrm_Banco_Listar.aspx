@@ -16,9 +16,14 @@
                             <input type="image" name="btn_Buscar" value="Buscar" id="btn_Buscar" src="../../../Recursos/Search.png"/>
                         </div>
                         <div>
-                            <button type="submit" id="btn_Agregar" class="button" onclick="location.href='../Modificar/wfrm_Banco_Modificar.aspx';" style='background: url(../../../Recursos/Add.png);'></button>
+<%--                            <button type="submit" id="btn_Agregar" class="button" onclick="location.href='../Modificar/wfrm_Banco_Modificar.aspx';" style='background: url(../../../Recursos/Add.png);'></button>
                             <button type="submit" id="btn_Modificar" class="button" onclick="location.href='../Modificar/wfrm_Banco_Modificar.aspx';" style='background: url(../../../Recursos/Edit.png);'></button>
-                            <button type="submit" id="btn_Eliminar" class="button" style='background: url(../../../Recursos/Delete.png);'></button>                      
+                            <button type="submit" id="btn_Eliminar" class="button" style='background: url(../../../Recursos/Delete.png);'></button> --%>     
+                            
+                            <asp:Button ID="Button1" runat="server" Text="Button" />
+                            <asp:Button ID="Button2" runat="server" Text="Button" />
+                            <asp:Button ID="Button3" runat="server" Text="Button" />
+                                            
                         </div>
 
                     </div>

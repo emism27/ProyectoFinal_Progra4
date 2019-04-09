@@ -22,3 +22,15 @@ C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\bin\Let
 C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\obj\Debug\SITE_LetsGo.csprojResolveAssemblyReference.cache
 C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\obj\Debug\SITE_LetsGo.dll
 C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\obj\Debug\SITE_LetsGo.pdb
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\bin\SITE_LetsGo.dll.config
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\bin\SITE_LetsGo.dll
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\bin\SITE_LetsGo.pdb
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\bin\SVC_LetsGo.dll
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\bin\LetsGo_BLL.dll
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\bin\LetsGo_DAL.dll
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\bin\SVC_LetsGo.pdb
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\bin\LetsGo_BLL.pdb
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\bin\LetsGo_DAL.pdb
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\obj\Debug\SITE_LetsGo.csprojResolveAssemblyReference.cache
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\obj\Debug\SITE_LetsGo.dll
+C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\SITE_LetsGo\obj\Debug\SITE_LetsGo.pdb
