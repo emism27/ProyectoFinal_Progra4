@@ -40,7 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_CONDUCTOR_BLL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_CLIENTE_BLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
