@@ -10,20 +10,20 @@ using System.Data;
 
 namespace LetsGo_BLL.Catalogos_Mantenimientos
 {
-    public class Cls_Tipo_Vehiculo_BLL
-    {
+    //public class Cls_Tipo_Vehiculo_BLL
+    //{
 
-        public DataTable Listar_Tipo_Vehiculo(ref string sMsjError)
-        {
-            cls_BD_BLL Obj_BD_BLL = new cls_BD_BLL();
-            return Obj_BD_BLL.ExecuteDataAdapter("sp_Listar_Departamentos",string.Empty, SqlDbType.VarChar, string.Empty, ref sMsjError);
-        }
+    //    public DataTable Listar_Tipo_Vehiculo(ref string sMsjError)
+    //    {
+    //        cls_BD_BLL Obj_BD_BLL = new cls_BD_BLL();
+    //        return Obj_BD_BLL.ExecuteDataAdapter("sp_Listar_Departamentos",string.Empty, SqlDbType.VarChar, string.Empty, ref sMsjError);
+    //    }
 
-        public DataTable Filtrar_Tipo_Vehiculo(string sValorParametro, ref string sMsjError)
-        {
-            cls_BD_BLL Obj_BD_BLL = new cls_BD_BLL();
-            return Obj_BD_BLL.ExecuteDataAdapter("sp_Filtar_Departamentos", "@Descripcion", SqlDbType.VarChar, sValorParametro, ref sMsjError);
-        }
+    //    public DataTable Filtrar_Tipo_Vehiculo(string sValorParametro, ref string sMsjError)
+    //    {
+    //        cls_BD_BLL Obj_BD_BLL = new cls_BD_BLL();
+    //        return Obj_BD_BLL.ExecuteDataAdapter("sp_Filtar_Departamentos", "@Descripcion", SqlDbType.VarChar, sValorParametro, ref sMsjError);
+    //    }
 
        
 

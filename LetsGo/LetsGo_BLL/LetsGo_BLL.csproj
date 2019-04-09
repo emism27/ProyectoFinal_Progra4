@@ -43,9 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BD\cls_BD_BLL.cs" />
-    <Compile Include="Catalogos_Mantenimientos\Cls_Conductor_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_Tipo_Vehiculo_BLL.cs" />
-    <Compile Include="Catalogos_Mantenimientos\Cls_Vehiculo_BLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

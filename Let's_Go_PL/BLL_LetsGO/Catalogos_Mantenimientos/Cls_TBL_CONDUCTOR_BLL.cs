@@ -8,10 +8,5 @@ namespace BLL_LetsGO.Catalogos_Mantenimientos
 {
     class Cls_TBL_CONDUCTOR_BLL
     {
-
-
-
-
-
     }
 }
