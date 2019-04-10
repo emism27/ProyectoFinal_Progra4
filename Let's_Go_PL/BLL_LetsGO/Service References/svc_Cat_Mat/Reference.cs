@@ -8,54 +8,54 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BLL_LetsGO.svc_Cat_y_Mat {
+namespace BLL_LetsGO.svc_Cat_Mat {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="svc_Cat_y_Mat.ILetsGo_Interface")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="svc_Cat_Mat.ILetsGo_Interface")]
     public interface ILetsGo_Interface {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILetsGo_Interface/ListarDatos", ReplyAction="http://tempuri.org/ILetsGo_Interface/ListarDatosResponse")]
-        BLL_LetsGO.svc_Cat_y_Mat.ListarDatosResponse ListarDatos(BLL_LetsGO.svc_Cat_y_Mat.ListarDatosRequest request);
+        BLL_LetsGO.svc_Cat_Mat.ListarDatosResponse ListarDatos(BLL_LetsGO.svc_Cat_Mat.ListarDatosRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILetsGo_Interface/ListarDatos", ReplyAction="http://tempuri.org/ILetsGo_Interface/ListarDatosResponse")]
-        System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_y_Mat.ListarDatosResponse> ListarDatosAsync(BLL_LetsGO.svc_Cat_y_Mat.ListarDatosRequest request);
+        System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_Mat.ListarDatosResponse> ListarDatosAsync(BLL_LetsGO.svc_Cat_Mat.ListarDatosRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILetsGo_Interface/FiltrarDatos", ReplyAction="http://tempuri.org/ILetsGo_Interface/FiltrarDatosResponse")]
-        BLL_LetsGO.svc_Cat_y_Mat.FiltrarDatosResponse FiltrarDatos(BLL_LetsGO.svc_Cat_y_Mat.FiltrarDatosRequest request);
+        BLL_LetsGO.svc_Cat_Mat.FiltrarDatosResponse FiltrarDatos(BLL_LetsGO.svc_Cat_Mat.FiltrarDatosRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILetsGo_Interface/FiltrarDatos", ReplyAction="http://tempuri.org/ILetsGo_Interface/FiltrarDatosResponse")]
-        System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_y_Mat.FiltrarDatosResponse> FiltrarDatosAsync(BLL_LetsGO.svc_Cat_y_Mat.FiltrarDatosRequest request);
+        System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_Mat.FiltrarDatosResponse> FiltrarDatosAsync(BLL_LetsGO.svc_Cat_Mat.FiltrarDatosRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILetsGo_Interface/Insertar_DatosSinIdentity", ReplyAction="http://tempuri.org/ILetsGo_Interface/Insertar_DatosSinIdentityResponse")]
-        BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosSinIdentityResponse Insertar_DatosSinIdentity(BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosSinIdentityRequest request);
+        BLL_LetsGO.svc_Cat_Mat.Insertar_DatosSinIdentityResponse Insertar_DatosSinIdentity(BLL_LetsGO.svc_Cat_Mat.Insertar_DatosSinIdentityRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILetsGo_Interface/Insertar_DatosSinIdentity", ReplyAction="http://tempuri.org/ILetsGo_Interface/Insertar_DatosSinIdentityResponse")]
-        System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosSinIdentityResponse> Insertar_DatosSinIdentityAsync(BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosSinIdentityRequest request);
+        System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_Mat.Insertar_DatosSinIdentityResponse> Insertar_DatosSinIdentityAsync(BLL_LetsGO.svc_Cat_Mat.Insertar_DatosSinIdentityRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILetsGo_Interface/Insertar_DatosConIdentity", ReplyAction="http://tempuri.org/ILetsGo_Interface/Insertar_DatosConIdentityResponse")]
-        BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosConIdentityResponse Insertar_DatosConIdentity(BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosConIdentityRequest request);
+        BLL_LetsGO.svc_Cat_Mat.Insertar_DatosConIdentityResponse Insertar_DatosConIdentity(BLL_LetsGO.svc_Cat_Mat.Insertar_DatosConIdentityRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILetsGo_Interface/Insertar_DatosConIdentity", ReplyAction="http://tempuri.org/ILetsGo_Interface/Insertar_DatosConIdentityResponse")]
-        System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosConIdentityResponse> Insertar_DatosConIdentityAsync(BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosConIdentityRequest request);
+        System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_Mat.Insertar_DatosConIdentityResponse> Insertar_DatosConIdentityAsync(BLL_LetsGO.svc_Cat_Mat.Insertar_DatosConIdentityRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILetsGo_Interface/Modifica_Datos", ReplyAction="http://tempuri.org/ILetsGo_Interface/Modifica_DatosResponse")]
-        BLL_LetsGO.svc_Cat_y_Mat.Modifica_DatosResponse Modifica_Datos(BLL_LetsGO.svc_Cat_y_Mat.Modifica_DatosRequest request);
+        BLL_LetsGO.svc_Cat_Mat.Modifica_DatosResponse Modifica_Datos(BLL_LetsGO.svc_Cat_Mat.Modifica_DatosRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILetsGo_Interface/Modifica_Datos", ReplyAction="http://tempuri.org/ILetsGo_Interface/Modifica_DatosResponse")]
-        System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_y_Mat.Modifica_DatosResponse> Modifica_DatosAsync(BLL_LetsGO.svc_Cat_y_Mat.Modifica_DatosRequest request);
+        System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_Mat.Modifica_DatosResponse> Modifica_DatosAsync(BLL_LetsGO.svc_Cat_Mat.Modifica_DatosRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILetsGo_Interface/Elimina_Datos", ReplyAction="http://tempuri.org/ILetsGo_Interface/Elimina_DatosResponse")]
-        BLL_LetsGO.svc_Cat_y_Mat.Elimina_DatosResponse Elimina_Datos(BLL_LetsGO.svc_Cat_y_Mat.Elimina_DatosRequest request);
+        BLL_LetsGO.svc_Cat_Mat.Elimina_DatosResponse Elimina_Datos(BLL_LetsGO.svc_Cat_Mat.Elimina_DatosRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILetsGo_Interface/Elimina_Datos", ReplyAction="http://tempuri.org/ILetsGo_Interface/Elimina_DatosResponse")]
-        System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_y_Mat.Elimina_DatosResponse> Elimina_DatosAsync(BLL_LetsGO.svc_Cat_y_Mat.Elimina_DatosRequest request);
+        System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_Mat.Elimina_DatosResponse> Elimina_DatosAsync(BLL_LetsGO.svc_Cat_Mat.Elimina_DatosRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -335,12 +335,12 @@ namespace BLL_LetsGO.svc_Cat_y_Mat {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface ILetsGo_InterfaceChannel : BLL_LetsGO.svc_Cat_y_Mat.ILetsGo_Interface, System.ServiceModel.IClientChannel {
+    public interface ILetsGo_InterfaceChannel : BLL_LetsGO.svc_Cat_Mat.ILetsGo_Interface, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class LetsGo_InterfaceClient : System.ServiceModel.ClientBase<BLL_LetsGO.svc_Cat_y_Mat.ILetsGo_Interface>, BLL_LetsGO.svc_Cat_y_Mat.ILetsGo_Interface {
+    public partial class LetsGo_InterfaceClient : System.ServiceModel.ClientBase<BLL_LetsGO.svc_Cat_Mat.ILetsGo_Interface>, BLL_LetsGO.svc_Cat_Mat.ILetsGo_Interface {
         
         public LetsGo_InterfaceClient() {
         }
@@ -362,119 +362,119 @@ namespace BLL_LetsGO.svc_Cat_y_Mat {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        BLL_LetsGO.svc_Cat_y_Mat.ListarDatosResponse BLL_LetsGO.svc_Cat_y_Mat.ILetsGo_Interface.ListarDatos(BLL_LetsGO.svc_Cat_y_Mat.ListarDatosRequest request) {
+        BLL_LetsGO.svc_Cat_Mat.ListarDatosResponse BLL_LetsGO.svc_Cat_Mat.ILetsGo_Interface.ListarDatos(BLL_LetsGO.svc_Cat_Mat.ListarDatosRequest request) {
             return base.Channel.ListarDatos(request);
         }
         
         public System.Data.DataTable ListarDatos(string sNombreSP, ref string sMsjError) {
-            BLL_LetsGO.svc_Cat_y_Mat.ListarDatosRequest inValue = new BLL_LetsGO.svc_Cat_y_Mat.ListarDatosRequest();
+            BLL_LetsGO.svc_Cat_Mat.ListarDatosRequest inValue = new BLL_LetsGO.svc_Cat_Mat.ListarDatosRequest();
             inValue.sNombreSP = sNombreSP;
             inValue.sMsjError = sMsjError;
-            BLL_LetsGO.svc_Cat_y_Mat.ListarDatosResponse retVal = ((BLL_LetsGO.svc_Cat_y_Mat.ILetsGo_Interface)(this)).ListarDatos(inValue);
+            BLL_LetsGO.svc_Cat_Mat.ListarDatosResponse retVal = ((BLL_LetsGO.svc_Cat_Mat.ILetsGo_Interface)(this)).ListarDatos(inValue);
             sMsjError = retVal.sMsjError;
             return retVal.ListarDatosResult;
         }
         
-        public System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_y_Mat.ListarDatosResponse> ListarDatosAsync(BLL_LetsGO.svc_Cat_y_Mat.ListarDatosRequest request) {
+        public System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_Mat.ListarDatosResponse> ListarDatosAsync(BLL_LetsGO.svc_Cat_Mat.ListarDatosRequest request) {
             return base.Channel.ListarDatosAsync(request);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        BLL_LetsGO.svc_Cat_y_Mat.FiltrarDatosResponse BLL_LetsGO.svc_Cat_y_Mat.ILetsGo_Interface.FiltrarDatos(BLL_LetsGO.svc_Cat_y_Mat.FiltrarDatosRequest request) {
+        BLL_LetsGO.svc_Cat_Mat.FiltrarDatosResponse BLL_LetsGO.svc_Cat_Mat.ILetsGo_Interface.FiltrarDatos(BLL_LetsGO.svc_Cat_Mat.FiltrarDatosRequest request) {
             return base.Channel.FiltrarDatos(request);
         }
         
         public System.Data.DataTable FiltrarDatos(string sNombreSP, string sNombreParametro, System.Data.SqlDbType DbType, string sValorParametro, ref string sMsjError) {
-            BLL_LetsGO.svc_Cat_y_Mat.FiltrarDatosRequest inValue = new BLL_LetsGO.svc_Cat_y_Mat.FiltrarDatosRequest();
+            BLL_LetsGO.svc_Cat_Mat.FiltrarDatosRequest inValue = new BLL_LetsGO.svc_Cat_Mat.FiltrarDatosRequest();
             inValue.sNombreSP = sNombreSP;
             inValue.sNombreParametro = sNombreParametro;
             inValue.DbType = DbType;
             inValue.sValorParametro = sValorParametro;
             inValue.sMsjError = sMsjError;
-            BLL_LetsGO.svc_Cat_y_Mat.FiltrarDatosResponse retVal = ((BLL_LetsGO.svc_Cat_y_Mat.ILetsGo_Interface)(this)).FiltrarDatos(inValue);
+            BLL_LetsGO.svc_Cat_Mat.FiltrarDatosResponse retVal = ((BLL_LetsGO.svc_Cat_Mat.ILetsGo_Interface)(this)).FiltrarDatos(inValue);
             sMsjError = retVal.sMsjError;
             return retVal.FiltrarDatosResult;
         }
         
-        public System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_y_Mat.FiltrarDatosResponse> FiltrarDatosAsync(BLL_LetsGO.svc_Cat_y_Mat.FiltrarDatosRequest request) {
+        public System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_Mat.FiltrarDatosResponse> FiltrarDatosAsync(BLL_LetsGO.svc_Cat_Mat.FiltrarDatosRequest request) {
             return base.Channel.FiltrarDatosAsync(request);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosSinIdentityResponse BLL_LetsGO.svc_Cat_y_Mat.ILetsGo_Interface.Insertar_DatosSinIdentity(BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosSinIdentityRequest request) {
+        BLL_LetsGO.svc_Cat_Mat.Insertar_DatosSinIdentityResponse BLL_LetsGO.svc_Cat_Mat.ILetsGo_Interface.Insertar_DatosSinIdentity(BLL_LetsGO.svc_Cat_Mat.Insertar_DatosSinIdentityRequest request) {
             return base.Channel.Insertar_DatosSinIdentity(request);
         }
         
         public bool Insertar_DatosSinIdentity(string sNombreSP, System.Data.DataTable dtParametros, ref string sMsjError) {
-            BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosSinIdentityRequest inValue = new BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosSinIdentityRequest();
+            BLL_LetsGO.svc_Cat_Mat.Insertar_DatosSinIdentityRequest inValue = new BLL_LetsGO.svc_Cat_Mat.Insertar_DatosSinIdentityRequest();
             inValue.sNombreSP = sNombreSP;
             inValue.dtParametros = dtParametros;
             inValue.sMsjError = sMsjError;
-            BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosSinIdentityResponse retVal = ((BLL_LetsGO.svc_Cat_y_Mat.ILetsGo_Interface)(this)).Insertar_DatosSinIdentity(inValue);
+            BLL_LetsGO.svc_Cat_Mat.Insertar_DatosSinIdentityResponse retVal = ((BLL_LetsGO.svc_Cat_Mat.ILetsGo_Interface)(this)).Insertar_DatosSinIdentity(inValue);
             sMsjError = retVal.sMsjError;
             return retVal.Insertar_DatosSinIdentityResult;
         }
         
-        public System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosSinIdentityResponse> Insertar_DatosSinIdentityAsync(BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosSinIdentityRequest request) {
+        public System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_Mat.Insertar_DatosSinIdentityResponse> Insertar_DatosSinIdentityAsync(BLL_LetsGO.svc_Cat_Mat.Insertar_DatosSinIdentityRequest request) {
             return base.Channel.Insertar_DatosSinIdentityAsync(request);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosConIdentityResponse BLL_LetsGO.svc_Cat_y_Mat.ILetsGo_Interface.Insertar_DatosConIdentity(BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosConIdentityRequest request) {
+        BLL_LetsGO.svc_Cat_Mat.Insertar_DatosConIdentityResponse BLL_LetsGO.svc_Cat_Mat.ILetsGo_Interface.Insertar_DatosConIdentity(BLL_LetsGO.svc_Cat_Mat.Insertar_DatosConIdentityRequest request) {
             return base.Channel.Insertar_DatosConIdentity(request);
         }
         
         public string Insertar_DatosConIdentity(string sNombreSP, System.Data.DataTable dtParametros, ref string sValorScalar, ref string sMsjError) {
-            BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosConIdentityRequest inValue = new BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosConIdentityRequest();
+            BLL_LetsGO.svc_Cat_Mat.Insertar_DatosConIdentityRequest inValue = new BLL_LetsGO.svc_Cat_Mat.Insertar_DatosConIdentityRequest();
             inValue.sNombreSP = sNombreSP;
             inValue.dtParametros = dtParametros;
             inValue.sValorScalar = sValorScalar;
             inValue.sMsjError = sMsjError;
-            BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosConIdentityResponse retVal = ((BLL_LetsGO.svc_Cat_y_Mat.ILetsGo_Interface)(this)).Insertar_DatosConIdentity(inValue);
+            BLL_LetsGO.svc_Cat_Mat.Insertar_DatosConIdentityResponse retVal = ((BLL_LetsGO.svc_Cat_Mat.ILetsGo_Interface)(this)).Insertar_DatosConIdentity(inValue);
             sValorScalar = retVal.sValorScalar;
             sMsjError = retVal.sMsjError;
             return retVal.Insertar_DatosConIdentityResult;
         }
         
-        public System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosConIdentityResponse> Insertar_DatosConIdentityAsync(BLL_LetsGO.svc_Cat_y_Mat.Insertar_DatosConIdentityRequest request) {
+        public System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_Mat.Insertar_DatosConIdentityResponse> Insertar_DatosConIdentityAsync(BLL_LetsGO.svc_Cat_Mat.Insertar_DatosConIdentityRequest request) {
             return base.Channel.Insertar_DatosConIdentityAsync(request);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        BLL_LetsGO.svc_Cat_y_Mat.Modifica_DatosResponse BLL_LetsGO.svc_Cat_y_Mat.ILetsGo_Interface.Modifica_Datos(BLL_LetsGO.svc_Cat_y_Mat.Modifica_DatosRequest request) {
+        BLL_LetsGO.svc_Cat_Mat.Modifica_DatosResponse BLL_LetsGO.svc_Cat_Mat.ILetsGo_Interface.Modifica_Datos(BLL_LetsGO.svc_Cat_Mat.Modifica_DatosRequest request) {
             return base.Channel.Modifica_Datos(request);
         }
         
         public bool Modifica_Datos(string sNombreSP, System.Data.DataTable dtParametros, ref string sMsjError) {
-            BLL_LetsGO.svc_Cat_y_Mat.Modifica_DatosRequest inValue = new BLL_LetsGO.svc_Cat_y_Mat.Modifica_DatosRequest();
+            BLL_LetsGO.svc_Cat_Mat.Modifica_DatosRequest inValue = new BLL_LetsGO.svc_Cat_Mat.Modifica_DatosRequest();
             inValue.sNombreSP = sNombreSP;
             inValue.dtParametros = dtParametros;
             inValue.sMsjError = sMsjError;
-            BLL_LetsGO.svc_Cat_y_Mat.Modifica_DatosResponse retVal = ((BLL_LetsGO.svc_Cat_y_Mat.ILetsGo_Interface)(this)).Modifica_Datos(inValue);
+            BLL_LetsGO.svc_Cat_Mat.Modifica_DatosResponse retVal = ((BLL_LetsGO.svc_Cat_Mat.ILetsGo_Interface)(this)).Modifica_Datos(inValue);
             sMsjError = retVal.sMsjError;
             return retVal.Modifica_DatosResult;
         }
         
-        public System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_y_Mat.Modifica_DatosResponse> Modifica_DatosAsync(BLL_LetsGO.svc_Cat_y_Mat.Modifica_DatosRequest request) {
+        public System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_Mat.Modifica_DatosResponse> Modifica_DatosAsync(BLL_LetsGO.svc_Cat_Mat.Modifica_DatosRequest request) {
             return base.Channel.Modifica_DatosAsync(request);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        BLL_LetsGO.svc_Cat_y_Mat.Elimina_DatosResponse BLL_LetsGO.svc_Cat_y_Mat.ILetsGo_Interface.Elimina_Datos(BLL_LetsGO.svc_Cat_y_Mat.Elimina_DatosRequest request) {
+        BLL_LetsGO.svc_Cat_Mat.Elimina_DatosResponse BLL_LetsGO.svc_Cat_Mat.ILetsGo_Interface.Elimina_Datos(BLL_LetsGO.svc_Cat_Mat.Elimina_DatosRequest request) {
             return base.Channel.Elimina_Datos(request);
         }
         
         public bool Elimina_Datos(string sNombreSP, System.Data.DataTable dtParametros, ref string sMsjError) {
-            BLL_LetsGO.svc_Cat_y_Mat.Elimina_DatosRequest inValue = new BLL_LetsGO.svc_Cat_y_Mat.Elimina_DatosRequest();
+            BLL_LetsGO.svc_Cat_Mat.Elimina_DatosRequest inValue = new BLL_LetsGO.svc_Cat_Mat.Elimina_DatosRequest();
             inValue.sNombreSP = sNombreSP;
             inValue.dtParametros = dtParametros;
             inValue.sMsjError = sMsjError;
-            BLL_LetsGO.svc_Cat_y_Mat.Elimina_DatosResponse retVal = ((BLL_LetsGO.svc_Cat_y_Mat.ILetsGo_Interface)(this)).Elimina_Datos(inValue);
+            BLL_LetsGO.svc_Cat_Mat.Elimina_DatosResponse retVal = ((BLL_LetsGO.svc_Cat_Mat.ILetsGo_Interface)(this)).Elimina_Datos(inValue);
             sMsjError = retVal.sMsjError;
             return retVal.Elimina_DatosResult;
         }
         
-        public System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_y_Mat.Elimina_DatosResponse> Elimina_DatosAsync(BLL_LetsGO.svc_Cat_y_Mat.Elimina_DatosRequest request) {
+        public System.Threading.Tasks.Task<BLL_LetsGO.svc_Cat_Mat.Elimina_DatosResponse> Elimina_DatosAsync(BLL_LetsGO.svc_Cat_Mat.Elimina_DatosRequest request) {
             return base.Channel.Elimina_DatosAsync(request);
         }
     }
