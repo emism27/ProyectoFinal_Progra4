@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8304a717-5021-43e1-a5b1-42914ba4acc0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="633e0e86-3640-487a-8e52-b0da270e3fd4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,10 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:13999/LetsGo.svc?singleWsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:13999/LetsGo.svc?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="LetsGo_Contract.wsdl" MetadataType="Wsdl" ID="04a30733-ad38-4cee-8145-b9e9df58246b" SourceId="1" SourceUrl="http://localhost:13999/LetsGo.svc?singleWsdl" />
+    <MetadataFile FileName="LetsGo.xsd" MetadataType="Schema" ID="fe953e58-11af-45c2-be07-9f3ae4c6eeea" SourceId="1" SourceUrl="http://localhost:13999/LetsGo.svc?xsd=xsd0" />
+    <MetadataFile FileName="LetsGo1.xsd" MetadataType="Schema" ID="79224c67-1dc8-4fbc-ad55-4fcc0f2223b8" SourceId="1" SourceUrl="http://localhost:13999/LetsGo.svc?xsd=xsd1" />
+    <MetadataFile FileName="LetsGo_Contract.wsdl" MetadataType="Wsdl" ID="ea0cd867-7c68-4314-be4b-32c5ab7e8ac2" SourceId="1" SourceUrl="http://localhost:13999/LetsGo.svc?wsdl" />
+    <MetadataFile FileName="LetsGo2.xsd" MetadataType="Schema" ID="8c7b7d8f-f949-43df-918e-3b5c9136094a" SourceId="1" SourceUrl="http://localhost:13999/LetsGo.svc?xsd=xsd2" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

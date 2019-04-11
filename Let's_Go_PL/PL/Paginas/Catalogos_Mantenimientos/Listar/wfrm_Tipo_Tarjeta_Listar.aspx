@@ -12,7 +12,7 @@
                             <select id="cbx_Filtro" >
                                 <option value="categories" selected="selected">Filtrar por...</option>
                             </select>
-                            <input name="filtro" type="text" class="form-control" id="txt_Filtro" placeholder="Palabra clave..."/>
+                            <input runat="server" name="filtro" type="text" class="form-control" id="txt_Filtro" placeholder="Palabra clave..."/>
                             <input type="image" name="btn_Buscar" value="Buscar" id="btn_Buscar" src="../../../Recursos/Search.png"/>
                         </div>
                         <div>
@@ -22,14 +22,12 @@
                         </div>
 
                     </div>
-                    <form id="Vehiculo_Catalogo" method="post">
+                    <form id="Vehiculo_Catalogo" method="post" runat="server">
                         <div class="row">
                             <div class="col-md-6">
 
                                 <div>
-
-                                    <p>AQUI VA EL DATA GRIDVIEW</p>
-
+                                    <asp:GridView ID="dgvTipoTarjeta" runat="server"></asp:GridView>
                                 </div>
                             </div>
                         </div>
