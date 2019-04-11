@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LetsGo_Contract" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xs:element name="ListarDatos">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="sNombreSP" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="sMsjError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ListarDatosResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ListarDatosResult" nillable="true">
+              <xs:complexType>
+                <xs:annotation>
+                  <xs:appinfo>
+                    <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:sequence>
+                  <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element minOccurs="0" name="sMsjError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FiltrarDatos">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="sNombreSP" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="sNombreParametro" nillable="true" type="xs:string" />
+            <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System.Data" minOccurs="0" name="DbType" type="q1:SqlDbType" />
+            <xs:element minOccurs="0" name="sValorParametro" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="sMsjError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FiltrarDatosResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="FiltrarDatosResult" nillable="true">
+              <xs:complexType>
+                <xs:annotation>
+                  <xs:appinfo>
+                    <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:sequence>
+                  <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element minOccurs="0" name="sMsjError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Insertar_DatosSinIdentity">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="sNombreSP" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="dtParametros" nillable="true">
+              <xs:complexType>
+                <xs:annotation>
+                  <xs:appinfo>
+                    <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:sequence>
+                  <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element minOccurs="0" name="sMsjError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Insertar_DatosSinIdentityResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Insertar_DatosSinIdentityResult" type="xs:boolean" />
+            <xs:element minOccurs="0" name="sMsjError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Insertar_DatosConIdentity">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="sNombreSP" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="dtParametros" nillable="true">
+              <xs:complexType>
+                <xs:annotation>
+                  <xs:appinfo>
+                    <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:sequence>
+                  <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element minOccurs="0" name="sValorScalar" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="sMsjError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Insertar_DatosConIdentityResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Insertar_DatosConIdentityResult" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="sValorScalar" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="sMsjError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Modifica_Datos">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="sNombreSP" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="dtParametros" nillable="true">
+              <xs:complexType>
+                <xs:annotation>
+                  <xs:appinfo>
+                    <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:sequence>
+                  <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element minOccurs="0" name="sMsjError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Modifica_DatosResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Modifica_DatosResult" type="xs:boolean" />
+            <xs:element minOccurs="0" name="sMsjError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Elimina_Datos">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="sNombreSP" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="dtParametros" nillable="true">
+              <xs:complexType>
+                <xs:annotation>
+                  <xs:appinfo>
+                    <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:sequence>
+                  <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element minOccurs="0" name="sMsjError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Elimina_DatosResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Elimina_DatosResult" type="xs:boolean" />
+            <xs:element minOccurs="0" name="sMsjError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="anyType" nillable="true" type="xs:anyType" />
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI" />
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
+      <xs:element name="boolean" nillable="true" type="xs:boolean" />
+      <xs:element name="byte" nillable="true" type="xs:byte" />
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime" />
+      <xs:element name="decimal" nillable="true" type="xs:decimal" />
+      <xs:element name="double" nillable="true" type="xs:double" />
+      <xs:element name="float" nillable="true" type="xs:float" />
+      <xs:element name="int" nillable="true" type="xs:int" />
+      <xs:element name="long" nillable="true" type="xs:long" />
+      <xs:element name="QName" nillable="true" type="xs:QName" />
+      <xs:element name="short" nillable="true" type="xs:short" />
+      <xs:element name="string" nillable="true" type="xs:string" />
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" />
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" />
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" />
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" />
+      <xs:element name="char" nillable="true" type="tns:char" />
+      <xs:simpleType name="char">
+        <xs:restriction base="xs:int" />
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration" />
+      <xs:simpleType name="duration">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S" />
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid" />
+      <xs:simpleType name="guid">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="FactoryType" type="xs:QName" />
+      <xs:attribute name="Id" type="xs:ID" />
+      <xs:attribute name="Ref" type="xs:IDREF" />
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/System.Data" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xs:element name="DataTable" nillable="true">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:appinfo>
+              <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+            </xs:appinfo>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:simpleType name="SqlDbType">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="BigInt" />
+          <xs:enumeration value="Binary" />
+          <xs:enumeration value="Bit" />
+          <xs:enumeration value="Char" />
+          <xs:enumeration value="DateTime" />
+          <xs:enumeration value="Decimal" />
+          <xs:enumeration value="Float" />
+          <xs:enumeration value="Image" />
+          <xs:enumeration value="Int" />
+          <xs:enumeration value="Money" />
+          <xs:enumeration value="NChar" />
+          <xs:enumeration value="NText" />
+          <xs:enumeration value="NVarChar" />
+          <xs:enumeration value="Real" />
+          <xs:enumeration value="UniqueIdentifier" />
+          <xs:enumeration value="SmallDateTime" />
+          <xs:enumeration value="SmallInt" />
+          <xs:enumeration value="SmallMoney" />
+          <xs:enumeration value="Text" />
+          <xs:enumeration value="Timestamp" />
+          <xs:enumeration value="TinyInt" />
+          <xs:enumeration value="VarBinary" />
+          <xs:enumeration value="VarChar" />
+          <xs:enumeration value="Variant" />
+          <xs:enumeration value="Xml">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">25</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="Udt">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">29</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="Structured">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">30</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="Date">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">31</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="Time">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">32</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="DateTime2">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">33</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="DateTimeOffset">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">34</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="SqlDbType" nillable="true" type="tns:SqlDbType" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="ILetsGo_Interface_ListarDatos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarDatos" />
+  </wsdl:message>
+  <wsdl:message name="ILetsGo_Interface_ListarDatos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarDatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILetsGo_Interface_FiltrarDatos_InputMessage">
+    <wsdl:part name="parameters" element="tns:FiltrarDatos" />
+  </wsdl:message>
+  <wsdl:message name="ILetsGo_Interface_FiltrarDatos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FiltrarDatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILetsGo_Interface_Insertar_DatosSinIdentity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insertar_DatosSinIdentity" />
+  </wsdl:message>
+  <wsdl:message name="ILetsGo_Interface_Insertar_DatosSinIdentity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insertar_DatosSinIdentityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILetsGo_Interface_Insertar_DatosConIdentity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insertar_DatosConIdentity" />
+  </wsdl:message>
+  <wsdl:message name="ILetsGo_Interface_Insertar_DatosConIdentity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insertar_DatosConIdentityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILetsGo_Interface_Modifica_Datos_InputMessage">
+    <wsdl:part name="parameters" element="tns:Modifica_Datos" />
+  </wsdl:message>
+  <wsdl:message name="ILetsGo_Interface_Modifica_Datos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Modifica_DatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILetsGo_Interface_Elimina_Datos_InputMessage">
+    <wsdl:part name="parameters" element="tns:Elimina_Datos" />
+  </wsdl:message>
+  <wsdl:message name="ILetsGo_Interface_Elimina_Datos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Elimina_DatosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ILetsGo_Interface">
+    <wsdl:operation name="ListarDatos">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILetsGo_Interface/ListarDatos" message="tns:ILetsGo_Interface_ListarDatos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILetsGo_Interface/ListarDatosResponse" message="tns:ILetsGo_Interface_ListarDatos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FiltrarDatos">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILetsGo_Interface/FiltrarDatos" message="tns:ILetsGo_Interface_FiltrarDatos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILetsGo_Interface/FiltrarDatosResponse" message="tns:ILetsGo_Interface_FiltrarDatos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insertar_DatosSinIdentity">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILetsGo_Interface/Insertar_DatosSinIdentity" message="tns:ILetsGo_Interface_Insertar_DatosSinIdentity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILetsGo_Interface/Insertar_DatosSinIdentityResponse" message="tns:ILetsGo_Interface_Insertar_DatosSinIdentity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insertar_DatosConIdentity">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILetsGo_Interface/Insertar_DatosConIdentity" message="tns:ILetsGo_Interface_Insertar_DatosConIdentity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILetsGo_Interface/Insertar_DatosConIdentityResponse" message="tns:ILetsGo_Interface_Insertar_DatosConIdentity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Modifica_Datos">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILetsGo_Interface/Modifica_Datos" message="tns:ILetsGo_Interface_Modifica_Datos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILetsGo_Interface/Modifica_DatosResponse" message="tns:ILetsGo_Interface_Modifica_Datos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Elimina_Datos">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILetsGo_Interface/Elimina_Datos" message="tns:ILetsGo_Interface_Elimina_Datos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILetsGo_Interface/Elimina_DatosResponse" message="tns:ILetsGo_Interface_Elimina_Datos_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ILetsGo_Interface" type="tns:ILetsGo_Interface">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListarDatos">
+      <soap:operation soapAction="http://tempuri.org/ILetsGo_Interface/ListarDatos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FiltrarDatos">
+      <soap:operation soapAction="http://tempuri.org/ILetsGo_Interface/FiltrarDatos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insertar_DatosSinIdentity">
+      <soap:operation soapAction="http://tempuri.org/ILetsGo_Interface/Insertar_DatosSinIdentity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insertar_DatosConIdentity">
+      <soap:operation soapAction="http://tempuri.org/ILetsGo_Interface/Insertar_DatosConIdentity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Modifica_Datos">
+      <soap:operation soapAction="http://tempuri.org/ILetsGo_Interface/Modifica_Datos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Elimina_Datos">
+      <soap:operation soapAction="http://tempuri.org/ILetsGo_Interface/Elimina_Datos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LetsGo_Contract">
+    <wsdl:port name="BasicHttpBinding_ILetsGo_Interface" binding="tns:BasicHttpBinding_ILetsGo_Interface">
+      <soap:address location="http://localhost:13999/LetsGo.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

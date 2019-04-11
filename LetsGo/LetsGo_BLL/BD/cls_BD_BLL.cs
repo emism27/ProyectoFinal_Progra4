@@ -17,7 +17,7 @@ namespace LetsGo_BLL.BD
         {
             try
             {
-                Obj_BD_DAL.sCadena_Conexion = ConfigurationManager.ConnectionStrings["Windows_AUT"].ConnectionString;
+                Obj_BD_DAL.sCadena_Conexion = ConfigurationManager.ConnectionStrings["WIN_AUT"].ConnectionString.ToString().Trim();
                 Obj_BD_DAL.obj_sql_cnx = new SqlConnection(Obj_BD_DAL.sCadena_Conexion);
                 Obj_BD_DAL.sMsj_Error = string.Empty;
             }
@@ -37,7 +37,7 @@ namespace LetsGo_BLL.BD
 
             try
             {
-                obj_BD_DAL.sCadena_Conexion = ConfigurationManager.ConnectionStrings[1].ToString();
+                obj_BD_DAL.sCadena_Conexion = ConfigurationManager.ConnectionStrings["WIN_AUT"].ConnectionString.ToString().Trim();
 
                 obj_BD_DAL.obj_sql_cnx = new SqlConnection(obj_BD_DAL.sCadena_Conexion);
                 if (obj_BD_DAL.obj_sql_cnx.State == ConnectionState.Closed)
@@ -90,7 +90,7 @@ namespace LetsGo_BLL.BD
 
             try
             {
-                obj_BD_DAL.sCadena_Conexion = ConfigurationManager.ConnectionStrings[1].ToString();
+                obj_BD_DAL.sCadena_Conexion = ConfigurationManager.ConnectionStrings["WIN_AUT"].ConnectionString.ToString().Trim();
 
                 obj_BD_DAL.obj_sql_cnx = new SqlConnection(obj_BD_DAL.sCadena_Conexion);
 
@@ -164,7 +164,7 @@ namespace LetsGo_BLL.BD
 
             try
             {
-                obj_BD_DAL.sCadena_Conexion = ConfigurationManager.ConnectionStrings[1].ToString();
+                obj_BD_DAL.sCadena_Conexion = ConfigurationManager.ConnectionStrings["WIN_AUT"].ConnectionString.ToString().Trim();
 
                 obj_BD_DAL.obj_sql_cnx = new SqlConnection(obj_BD_DAL.sCadena_Conexion);
 

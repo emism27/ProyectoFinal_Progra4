@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace BLL_LetsGO.Catalogos_Mantenimientos
 {
-    class Cls_TBL_CONDUCTOR_BLL
+    public class Cls_TBL_CONDUCTOR_BLL
     {
+        
+
     }
 }
