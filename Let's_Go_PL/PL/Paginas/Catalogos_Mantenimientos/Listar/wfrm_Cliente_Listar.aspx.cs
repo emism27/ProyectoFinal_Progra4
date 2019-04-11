@@ -18,7 +18,7 @@ namespace PL.Paginas.Catalogos_Mantenimientos.Listar
             Cls_TBL_CLIENTE_BLL Obj_BLL = new Cls_TBL_CLIENTE_BLL();
             GV_Cliente_listar.AllowSorting = false;
             GV_Cliente_listar.DataBind();
-            GV_Cliente_listar.DataSource = Obj_BLL.Listar();
+            //GV_Cliente_listar.DataSource = Obj_BLL.Listar();
 
 
         }
