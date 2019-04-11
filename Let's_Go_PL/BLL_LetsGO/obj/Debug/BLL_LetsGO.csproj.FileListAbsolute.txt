@@ -1,0 +1,8 @@
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\BLL_LetsGO\obj\Debug\BLL_LetsGO.csprojResolveAssemblyReference.cache
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\BLL_LetsGO\bin\Debug\BLL_LetsGO.dll.config
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\BLL_LetsGO\bin\Debug\BLL_LetsGO.dll
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\BLL_LetsGO\bin\Debug\BLL_LetsGO.pdb
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\BLL_LetsGO\bin\Debug\DAL_LetsGO.dll
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\BLL_LetsGO\bin\Debug\DAL_LetsGO.pdb
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\BLL_LetsGO\obj\Debug\BLL_LetsGO.dll
+C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\BLL_LetsGO\obj\Debug\BLL_LetsGO.pdb

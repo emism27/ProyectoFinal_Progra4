@@ -40,6 +40,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -115,6 +117,31 @@
     <Content Include="Recursos\Save.png" />
     <Content Include="Recursos\Search.png" />
     <Content Include="Scripts_Validaciones\js_Validacion_Tipo_Vehiculo.js" />
+    <Content Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Service References\svc_Cat_Mat\configuration91.svcinfo" />
+    <None Include="Service References\svc_Cat_Mat\configuration.svcinfo" />
+    <Content Include="Service References\svc_Cat_Mat\PL.svc_Cat_Mat.Elimina_DatosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svc_Cat_Mat\PL.svc_Cat_Mat.FiltrarDatosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svc_Cat_Mat\PL.svc_Cat_Mat.Insertar_DatosConIdentityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svc_Cat_Mat\PL.svc_Cat_Mat.Insertar_DatosSinIdentityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svc_Cat_Mat\PL.svc_Cat_Mat.ListarDatosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svc_Cat_Mat\PL.svc_Cat_Mat.Modifica_DatosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\svc_Cat_Mat\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Styles\CSS\Login.css" />
     <Content Include="Styles\CSS\MasterPage.css" />
     <Content Include="Styles\CSS\noscript.css" />
@@ -439,9 +466,24 @@
       <DependentUpon>wfrm_Login_Seguridad.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\svc_Cat_Mat\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Paginas\Otros\msr_MasterPage_Otros.Master" />
+    <None Include="Service References\svc_Cat_Mat\LetsGo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svc_Cat_Mat\LetsGo1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svc_Cat_Mat\LetsGo2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svc_Cat_Mat\LetsGo_Contract.wsdl" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -454,6 +496,22 @@
     <Folder Include="Paginas\Servicios\" />
     <Folder Include="Styles\BOOTSTRAP\" />
     <Folder Include="Styles\JQ\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL_LetsGO\BLL_LetsGO.csproj">
+      <Project>{5b0b6803-e8e6-4f39-aacc-6538e1f5b3c8}</Project>
+      <Name>BLL_LetsGO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL_LetsGO\DAL_LetsGO.csproj">
+      <Project>{4263a29a-6545-49a4-adec-a64ea9769544}</Project>
+      <Name>DAL_LetsGO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\svc_Cat_Mat\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
