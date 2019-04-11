@@ -13,12 +13,12 @@ namespace PL.Paginas.Catalogos_Mantenimientos.Listar {
     public partial class wfrm_Cliente_Listar {
         
         /// <summary>
-        /// GV_Cliente_listar control.
+        /// dgvCliente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GV_Cliente_listar;
+        protected global::System.Web.UI.WebControls.GridView dgvCliente;
     }
 }

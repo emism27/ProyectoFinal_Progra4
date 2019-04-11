@@ -3,3 +3,8 @@ C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\DAL_LetsGO\bin
 C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\DAL_LetsGO\obj\Debug\DAL_LetsGO.csprojResolveAssemblyReference.cache
 C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\DAL_LetsGO\obj\Debug\DAL_LetsGO.dll
 C:\Users\Alexander\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\DAL_LetsGO\obj\Debug\DAL_LetsGO.pdb
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra42\Let's_Go_PL\DAL_LetsGO\bin\Debug\DAL_LetsGO.dll
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra42\Let's_Go_PL\DAL_LetsGO\bin\Debug\DAL_LetsGO.pdb
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra42\Let's_Go_PL\DAL_LetsGO\obj\Debug\DAL_LetsGO.csprojResolveAssemblyReference.cache
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra42\Let's_Go_PL\DAL_LetsGO\obj\Debug\DAL_LetsGO.dll
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra42\Let's_Go_PL\DAL_LetsGO\obj\Debug\DAL_LetsGO.pdb

@@ -29,7 +29,7 @@
 
                                 <div>
 
-                                    <p><asp:GridView ID="GV_Cliente_listar" runat="server" OnLoad ="Page_Load"></asp:GridView></p>
+                                     <asp:GridView ID="dgvCliente" runat="server"></asp:GridView>
                                     
 
                                 </div>

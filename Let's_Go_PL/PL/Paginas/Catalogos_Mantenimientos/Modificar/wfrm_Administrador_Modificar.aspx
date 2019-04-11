@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Paginas/Otros/msr_MasterPage_Otros.Master" AutoEventWireup="true" CodeBehind="wfrm_Administrador_Modificar.aspx.cs" Inherits="PL.Paginas.Catalogos_Mantenimientos.Modificar.wfrm_Administrador_Modificar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+    <script src="../../../Scripts_Validaciones/js_Validaciones_TBL_Cliente_TBL_Administrador_TBL_Estado.js"></script> 
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -21,7 +24,7 @@
                             <div class="col-md-6">
 
                                     <div>
-                                    <label for="txt_Id_Administrador">ID Administrador: </label><input name="txt_Id_Administrador" type="text" class="form-control" id="txt_Id_Administrador" placeholder="Ingrese el ID del Administrador..." required=""/>
+                                    <label for="txt_Id_Administrador">ID Administrador: </label><input name="txt_Id_Administrador" type="text" class="form-control" id="txt_Id_Administrador" placeholder="Ingrese el ID del Administrador..." required=""  onkeypress="return ValidarNumeros(event)"/>
                                     </div>
 
                                     <div>
@@ -49,5 +52,6 @@
             </div>
         </div>
     </section>
+
 
 </asp:Content>

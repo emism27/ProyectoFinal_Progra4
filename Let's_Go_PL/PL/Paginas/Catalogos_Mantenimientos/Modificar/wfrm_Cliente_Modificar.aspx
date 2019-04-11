@@ -1,5 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Paginas/Otros/msr_MasterPage_Otros.Master" AutoEventWireup="true" CodeBehind="wfrm_Cliente_Modificar.aspx.cs" Inherits="PL.Paginas.Catalogos_Mantenimientos.Modificar.wfrm_Cliente_Modificar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+    <script src="../../../Scripts_Validaciones/js_Validaciones_TBL_Cliente_TBL_Administrador_TBL_Estado.js"></script>
+
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -21,7 +25,7 @@
                             <div class="col-md-6">
 
                                     <div>
-                                    <label for="txt_Id_Cliente">ID Cliente: </label><input name="txt_Id_Cliente" type="text" class="form-control" id="txt_Id_Cliente" placeholder="Ingrese el ID del Cliente..." required=""/>
+                                    <label for="txt_Id_Cliente">ID Cliente: </label><input name="txt_Id_Cliente" type="text" class="form-control" id="txt_Id_Cliente" placeholder="Ingrese el ID del Cliente..." required="" onkeypress="return ValidarNumeros(event)"/>
                                     </div>
 
                                     <div>

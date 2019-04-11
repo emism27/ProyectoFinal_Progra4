@@ -27,7 +27,7 @@
 
                                 <div>
 
-                                    <p>AQUI VA EL DATA GRIDVIEW</p>
+                                     <asp:GridView ID="dgvAministrador" runat="server"></asp:GridView>
 
                                 </div>
                             </div>

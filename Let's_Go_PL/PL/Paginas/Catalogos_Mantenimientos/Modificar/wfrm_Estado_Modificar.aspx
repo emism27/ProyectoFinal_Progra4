@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Paginas/Otros/msr_MasterPage_Otros.Master" AutoEventWireup="true" CodeBehind="wfrm_Estado_Modificar.aspx.cs" Inherits="PL.Paginas.Catalogos_Mantenimientos.Modificar.wfrm_Estado_Modificar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+    <script src="../../../Scripts_Validaciones/js_Validaciones_TBL_Cliente_TBL_Administrador_TBL_Estado.js"></script>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -10,7 +13,7 @@
                     <div class="section-heading">
 
                         <div>
-                            <button type="submit" id="btn_Guardar" class="button" style='background: url(../../../Recursos/Save.png);'></button>
+                            <button type="submit" id="btn_Guardar" onclick="ValidarEspaciosTBL_Estado()" class="button" style='background: url(../../../Recursos/Save.png);'></button>
                             <button type="reset" id="btn_Limpiar" class="button" style='background: url(../../../Recursos/Refresh.png);'></button>
                             <button type="submit" id="btn_Atras" class="button" onclick="location.href='../Listar/wfrm_Estado_Listar.aspx';" style='background: url(../../../Recursos/Exit.png);'></button>
                         </div>
@@ -21,11 +24,11 @@
                             <div class="col-md-6">
 
                                     <div>
-                                    <label for="txt_Id_Estado">ID Estado: </label><input name="txt_Id_Estado" type="text" class="form-control" id="txt_Id_Estado" placeholder="Ingrese el ID del Estado..." required=""/>
+                                    <label for="txt_Id_Estado">ID Estado: </label><input name="txt_Id_Estado" type="text" class="form-control" id="txt_Id_Estado" placeholder="Ingrese el ID del Estado..." required="" onkeypress="return ValidarNumeros(event)"/>
                                     </div>
 
                                     <div>
-                                    <label for="txt_Descripcion">Descripcion: </label><input name="txt_Descripcion" type="text" class="form-control" id="txt_Descripcion" placeholder="Ingrese la Descripcion..." required=""/>
+                                    <label for="txt_Descripcion">Descripcion: </label><input name="txt_Descripcion" type="text" class="form-control" id="txt_Descripcion" placeholder="Ingrese la Descripcion..." required="" onkeypress="return ValidarLetras(event)"/>
                                     </div>
 
                             </div>
@@ -35,5 +38,7 @@
             </div>
         </div>
     </section>
+
+    <span id="formError"></span>
 
 </asp:Content>

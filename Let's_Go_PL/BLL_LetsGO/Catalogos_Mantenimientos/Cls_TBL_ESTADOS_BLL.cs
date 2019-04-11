@@ -5,20 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using DAL_LetsGO.Catalogos_Mantenimientos;
 using System.Data;
-//using BLL_LetsGO.svc_Cat_y_Mat;
-
 namespace BLL_LetsGO.Catalogos_Mantenimientos
 {
-    public class Cls_TBL_CLIENTE_BLL
+    public class Cls_TBL_ESTADOS_BLL
     {
 
-        //LetsGo_InterfaceClient client = new LetsGo_InterfaceClient();
-
-        //svc_Cat_y_Mat.ListarDatosRequest
-
-
         // Metodo para listar los datos
-        public void Listar_Cuentas(ref Cls_TBL_CLIENTE_DAL Obj_CLIENTE_DAL)
+        public void Listar_Cuentas(ref Cls_TBL_ESTADOS_DAL Obj_ESTADOS_DAL)
         {
             // se crea la variable error para pasarlo por el servicio
             string sMsjError = string.Empty;
@@ -30,7 +23,7 @@ namespace BLL_LetsGO.Catalogos_Mantenimientos
                 //svc_Cat_Mat.LetsGo_InterfaceClient Obj_svc_LetsGo = new svc_Cat_Mat.LetsGo_InterfaceClient();
 
                 // el nombre del Store procedure
-                string sNombreSP = "[SCH_CUENTA].[sp_select_TBL_CLIENTE]";
+                string sNombreSP = " [SCH_SERVICIOS].[sp_select_TBL_ESTADOS]";
 
                 // se crea un datatable para que sea llenado
                 DataTable dt = new DataTable();
@@ -41,7 +34,7 @@ namespace BLL_LetsGO.Catalogos_Mantenimientos
                 if (sMsjError == string.Empty)
                 {
                     // se llena el DataTable del objeto de la tabla poniendolo que sea igual al Datatable llenado desde el servicio
-                    Obj_CLIENTE_DAL.Obj_DT = dt;
+                    Obj_ESTADOS_DAL.Obj_DT = dt;
                     sMsjError = string.Empty;
                 }
                 else
@@ -54,19 +47,6 @@ namespace BLL_LetsGO.Catalogos_Mantenimientos
                 sMsjError = ex.Message.ToString();
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }
