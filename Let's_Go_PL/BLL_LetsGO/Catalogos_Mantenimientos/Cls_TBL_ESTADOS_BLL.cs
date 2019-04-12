@@ -23,7 +23,7 @@ namespace BLL_LetsGO.Catalogos_Mantenimientos
                 //svc_Cat_Mat.LetsGo_InterfaceClient Obj_svc_LetsGo = new svc_Cat_Mat.LetsGo_InterfaceClient();
 
                 // el nombre del Store procedure
-                string sNombreSP = " [SCH_SERVICIOS].[sp_select_TBL_ESTADOS]";
+                string sNombreSP = "[SCH_SERVICIOS].[sp_select_TBL_ESTADOS]";
 
                 // se crea un datatable para que sea llenado
                 DataTable dt = new DataTable();

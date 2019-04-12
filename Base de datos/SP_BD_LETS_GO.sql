@@ -8,12 +8,12 @@ GO
 --Select
     create procedure [SCH_EMPRESA].[sp_select_TBL_ADMINISTRADOR]
     as
-    select [ID_Administrador] ,[ID_Cuenta] ,[ID_Estado] ,[ID_Cedula_Juridica] from [SCH_CUENTA].[TBL_ADMINISTRADOR]
+    select [ID_Administrador] ,[ID_Cuenta] ,[ID_Estado] ,[ID_Cedula_Juridica] from [SCH_EMPRESA].[TBL_ADMINISTRADOR]
     go
 --Insert
     create procedure [SCH_EMPRESA].[sp_insert_TBL_ADMINISTRADOR]
     (
-        @ID_Administrador int ,@ID_Cuenta int ,@ID_Estado tinyint ,@ID_Cedula_Juridica int
+        @ID_Administrador int ,@ID_Cuenta int ,@ID_Estado tinyint ,@ID_Cedula_Juridica bigint
     )
     as
     IF NOT EXISTS (SELECT [ID_Administrador] ,[ID_Cuenta] ,[ID_Estado] ,[ID_Cedula_Juridica]
@@ -34,7 +34,7 @@ AND [ID_Cedula_Juridica] = @ID_Cedula_Juridica)
 --Update
     create procedure [SCH_EMPRESA].[sp_update_TBL_ADMINISTRADOR]
     (
-        @ID_Administrador int ,@ID_Cuenta int ,@ID_Estado tinyint ,@ID_Cedula_Juridica int
+        @ID_Administrador int ,@ID_Cuenta int ,@ID_Estado tinyint ,@ID_Cedula_Juridica bigint
     )
     as
     update [SCH_EMPRESA].[TBL_ADMINISTRADOR]
@@ -56,7 +56,7 @@ AND [ID_Cedula_Juridica] = @ID_Cedula_Juridica)
 -- Filtrar
     create procedure [SCH_EMPRESA].[sp_search_TBL_ADMINISTRADOR]
     (
-        @ID_Administrador int ,@ID_Cuenta int ,@ID_Estado tinyint ,@ID_Cedula_Juridica int
+        @ID_Administrador int ,@ID_Cuenta int ,@ID_Estado tinyint ,@ID_Cedula_Juridica bigint
     )
     as
     SELECT [ID_Administrador] ,[ID_Cuenta] ,[ID_Estado] ,[ID_Cedula_Juridica]
@@ -470,7 +470,7 @@ AND [Total] LIKE '%' + ISNULL(@Total, [Total]) + '%'
 --Insert
     create procedure [SCH_EMPRESA].[sp_insert_TBL_EMPRESA]
     (
-        @ID_Cedula_Juridica int ,@Nombre_Empresa varchar (30) ,@Telefono int ,@Sitio_Web varchar (30) ,@Email varchar (30) ,@Direccion varchar (60)
+        @ID_Cedula_Juridica bigint ,@Nombre_Empresa varchar (30) ,@Telefono int ,@Sitio_Web varchar (30) ,@Email varchar (30) ,@Direccion varchar (60)
     )
     as
     IF NOT EXISTS (SELECT [ID_Cedula_Juridica] ,[Nombre_Empresa] ,[Telefono] ,[Sitio_Web] ,[Email] ,[Direccion]
@@ -493,7 +493,7 @@ AND [Direccion] = @Direccion)
 --Update
     create procedure [SCH_EMPRESA].[sp_update_TBL_EMPRESA]
     (
-        @ID_Cedula_Juridica int ,@Nombre_Empresa varchar (30) ,@Telefono int ,@Sitio_Web varchar (30) ,@Email varchar (30) ,@Direccion varchar (60)
+        @ID_Cedula_Juridica bigint ,@Nombre_Empresa varchar (30) ,@Telefono int ,@Sitio_Web varchar (30) ,@Email varchar (30) ,@Direccion varchar (60)
     )
     as
     update [SCH_EMPRESA].[TBL_EMPRESA]
@@ -515,7 +515,7 @@ AND [Direccion] = @Direccion)
 -- Filtrar
     create procedure [SCH_EMPRESA].[sp_search_TBL_EMPRESA]
     (
-        @ID_Cedula_Juridica int ,@Nombre_Empresa varchar (30) ,@Telefono int ,@Sitio_Web varchar (30) ,@Email varchar (30) ,@Direccion varchar (60)
+        @ID_Cedula_Juridica bigint ,@Nombre_Empresa varchar (30) ,@Telefono int ,@Sitio_Web varchar (30) ,@Email varchar (30) ,@Direccion varchar (60)
     )
     as
     SELECT [ID_Cedula_Juridica] ,[Nombre_Empresa] ,[Telefono] ,[Sitio_Web] ,[Email] ,[Direccion]
@@ -980,7 +980,7 @@ AND [Costo_Inicial] LIKE '%' + ISNULL(@Costo_Inicial, [Costo_Inicial]) + '%'
 --Insert
     create procedure [SCH_CUENTA].[sp_insert_TBL_TARJETA]
     (
-        @ID_Numero_Tarjeta bigint ,@ID_Tipo_Tarjeta tinyint ,@ID_Banco tinyint ,@Numero_Cuenta bigint ,@Fecha_Vencimiento dateTIME ,@CVV tinyint
+        @ID_Numero_Tarjeta bigint ,@ID_Tipo_Tarjeta tinyint ,@ID_Banco tinyint ,@Numero_Cuenta bigint ,@Fecha_Vencimiento dateTIME ,@CVV smallint
     )
     as
     IF NOT EXISTS (SELECT [ID_Numero_Tarjeta] ,[ID_Tipo_Tarjeta] ,[ID_Banco] ,[Numero_Cuenta] ,[Fecha_Vencimiento] ,[CVV]
@@ -1003,7 +1003,7 @@ AND [CVV] = @CVV)
 --Update
     create procedure [SCH_CUENTA].[sp_update_TBL_TARJETA]
     (
-        @ID_Numero_Tarjeta bigint ,@ID_Tipo_Tarjeta tinyint ,@ID_Banco tinyint ,@Numero_Cuenta bigint ,@Fecha_Vencimiento dateTIME ,@CVV tinyint
+        @ID_Numero_Tarjeta bigint ,@ID_Tipo_Tarjeta tinyint ,@ID_Banco tinyint ,@Numero_Cuenta bigint ,@Fecha_Vencimiento dateTIME ,@CVV smallint
     )
     as
     update [SCH_CUENTA].[TBL_TARJETA]
@@ -1025,7 +1025,7 @@ AND [CVV] = @CVV)
 -- Filtrar
     create procedure [SCH_CUENTA].[sp_search_TBL_TARJETA]
     (
-        @ID_Numero_Tarjeta bigint ,@ID_Tipo_Tarjeta tinyint ,@ID_Banco tinyint ,@Numero_Cuenta bigint ,@Fecha_Vencimiento dateTIME ,@CVV tinyint
+        @ID_Numero_Tarjeta bigint ,@ID_Tipo_Tarjeta tinyint ,@ID_Banco tinyint ,@Numero_Cuenta bigint ,@Fecha_Vencimiento dateTIME ,@CVV smallint
     )
     as
     SELECT [ID_Numero_Tarjeta] ,[ID_Tipo_Tarjeta] ,[ID_Banco] ,[Numero_Cuenta] ,[Fecha_Vencimiento] ,[CVV]

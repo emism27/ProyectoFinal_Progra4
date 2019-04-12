@@ -25,11 +25,6 @@
                     <form id="Vehiculo_Catalogo" method="post" runat="server">
                         <div class="row">
                             <div class="col-md-6">
-
-                                  <div>
-                                    <label for="txt_Id_Administrador">ID Administrador: </label><input name="txt_Id_Administrador" type="text" class="form-control" id="txt_Id_Administrador" placeholder="Ingrese el ID del Administrador..." required=""  onkeypress="return ValidarNumeros(event)"/>
-                                    </div>
-
                                 <div>
                                     <asp:GridView ID="dgvTipoTarjeta" runat="server"></asp:GridView>
                                 </div>

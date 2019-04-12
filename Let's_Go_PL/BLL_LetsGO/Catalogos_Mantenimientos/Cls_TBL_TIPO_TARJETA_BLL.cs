@@ -40,7 +40,6 @@ namespace BLL_LetsGO.Catalogos_Mantenimientos
                 else
                 {
                 }
-
             }
             catch (Exception ex)
             {

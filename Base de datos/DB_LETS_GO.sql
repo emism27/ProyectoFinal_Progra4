@@ -73,7 +73,7 @@ ID_Tipo_Tarjeta tinyint NOT NULL,
 ID_Banco tinyint NOT NULL,
 Numero_Cuenta bigint NOT NULL,
 Fecha_Vencimiento date NOT NULL,
-CVV tinyint NOT NULL
+CVV smallint NOT NULL
 
  
     CONSTRAINT PK_TBL_TARJETA PRIMARY KEY CLUSTERED (ID_Numero_Tarjeta)
@@ -218,7 +218,7 @@ GO
 
 CREATE TABLE [SCH_EMPRESA].[TBL_EMPRESA]
 (
-ID_Cedula_Juridica int NOT NULL,
+ID_Cedula_Juridica bigint NOT NULL,
 Nombre_Empresa varchar(30) NOT NULL,
 Telefono int NOT NULL,
 Sitio_Web varchar(30) NOT NULL,
@@ -237,7 +237,7 @@ CREATE TABLE [SCH_EMPRESA].[TBL_ADMINISTRADOR]
 ID_Administrador int NOT NULL,
 ID_Cuenta int NOT NULL, --fk
 ID_Estado tinyint NOT NULL, --fk
-ID_Cedula_Juridica int NOT NULL
+ID_Cedula_Juridica bigint NOT NULL
  
     CONSTRAINT PK_TBL_ADMINISTRADOR PRIMARY KEY CLUSTERED (ID_Administrador)
 )
