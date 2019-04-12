@@ -20,7 +20,7 @@
                         </div>
 
                     </div>
-                    <form id="Vehiculo_Catalogo" method="post">
+                    <form id="Vehiculo_Catalogo" method="post" runat="server">
                         <div class="row">
                             <div class="col-md-6">
 

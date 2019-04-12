@@ -11,5 +11,14 @@ namespace PL.Paginas.Catalogos_Mantenimientos.Modificar {
     
     
     public partial class wfrm_Cliente_Modificar {
+        
+        /// <summary>
+        /// Vehiculo_Catalogo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm Vehiculo_Catalogo;
     }
 }

@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Paginas/Otros/msr_MasterPage_Otros.Master" AutoEventWireup="true" CodeBehind="wfrm_Estado_Listar.aspx.cs" Inherits="PL.Paginas.Catalogos_Mantenimientos.Listar.wfrm_Estado_Listar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+     <script src="../../../Scripts_Validaciones/js_Validaciones_TBL_Cliente_TBL_Administrador_TBL_Estado.js"></script>
+
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -12,7 +15,7 @@
                             <select id="cbx_Filtro" >
                                 <option value="categories" selected="selected">Filtrar por...</option>
                             </select>
-                            <input name="filtro" type="text" class="form-control" id="txt_Filtro" placeholder="Palabra clave..."/>
+                            <input runat="server" name="filtro" type="text" class="form-control" id="txt_Filtro" placeholder="Palabra clave..."/>
                             <input type="image" name="btn_Buscar" value="Buscar" id="btn_Buscar" src="../../../Recursos/Search.png"/>
                         </div>
                         <div>
@@ -22,9 +25,12 @@
                         </div>
 
                     </div>
-                    <form id="Vehiculo_Catalogo" method="post">
+                    <form id="Vehiculo_Catalogo" method="post" runat="server">
                         <div class="row">
                             <div class="col-md-6">
+
+
+                                 
 
                                 <div>
 

@@ -13,6 +13,24 @@ namespace PL.Paginas.Catalogos_Mantenimientos.Listar {
     public partial class wfrm_Estado_Listar {
         
         /// <summary>
+        /// txt_Filtro control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txt_Filtro;
+        
+        /// <summary>
+        /// Vehiculo_Catalogo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm Vehiculo_Catalogo;
+        
+        /// <summary>
         /// dgvEstados control.
         /// </summary>
         /// <remarks>

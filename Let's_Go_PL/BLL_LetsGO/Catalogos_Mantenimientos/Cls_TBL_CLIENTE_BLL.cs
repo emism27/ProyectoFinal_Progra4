@@ -18,7 +18,7 @@ namespace BLL_LetsGO.Catalogos_Mantenimientos
 
 
         // Metodo para listar los datos
-        public void Listar_Cuentas(ref Cls_TBL_CLIENTE_DAL Obj_CLIENTE_DAL)
+        public void Listar_Cliente(ref Cls_TBL_CLIENTE_DAL Obj_CLIENTE_DAL)
         {
             // se crea la variable error para pasarlo por el servicio
             string sMsjError = string.Empty;

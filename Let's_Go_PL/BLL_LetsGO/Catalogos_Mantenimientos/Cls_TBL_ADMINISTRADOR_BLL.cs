@@ -11,7 +11,7 @@ namespace BLL_LetsGO.Catalogos_Mantenimientos
     public class Cls_TBL_ADMINISTRADOR_BLL
     {
 
-        public void Listar_Cuentas(ref Cls_TBL_ADMINISTRADOR_DAL Obj_ADMINISTRADOR_DAL)
+        public void Listar_Adminitrador(ref Cls_TBL_ADMINISTRADOR_DAL Obj_ADMINISTRADOR_DAL)
         {
             // se crea la variable error para pasarlo por el servicio
             string sMsjError = string.Empty;
