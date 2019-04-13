@@ -1,5 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Paginas/Otros/msr_MasterPage_Otros.Master" AutoEventWireup="true" CodeBehind="wfrm_Encabezado_Listar.aspx.cs" Inherits="PL.Paginas.Catalogos_Mantenimientos.Listar.wfrm_Encabezado_Listar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+        <script src="../../../Scripts_Validacion/js_Validaciones_TBL_Viaje_TBL_Encabezado_TBL_Detalle_TBL_Comision.js"></script>
+
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
