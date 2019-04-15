@@ -22,10 +22,11 @@ namespace PL.Paginas.Catalogos_Mantenimientos.Listar
 
         public void CargarDatos()
         {
+            /*
             if ()
             {
 
-            }
+            }*/
 
         }
     }

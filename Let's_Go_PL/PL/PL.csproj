@@ -117,6 +117,9 @@
     <Content Include="Recursos\Save.png" />
     <Content Include="Recursos\Search.png" />
     <Content Include="Scripts_Validaciones\js_Validaciones_TBL_Cliente_TBL_Administrador_TBL_Estado.js" />
+    <Content Include="Scripts_Validaciones\js_Validacion_Cuenta.js" />
+    <Content Include="Scripts_Validaciones\js_Validacion_Empresa.js" />
+    <Content Include="Scripts_Validaciones\js_Validacion_Preguntas_Seguridad.js" />
     <Content Include="Scripts_Validaciones\js_Validacion_TBL_Viaje_TBL_Encabezado_TBL_Detalle_TBL_Comision.js" />
     <Content Include="Scripts_Validaciones\js_Validacion_Tipo_Vehiculo.js" />
     <Content Include="Properties\DataSources\System.Data.DataTable.datasource" />
