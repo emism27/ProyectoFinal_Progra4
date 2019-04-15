@@ -46,6 +46,7 @@
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_ADMINISTRADOR_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_CLIENTE_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_COMISION.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_CONDUCTOR_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_DETALLE.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_ENCABEZADO.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_ESTADOS_BLL.cs" />
