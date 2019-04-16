@@ -116,6 +116,7 @@
     <Content Include="Recursos\Refresh.png" />
     <Content Include="Recursos\Save.png" />
     <Content Include="Recursos\Search.png" />
+    <Content Include="Scripts_Validaciones\js_Validaciones_Conductor.js" />
     <Content Include="Scripts_Validaciones\js_Validaciones_TBL_Cliente_TBL_Administrador_TBL_Estado.js" />
     <Content Include="Scripts_Validaciones\js_Validaciones_Vehiculo.js" />
     <Content Include="Scripts_Validaciones\js_Validacion_Cuenta.js" />

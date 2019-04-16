@@ -46,3 +46,13 @@ C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra49\Let's_Go_PL\PL\obj\Debug\PL.
 C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra410\Let's_Go_PL\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
 C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra410\Let's_Go_PL\PL\obj\Debug\PL.dll
 C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra410\Let's_Go_PL\PL\obj\Debug\PL.pdb
+C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\PL\bin\PL.dll.config
+C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\PL\bin\PL.dll
+C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\PL\bin\PL.pdb
+C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\PL\bin\BLL_LetsGO.dll
+C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\PL\bin\DAL_LetsGO.dll
+C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\PL\bin\BLL_LetsGO.pdb
+C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\PL\bin\DAL_LetsGO.pdb
+C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
+C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\PL\obj\Debug\PL.dll
+C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\PL\obj\Debug\PL.pdb

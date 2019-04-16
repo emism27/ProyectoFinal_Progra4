@@ -13,7 +13,7 @@
                     <div class="section-heading">
 
                         <div>
-                            <button type="submit" id="btn_Guardar" class="button" style='background: url(../../../Recursos/Save.png);'></button>
+                            <button type="submit" id="btn_Guardar" onclick="ValidarEspacios()" class="button" style='background: url(../../../Recursos/Save.png);'></button>
                             <button type="reset" id="btn_Limpiar" class="button" style='background: url(../../../Recursos/Refresh.png);'></button>
                             <button type="submit" id="btn_Atras" class="button" onclick="location.href='../Listar/wfrm_Vehiculo_Listar.aspx';" style='background: url(../../../Recursos/Exit.png);'></button>
                         
