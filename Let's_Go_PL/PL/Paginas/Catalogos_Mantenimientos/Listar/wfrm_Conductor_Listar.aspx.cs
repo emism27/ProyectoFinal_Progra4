@@ -11,7 +11,8 @@ namespace PL.Paginas.Catalogos_Mantenimientos.Listar
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
+            CargarDatos();
 
         }
 
