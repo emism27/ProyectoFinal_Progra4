@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using DAL_LetsGO.Catalogos_Mantenimientos;   // conexion al dal 
 using BLL_LetsGO.Catalogos_Mantenimientos;   // conexion al bll
 
@@ -11,8 +6,8 @@ namespace PL.Paginas.Catalogos_Mantenimientos.Listar
 {
     public partial class wfrm_Conductor_Listar : System.Web.UI.Page
     {
-        Cls_TBL_CLIENTE_BLL Obj_CLIENTE_BLL = new Cls_TBL_CLIENTE_BLL();
-        Cls_TBL_CLIENTE_DAL Obj_CLIENTE_DAL = new Cls_TBL_CLIENTE_DAL();
+        Cls_TBL_CONDUCTOR_BLL Obj_CONDUCTOR_BLL = new Cls_TBL_CONDUCTOR_BLL();
+        Cls_TBL_CONDUCTOR_DAL Obj_CONDUCTOR_DAL = new Cls_TBL_CONDUCTOR_DAL();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -22,9 +17,13 @@ namespace PL.Paginas.Catalogos_Mantenimientos.Listar
 
         public void CargarDatos()
         {
-            if ()
+            if (txt_Filtro.Value == string.Empty)
             {
 
+                Obj_CONDUCTOR_BLL.Listar_Conductor(ref Obj_CONDUCTOR_DAL);
+                GV_Conductor_listar.DataSource = null;
+                GV_Conductor_listar.DataSource = Obj_CONDUCTOR_DAL.Obj_DT;
+                GV_Conductor_listar.DataBind();
             }
 
         }

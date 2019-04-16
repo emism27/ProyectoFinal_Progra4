@@ -8,7 +8,7 @@ using System.Data;
 
 namespace BLL_LetsGO.Catalogos_Mantenimientos
 {
-    class Cls_TBL_CONDUCTOR_BLL
+    public class Cls_TBL_CONDUCTOR_BLL
     {
 
         public void Listar_Conductor(ref Cls_TBL_CONDUCTOR_DAL Obj_CONDUCTOR_DAL)
