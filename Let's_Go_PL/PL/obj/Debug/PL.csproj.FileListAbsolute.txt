@@ -43,3 +43,6 @@ C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra49\Let's_Go_PL\PL\bin\BLL_LetsG
 C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra49\Let's_Go_PL\PL\bin\DAL_LetsGO.pdb
 C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra49\Let's_Go_PL\PL\obj\Debug\PL.dll
 C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra49\Let's_Go_PL\PL\obj\Debug\PL.pdb
+C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra410\Let's_Go_PL\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
+C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra410\Let's_Go_PL\PL\obj\Debug\PL.dll
+C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra410\Let's_Go_PL\PL\obj\Debug\PL.pdb

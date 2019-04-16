@@ -12,3 +12,8 @@ C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra49\Let's_Go_PL\DAL_LetsGO\bin\D
 C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra49\Let's_Go_PL\DAL_LetsGO\bin\Debug\DAL_LetsGO.pdb
 C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra49\Let's_Go_PL\DAL_LetsGO\obj\Debug\DAL_LetsGO.dll
 C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra49\Let's_Go_PL\DAL_LetsGO\obj\Debug\DAL_LetsGO.pdb
+C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra410\Let's_Go_PL\DAL_LetsGO\bin\Debug\DAL_LetsGO.dll
+C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra410\Let's_Go_PL\DAL_LetsGO\bin\Debug\DAL_LetsGO.pdb
+C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra410\Let's_Go_PL\DAL_LetsGO\obj\Debug\DAL_LetsGO.csprojResolveAssemblyReference.cache
+C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra410\Let's_Go_PL\DAL_LetsGO\obj\Debug\DAL_LetsGO.dll
+C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra410\Let's_Go_PL\DAL_LetsGO\obj\Debug\DAL_LetsGO.pdb

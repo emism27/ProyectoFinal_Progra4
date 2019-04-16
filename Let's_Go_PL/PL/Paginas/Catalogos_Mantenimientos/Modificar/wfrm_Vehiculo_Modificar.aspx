@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Paginas/Otros/msr_MasterPage_Otros.Master" AutoEventWireup="true" CodeBehind="wfrm_Vehiculo_Modificar.aspx.cs" Inherits="PL.Paginas.Catalogos_Mantenimientos.Modificar.wfrm_Vehiculo_Modificar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+    <script src="../../../Scripts_Validaciones/js_Validaciones_Vehiculo.js"></script>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -21,7 +24,7 @@
                             <div class="col-md-6">
 
                                     <div>
-                                    <label for="txt_Id_Vehiculo">ID del Vehículo: </label><input name="id_vehiculo" type="text" class="form-control" id="txt_Id_Vehiculo" placeholder="Ingrese el ID del Vehículo..." required=""/>
+                                    <label for="txt_Id_Vehiculo">ID del Vehículo: </label><input name="txt_Id_Vehiculo" type="text" onkeypress="return ValidarNumeros(event)" class="form-control" id="txt_Id_Vehiculo" placeholder="Ingrese el ID del Vehículo..." required=""/>
                                     </div>
                                     
                                     <div>
@@ -35,7 +38,7 @@
                                     </div>
 
                                     <div>
-                                    <label for="txt_Año">Año: </label><input name="txt_Año" type="text" class="form-control" id="txt_Año" placeholder="Ingrese el Año..." required=""/>
+                                    <label for="txt_Año">Año: </label><input name="txt_Año" type="text" onkeypress="return ValidarNumeros(event)" class="form-control" id="txt_Año" placeholder="Ingrese el Año..." required=""/>
                                     </div>
                             </div>
                         </div>

@@ -33,7 +33,7 @@
 
                                 <div>
 
-                                     <asp:GridView ID="GV_Cliente_listar" runat="server"></asp:GridView>
+                                     <asp:GridView ID="GV_Cliente_listar" runat="server" OnSelectedIndexChanged="GV_Cliente_listar_SelectedIndexChanged1"></asp:GridView>
                                     
 
                                 </div>
