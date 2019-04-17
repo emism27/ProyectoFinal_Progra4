@@ -45,3 +45,11 @@ C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\BLL_LetsGO\bin\
 C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\BLL_LetsGO\obj\Debug\BLL_LetsGO.csprojResolveAssemblyReference.cache
 C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\BLL_LetsGO\obj\Debug\BLL_LetsGO.dll
 C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\BLL_LetsGO\obj\Debug\BLL_LetsGO.pdb
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra43\Let's_Go_PL\BLL_LetsGO\bin\Debug\BLL_LetsGO.dll.config
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra43\Let's_Go_PL\BLL_LetsGO\bin\Debug\BLL_LetsGO.dll
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra43\Let's_Go_PL\BLL_LetsGO\bin\Debug\BLL_LetsGO.pdb
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra43\Let's_Go_PL\BLL_LetsGO\bin\Debug\DAL_LetsGO.dll
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra43\Let's_Go_PL\BLL_LetsGO\bin\Debug\DAL_LetsGO.pdb
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra43\Let's_Go_PL\BLL_LetsGO\obj\Debug\BLL_LetsGO.csprojResolveAssemblyReference.cache
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra43\Let's_Go_PL\BLL_LetsGO\obj\Debug\BLL_LetsGO.dll
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra43\Let's_Go_PL\BLL_LetsGO\obj\Debug\BLL_LetsGO.pdb

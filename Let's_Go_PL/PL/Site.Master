@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="PL.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Let's Go</title>
+
+    <link href="Styles/CSS/SITE_Mater.css" rel="stylesheet" />
+    <script src="Styles/JS/MasterPage.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+   
+   <div id="NavBar" class="navbar" runat="server">
+
+      <a href="wfrm_Pagina_Trabajo_Otros.aspx">Inicio</a>
+      <a href="#news">News</a>
+    <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Dropdown
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="../Catalogos_Mantenimientos/Listar/wfrm_Administrador_Listar.aspx">Administrador</a>
+            <a href="../Catalogos_Mantenimientos/Listar/wfrm_Banco_Listar.aspx">Banco</a>
+            <a href="../Catalogos_Mantenimientos/Listar/wfrm_Cliente_Listar.aspx">Cliente</a>
+            <a href="../Catalogos_Mantenimientos/Listar/wfrm_Comision_Listar.aspx">Comision</a>
+            <a href="../Catalogos_Mantenimientos/Listar/wfrm_Conductor_Listar.aspx">Conductor</a>
+            <a href="../Catalogos_Mantenimientos/Listar/wfrm_Cuenta_Listar.aspx">Cuenta</a>
+            <a href="../Catalogos_Mantenimientos/Listar/wfrm_Detalle_Listar.aspx">Detalle</a>
+            <a href="../Catalogos_Mantenimientos/Listar/wfrm_Empresa_Listar.aspx">Empresa</a>
+            <a href="../Catalogos_Mantenimientos/Listar/wfrm_Encabezado_Listar.aspx">Encabezado</a>
+            <a href="../Catalogos_Mantenimientos/Listar/wfrm_Estado_Listar.aspx">Estado</a>
+            <a href="../Catalogos_Mantenimientos/Listar/wfrm_Marca_Listar.aspx">Marca</a>
+            <a href="../Catalogos_Mantenimientos/Listar/wfrm_Modelo_Listar.aspx">Modelo</a>
+            <a href="../Catalogos_Mantenimientos/Listar/wfrm_Preguntas_Seguridad_Listar.aspx">Preguntas de Seguridad</a>
+            <a href="../Catalogos_Mantenimientos/Listar/wfrm_Rating_Listar.aspx">Rating</a>
+            <a href="../Catalogos_Mantenimientos/Listar/wfrm_Solicitud_Viaje_Listar.aspx">Solicitud de Viaje</a>
+            <a href="../Catalogos_Mantenimientos/Listar/wfrm_Tarjeta_Listar.aspx">Tarjeta</a>
+            <a href="../Catalogos_Mantenimientos/Listar/wfrm_Tipo_Tarjeta_Listar.aspx">Tipo de Tarjeta</a>
+            <a href="../Catalogos_Mantenimientos/Listar/wfrm_Tipo_Vehiculo_Listar.aspx">Tipo de Vehiculo</a>
+            <a href="../Catalogos_Mantenimientos/Listar/wfrm_Vehiculo_Listar.aspx">Vehiculo</a>
+            <a href="../Catalogos_Mantenimientos/Listar/wfrm_Viaje_Listar.aspx">Viaje</a>
+      </div>
+  </div> 
+</div>
+
+    <div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+                  
+            
+
+        </asp:ContentPlaceHolder>
+    </div>
+
+</body>
+</html>
