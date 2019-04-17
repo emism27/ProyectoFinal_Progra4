@@ -112,14 +112,47 @@ namespace LetsGo_BLL.BD
                         switch (dr[1].ToString())
                         {
                             case "1":
-                                dbt = SqlDbType.Int;
-                                break;
+                                {
+                                    dbt = SqlDbType.Int;
+                                    break;
+                                }
                             case "2":
                                 {
                                     dbt = SqlDbType.VarChar;
                                     break;
                                 }
+                            case "3":
+                                {
+                                    dbt = SqlDbType.NVarChar;
+                                    break;
+                                }
+                            case "4":
+                                {
+                                    dbt = SqlDbType.Char;
+                                    break;
+                                }
+                            case "5":
+                                {
+                                    dbt = SqlDbType.NChar;
+                                    break;
+                                }
+                            case "6":
+                                {
+                                    dbt = SqlDbType.Decimal;
+                                    break;
+                                }
+                            case "7":
+                                {
+                                    dbt = SqlDbType.DateTime;
+                                    break;
+                                }
+                            case "8":
+                                {
+                                    dbt = SqlDbType.TinyInt;
+                                    break;
+                                }
                             default:
+                                dbt = SqlDbType.VarChar;
                                 break;
                         }
 
@@ -186,14 +219,47 @@ namespace LetsGo_BLL.BD
                         switch (dr[1].ToString())
                         {
                             case "1":
-                                dbt = SqlDbType.Int;
-                                break;
+                                {
+                                    dbt = SqlDbType.Int;
+                                    break;
+                                }
                             case "2":
                                 {
                                     dbt = SqlDbType.VarChar;
                                     break;
                                 }
+                            case "3":
+                                {
+                                    dbt = SqlDbType.NVarChar;
+                                    break;
+                                }
+                            case "4":
+                                {
+                                    dbt = SqlDbType.Char;
+                                    break;
+                                }
+                            case "5":
+                                {
+                                    dbt = SqlDbType.NChar;
+                                    break;
+                                }
+                            case "6":
+                                {
+                                    dbt = SqlDbType.Decimal;
+                                    break;
+                                }
+                            case "7":
+                                {
+                                    dbt = SqlDbType.DateTime;
+                                    break;
+                                }
+                            case "8":
+                                {
+                                    dbt = SqlDbType.TinyInt;
+                                    break;
+                                }
                             default:
+                                dbt = SqlDbType.VarChar;
                                 break;
                         }
 

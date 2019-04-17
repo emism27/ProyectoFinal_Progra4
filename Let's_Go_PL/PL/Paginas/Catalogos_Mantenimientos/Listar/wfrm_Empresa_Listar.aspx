@@ -28,7 +28,7 @@
 
                                 <div>
 
-                                    <p>AQUI VA EL DATA GRIDVIEW</p>
+                                    <asp:GridView ID="GV_Empresa_listar" runat="server" OnSelectedIndexChanged="GV_Empresa_listar_SelectedIndexChanged"></asp:GridView>
 
                                 </div>
                             </div>

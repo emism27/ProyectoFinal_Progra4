@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Paginas/Otros/msr_MasterPage_Otros.Master" AutoEventWireup="true" CodeBehind="wfrm_Cuenta_Modificar.aspx.cs" Inherits="PL.Paginas.Catalogos_Mantenimientos.Modificar.wfrm_Cuenta_Modificar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+    <script src="../../../Scripts_Validaciones/js_Validacion_Cuenta.js"></script>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -10,7 +13,7 @@
                     <div class="section-heading">
 
                         <div>
-                            <button type="submit" id="btn_Guardar" class="button" style='background: url(../../../Recursos/Save.png);'></button>
+                            <button type="submit" id="btn_Guardar" onclick="ValidarEspacios()" class="button" style='background: url(../../../Recursos/Save.png);'></button>
                             <button type="reset" id="btn_Limpiar" class="button" style='background: url(../../../Recursos/Refresh.png);'></button>
                             <button type="submit" id="btn_Atras" class="button" onclick="location.href='../Listar/wfrm_Cuenta_Listar.aspx';" style='background: url(../../../Recursos/Exit.png);'></button>
                         
@@ -21,27 +24,27 @@
                             <div class="col-md-6">
 
                                     <div>
-                                    <label for="txt_Id_Cuenta">ID Cuenta: </label><input name="id_Cuenta" type="text" class="form-control" id="txt_Id_Cuenta" placeholder="Ingrese el ID de la Cuenta..." required=""/>
+                                    <label for="txt_Id_Cuenta">ID Cuenta: </label><input name="id_Cuenta" type="text" onkeypress="return ValidarNumeros(event)" class="form-control" id="txt_Id_Cuenta" placeholder="Ingrese el ID de la Cuenta..." required=""/>
                                     </div>
                                     
                                     <div>
-                                    <label for="txt_Nombre">Nombre: </label><input name="txt_Nombre" type="text" class="form-control" id="txt_Nombre" placeholder="Ingrese el Nombre..." required=""/>
+                                    <label for="txt_Nombre">Nombre: </label><input name="txt_Nombre" type="text" onkeypress="return ValidarLetras(event)" class="form-control" id="txt_Nombre" placeholder="Ingrese el Nombre..." required=""/>
                                     </div>
 
                                     <div>
-                                    <label for="txt_Apellido1">Apellido 1: </label><input name="txt_Apellido1" type="text" class="form-control" id="txt_Apellido1" placeholder="Ingrese el Apellido 1..." required=""/>
+                                    <label for="txt_Apellido1">Apellido 1: </label><input name="txt_Apellido1" type="text" onkeypress="return ValidarLetras(event)" class="form-control" id="txt_Apellido1" placeholder="Ingrese el Apellido 1..." required=""/>
                                     </div>
 
                                     <div>
-                                    <label for="txt_Apellido2">Apellido 2: </label><input name="txt_Apellido2" type="text" class="form-control" id="txt_Apellido2" placeholder="Ingrese el Apellido 2..." required=""/>
+                                    <label for="txt_Apellido2">Apellido 2: </label><input name="txt_Apellido2" type="text" onkeypress="return ValidarLetras(event)" class="form-control" id="txt_Apellido2" placeholder="Ingrese el Apellido 2..." required=""/>
                                     </div>
 
                                     <div>
-                                    <label for="txt_Correo">Correo: </label><input name="txt_Correo" type="text" class="form-control" id="xtx_Correo" placeholder="Ingrese el Correo..." required=""/>
+                                    <label for="txt_Correo">Correo: </label><input name="txt_Correo" type="text" class="form-control" id="txt_Correo" placeholder="Ingrese el Correo..." required=""/>
                                     </div>
 
                                     <div>
-                                    <label for="txt_Telefono">Telefono: </label><input name="txt_Telefono" type="text" class="form-control" id="txt_Telefono" placeholder="Ingrese el Telefono..." required=""/>
+                                    <label for="txt_Telefono">Telefono: </label><input name="txt_Telefono" type="text" onkeypress="return ValidarNumeros(event)" class="form-control" id="txt_Telefono" placeholder="Ingrese el Telefono..." required=""/>
                                     </div>
 
                                     <div>
@@ -51,7 +54,7 @@
                                     </div>
 
                                     <div>
-                                    <label for="txt_Respuesta_Seguridad">Respuesta de seguridad: </label><input name="txt_Respuesta_Seguridad" type="text" class="form-control" id="txt_Respuesta_Seguridad" placeholder="Ingrese la Respuesta..." required=""/>
+                                    <label for="txt_Respuesta_Seguridad">Respuesta de seguridad: </label><input name="txt_Respuesta_Seguridad" type="text" onkeypress="return ValidarLetras(event)" class="form-control" id="txt_Respuesta_Seguridad" placeholder="Ingrese la Respuesta..." required=""/>
                                     </div>
                             </div>
                         </div>

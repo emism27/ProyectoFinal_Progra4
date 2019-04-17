@@ -21,11 +21,11 @@
                             <div class="col-md-6">
 
                                     <div>
-                                    <label for="txt_Id_Tipo_Tarjeta">ID Tipo Tarjeta: </label><input name="txt_Id_Tipo_Tarjeta" type="text" class="form-control" id="txt_Id_Tipo_Tarjeta" placeholder="Ingrese el ID de Tipo Tarjeta..." required=""/>
+                                    <label for="txt_Id_Tipo_Tarjeta">ID Tipo Tarjeta: </label><input runat="server" name="txt_Id_Tipo_Tarjeta" type="text" class="form-control" id="txt_Id_Tipo_Tarjeta" placeholder="Ingrese el ID de Tipo Tarjeta..." required=""/>
                                     </div>
 
                                     <div>
-                                    <label for="txt_Descripcion">Descripcion: </label><input name="txt_Descripcion" type="text" class="form-control" id="txt_Descripcion" placeholder="Ingrese la Descripcion..." required=""/>
+                                    <label for="txt_Descripcion">Descripcion: </label><input runat="server" name="txt_Descripcion" type="text" class="form-control" id="txt_Descripcion" placeholder="Ingrese la Descripcion..." required=""/>
                                     </div>
 
                             </div>
