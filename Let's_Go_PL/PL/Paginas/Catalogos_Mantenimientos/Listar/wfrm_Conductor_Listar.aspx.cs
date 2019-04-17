@@ -18,10 +18,15 @@ namespace PL.Paginas.Catalogos_Mantenimientos.Listar
 
         public void CargarDatos()
         {
-            if ()
+            if (txt_Filtro.Value == string.Empty)
             {
 
+                Obj_CONDUCTOR_BLL.Listar_Conductor(ref Obj_CONDUCTOR_DAL);
+                GV_Conductor_listar.DataSource = null;
+                GV_Conductor_listar.DataSource = Obj_CONDUCTOR_DAL.Obj_DT;
+                GV_Conductor_listar.DataBind();
             }
+
 
         }
     }
