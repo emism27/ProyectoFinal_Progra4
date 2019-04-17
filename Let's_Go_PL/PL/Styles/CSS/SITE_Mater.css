@@ -1,0 +1,161 @@
+﻿body {
+    margin: 0;
+    height: 100%;
+    background-image: url('../../Recursos/pic90.png');
+    background-repeat:repeat;
+}
+
+.navbar {
+    overflow: hidden;
+    background-image: url('../../Recursos/pic91.png');
+    background-repeat:repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+/*diseño de los content: section*/
+
+section {
+    padding:50px;
+    background-color:darkgrey;
+    width:500px;
+    margin:auto;
+    margin-top:40px;
+}
+
+/*Formularios*/
+
+form {
+    margin:auto;
+    width:700px;
+    padding: 1em;
+    border: none;
+}
+
+form div + div {
+    margin-top: 20px;
+}
+
+label {
+    /* Para asegurarse que todos los labels tienen el mismo tamaño y están alineados correctamente */
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    font-family:'Tw Cen MT';
+    font-weight:700;
+    font-stretch:expanded;
+    font-size:large;
+    margin-right:10px;
+}
+
+input, textarea, select {
+    /* Para asegurarse de que todos los campos de texto tienen las mismas propiedades de fuente
+       Por defecto, las areas de texto tienen una fuente con monospace */
+    font-family:'Tw Cen MT';
+    font-weight:300;
+    font-stretch:expanded;
+    font-size:x-large;
+    vertical-align: middle;
+
+    /* Para darle el mismo tamaño a todos los campos de texto */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Para armonizar el look&feel del borde en los campos de texto */
+    border: 1px solid #999;
+}
+
+input:focus {
+    /* Para dar un pequeño destaque en elementos activos*/
+    border-color: #000;
+}
+
+button {
+    /* Este margen extra representa aproximadamente el mismo espacio que el espacio
+       entre los labels y sus campos de texto */
+    margin:30px;
+    text-align:center;
+    font-family:'Tw Cen MT';
+    font-weight:700;
+    font-stretch:expanded;
+    font-size:x-large;
+    background-size:contain;
+    background-attachment:local;
+    background:no-repeat;
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+    border:none;
+}
+
+div {
+text-align:center;
+}
+
+input#btn_Buscar {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    border:none;
+}
+
+#btn_Agregar, #btn_Modificar, #btn_Eliminar{
+     Height:90px;
+     Width:157px;
+     margin-left:40px;
+}
