@@ -9,10 +9,10 @@
                 <div class="col-md-12">
                     <div class="section-heading">
                         <div>
-                            <select id="cbx_Filtro" >
+                            <select id="cbx_Filtro" runat="server">
                                 <option value="categories" selected="selected">Filtrar por...</option>
                             </select>
-                            <input name="filtro" type="text" class="form-control" id="txt_Filtro" placeholder="Palabra clave..."/>
+                            <input runat="server" name="filtro" type="text" class="form-control" id="txt_Filtro" placeholder="Palabra clave..."/>
                             <input type="image" name="btn_Buscar" value="Buscar" id="btn_Buscar" src="../../../Recursos/Search.png"/>
                         </div>
                         <div>
@@ -22,14 +22,30 @@
                         </div>
 
                     </div>
-                    <form id="Vehiculo_Catalogo" method="post">
+                    <form id="Vehiculo_Catalogo" method="post" runat="server">
                         <div class="row">
                             <div class="col-md-6">
-
                                 <div>
-
-                                    <p>AQUI VA EL DATA GRIDVIEW</p>
-
+                                    <asp:GridView ID="dgvTarjeta" runat="server" AutoGenerateColumns="False" AutoGenerateSelectButton="True" OnSelectedIndexChanged="dgvTipoTarjeta_SelectedIndexChanged" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical">
+                                        <AlternatingRowStyle BackColor="#DCDCDC" />
+                                        <Columns>
+                                            <asp:BoundField DataField="ID_Tipo_Tarjeta" HeaderText="ID NUMERO TARJETA" />
+                                            <asp:BoundField DataField="ID_Tipo_Tarjeta" HeaderText="ID TIPO TARJETA" />
+                                            <asp:BoundField DataField="ID_Banco" HeaderText="ID BANCO" />
+                                            <asp:BoundField DataField="Numero_Cuenta" HeaderText="NUMERO CUENTA" />
+                                            <asp:BoundField DataField="Fecha_Vencimiento" HeaderText="FECHA VENCIMIENTO" />
+                                            <asp:BoundField DataField="CVV" HeaderText="CVV" />
+                                        </Columns>
+                                        <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
+                                        <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
+                                        <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+                                        <RowStyle BackColor="#EEEEEE" ForeColor="Black" />
+                                        <SelectedRowStyle BackColor="#008A8C" Font-Bold="True" ForeColor="White" />
+                                        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                                        <SortedAscendingHeaderStyle BackColor="#0000A9" />
+                                        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                                        <SortedDescendingHeaderStyle BackColor="#000065" />
+                                    </asp:GridView><br />
                                 </div>
                             </div>
                         </div>

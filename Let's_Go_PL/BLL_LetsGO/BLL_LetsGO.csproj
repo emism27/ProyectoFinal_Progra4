@@ -53,6 +53,7 @@
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_ENCABEZADO.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_ESTADOS_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_PREGUNTAS_SEGURIDAD_BLL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_TARJETA_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_TIPO_TARJETA_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_VIAJE.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

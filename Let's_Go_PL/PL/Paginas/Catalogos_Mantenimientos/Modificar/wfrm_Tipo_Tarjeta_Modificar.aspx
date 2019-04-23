@@ -4,19 +4,23 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
             <section class="forms">
+                <form runat="server">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-heading">
 
                         <div>
-                            <button type="submit" id="btn_Guardar" class="button" style='background: url(../../../Recursos/Save.png);'></button>
-                            <button type="reset" id="btn_Limpiar" class="button" style='background: url(../../../Recursos/Refresh.png);'></button>
-                            <button type="submit" id="btn_Atras" class="button" onclick="location.href='../Listar/wfrm_Tipo_Tarjeta_Listar.aspx';" style='background: url(../../../Recursos/Exit.png);'></button>
+                            <asp:Button ID="btn_Guardar" runat="server" Text="Guardar" OnClick="btn_Guardar_Click1" /><br />
+                            <asp:Button ID="btn_Limpiar" runat="server" Text="Limpiar" /><br />
+                            <asp:Button ID="btn_Atras" runat="server" Text="Atras" /><br />
+                            <button type="submit" id="btn_Guardar1" class="button" style='background: url(../../../Recursos/Save.png);'></button>
+                            <button type="reset" id="btn_Limpiar2" class="button" style='background: url(../../../Recursos/Refresh.png);'></button>
+                            <button type="submit" id="btn_Atras3" class="button" onclick="location.href='../Listar/wfrm_Tipo_Tarjeta_Listar.aspx';" style='background: url(../../../Recursos/Exit.png);'></button>
                         </div>
 
                     </div>
-                    <form id="Vehiculo_Catalogo" method="post">
+<%--                    <form id="Vehiculo_Catalogo" method="post" runat="server">--%>
                         <div class="row">
                             <div class="col-md-6">
 
@@ -30,10 +34,11 @@
 
                             </div>
                         </div>
-                    </form>
+<%--                    </form>--%>
                 </div>
             </div>
         </div>
+      </form>
     </section>
     
 </asp:Content>

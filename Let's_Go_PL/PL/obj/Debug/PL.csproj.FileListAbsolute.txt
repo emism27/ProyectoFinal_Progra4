@@ -46,23 +46,23 @@ C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra49\Let's_Go_PL\PL\obj\Debug\PL.
 C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra410\Let's_Go_PL\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
 C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra410\Let's_Go_PL\PL\obj\Debug\PL.dll
 C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra410\Let's_Go_PL\PL\obj\Debug\PL.pdb
-C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\PL\bin\PL.dll.config
-C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\PL\bin\PL.dll
-C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\PL\bin\PL.pdb
-C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\PL\bin\BLL_LetsGO.dll
-C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\PL\bin\DAL_LetsGO.dll
-C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\PL\bin\BLL_LetsGO.pdb
-C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\PL\bin\DAL_LetsGO.pdb
-C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
-C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\PL\obj\Debug\PL.dll
-C:\Users\Adrian\Source\Repos\ProyectoFinal_Progra411\Let's_Go_PL\PL\obj\Debug\PL.pdb
-C:\Users\Jer\Source\Repos\ProyectoFinal_Progra43\Let's_Go_PL\PL\bin\PL.dll.config
-C:\Users\Jer\Source\Repos\ProyectoFinal_Progra43\Let's_Go_PL\PL\bin\PL.dll
-C:\Users\Jer\Source\Repos\ProyectoFinal_Progra43\Let's_Go_PL\PL\bin\PL.pdb
-C:\Users\Jer\Source\Repos\ProyectoFinal_Progra43\Let's_Go_PL\PL\bin\BLL_LetsGO.dll
-C:\Users\Jer\Source\Repos\ProyectoFinal_Progra43\Let's_Go_PL\PL\bin\DAL_LetsGO.dll
-C:\Users\Jer\Source\Repos\ProyectoFinal_Progra43\Let's_Go_PL\PL\bin\BLL_LetsGO.pdb
-C:\Users\Jer\Source\Repos\ProyectoFinal_Progra43\Let's_Go_PL\PL\bin\DAL_LetsGO.pdb
-C:\Users\Jer\Source\Repos\ProyectoFinal_Progra43\Let's_Go_PL\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
-C:\Users\Jer\Source\Repos\ProyectoFinal_Progra43\Let's_Go_PL\PL\obj\Debug\PL.dll
-C:\Users\Jer\Source\Repos\ProyectoFinal_Progra43\Let's_Go_PL\PL\obj\Debug\PL.pdb
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.dll
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.pdb
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\PL.dll.config
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\PL.dll
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\PL.pdb
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\BLL_LetsGO.dll
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\DAL_LetsGO.dll
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\BLL_LetsGO.pdb
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\DAL_LetsGO.pdb
+C:\Users\Kinderson\Desktop\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\PL.dll.config
+C:\Users\Kinderson\Desktop\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\PL.dll
+C:\Users\Kinderson\Desktop\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\PL.pdb
+C:\Users\Kinderson\Desktop\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\BLL_LetsGO.dll
+C:\Users\Kinderson\Desktop\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\DAL_LetsGO.dll
+C:\Users\Kinderson\Desktop\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\BLL_LetsGO.pdb
+C:\Users\Kinderson\Desktop\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\DAL_LetsGO.pdb
+C:\Users\Kinderson\Desktop\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
+C:\Users\Kinderson\Desktop\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.dll
+C:\Users\Kinderson\Desktop\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.pdb

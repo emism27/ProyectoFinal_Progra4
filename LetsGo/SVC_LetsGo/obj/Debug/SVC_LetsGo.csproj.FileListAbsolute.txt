@@ -28,3 +28,13 @@ C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\S
 C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\SVC_LetsGo\obj\Debug\SVC_LetsGo.csprojResolveAssemblyReference.cache
 C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\SVC_LetsGo\obj\Debug\SVC_LetsGo.dll
 C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\SVC_LetsGo\obj\Debug\SVC_LetsGo.pdb
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\LetsGo\SVC_LetsGo\bin\Debug\SVC_LetsGo.dll.config
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\LetsGo\SVC_LetsGo\bin\Debug\SVC_LetsGo.dll
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\LetsGo\SVC_LetsGo\bin\Debug\SVC_LetsGo.pdb
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\LetsGo\SVC_LetsGo\bin\Debug\LetsGo_BLL.dll
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\LetsGo\SVC_LetsGo\bin\Debug\LetsGo_DAL.dll
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\LetsGo\SVC_LetsGo\bin\Debug\LetsGo_BLL.pdb
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\LetsGo\SVC_LetsGo\bin\Debug\LetsGo_DAL.pdb
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\LetsGo\SVC_LetsGo\obj\Debug\SVC_LetsGo.csprojResolveAssemblyReference.cache
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\LetsGo\SVC_LetsGo\obj\Debug\SVC_LetsGo.dll
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\LetsGo\SVC_LetsGo\obj\Debug\SVC_LetsGo.pdb

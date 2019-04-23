@@ -1,0 +1,179 @@
+﻿form{
+    height:100%;
+    width:100%;
+    background-color:transparent;
+    text-align:center;
+}
+
+div{
+    background-color:transparent;
+    padding:10px;
+    border:none;
+    text-align:center;
+    display:block;
+}
+
+div#buscar{
+    background-color:#333;
+    opacity:0.85;
+}
+
+label{
+    border:none;
+    text-align:right;
+    font-family:'Century Gothic';
+    font-size:20px;
+    text-anchor:middle;
+    color:white;
+    font-weight:600;
+    width:180px;
+    height:30px;
+    display:inline-block;
+    vertical-align:central;
+}
+
+.txt_Palabra{
+    margin:5px;
+    border:none;
+    text-align:left;
+    font-family:'Century Gothic';
+    font-size:20px;
+    font-weight:300;
+    text-anchor:middle;
+    color:black;
+    width:300px;
+    height:25px;
+    display:inline-block;
+    vertical-align:central;
+}
+
+.btn_Buscar{
+    margin:0;
+    border:none;
+    border-width: medium;
+    text-align:center;
+    font-family:'Century Gothic';
+    text-anchor:middle;
+    width:90px;
+    height:50px;
+    display:inline-block;
+    font-size:20px;
+    font-weight:600;
+    background-color: #4C5C6C;
+    color:lightgray;
+    vertical-align:central;
+    border-radius:10%;
+    border:none;
+    }
+
+.drd_Filtro{
+    margin:5px;
+    border:none;
+    text-align:center;
+    font-family:'Century Gothic';
+    font-size:20px;
+    font-weight:300;
+    text-anchor:middle;
+    width:300px;
+    height:25px;
+    display:inline-block;
+    vertical-align:central;
+}
+
+.btn_Agregar {
+    margin: 10px;
+    margin-left:30px;
+    margin-right:30px;
+    border: none;
+    text-align: center;
+    font-family: 'Century Gothic';
+    font-size: 20px;
+    font-weight: 900;
+    text-anchor: middle;
+    width:64px;
+    height:64px;
+    background-image:url('../../Recursos/Add.png');
+}
+
+.btn_Modificar{
+    margin:10px;
+    margin-left:30px;
+    margin-right:30px;
+    border:none;
+    text-align:center;
+    font-family:'Century Gothic';
+    font-size:20px;
+    font-weight:900;
+    text-anchor:middle;
+    width:64px;
+    height:64px;
+    background-image: url('../../Recursos/Edit.png');
+}
+
+.btn_Eliminar{
+    margin:10px;
+    margin-left:30px;
+    margin-right:30px;
+    border:none;
+    text-align:center;
+    font-family:'Century Gothic';
+    font-size:20px;
+    font-weight:900;
+    text-anchor:middle;
+    width:64px;
+    height:64px;
+    background-image: url('../../Recursos/Delete.png');
+}
+
+.mGrid {
+    width: 100%;
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: solid 1px #525252;
+    border-collapse: collapse;
+}
+
+    .mGrid td {
+        padding: 2px;
+        border: solid 1px #c1c1c1;
+        color: #717171;
+    }
+
+    .mGrid th {
+        padding: 4px 2px;
+        color: #fff;
+        background: #424242 url(grd_head.png) repeat-x top;
+        border-left: solid 1px #525252;
+        font-size: 0.9em;
+    }
+
+    .mGrid .alt {
+        background: #fcfcfc url(grd_alt.png) repeat-x top;
+    }
+
+    .mGrid .pgr {
+        background: #424242 url(grd_pgr.png) repeat-x top;
+    }
+
+        .mGrid .pgr table {
+            margin: 5px 0;
+        }
+
+        .mGrid .pgr td {
+            border-width: 0;
+            padding: 0 6px;
+            border-left: solid 1px #666;
+            font-weight: bold;
+            color: #fff;
+            line-height: 12px;
+        }
+
+        .mGrid .pgr a {
+            color: #666;
+            text-decoration: none;
+        }
+
+            .mGrid .pgr a:hover {
+                color: #000;
+                text-decoration: none;
+            }

@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using DAL_LetsGO.Catalogos_Mantenimientos;
 using System.Data;
 
 namespace BLL_LetsGO.Catalogos_Mantenimientos
 {
-    public class Cls_TBL_CONDUCTOR_BLL
+    class Cls_TBL_CONDUCTOR_BLL
     {
 
         public void Listar_Conductor(ref Cls_TBL_CONDUCTOR_DAL Obj_CONDUCTOR_DAL)

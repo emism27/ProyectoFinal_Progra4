@@ -13,3 +13,8 @@ C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\L
 C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\LetsGo_DAL\obj\Debug\LetsGo_DAL.csprojResolveAssemblyReference.cache
 C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\LetsGo_DAL\obj\Debug\LetsGo_DAL.dll
 C:\Users\crisr\Source\Repos\ProyectoFinal_Progra4\ProyectoFinal_Progra4\LetsGo\LetsGo_DAL\obj\Debug\LetsGo_DAL.pdb
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\LetsGo\LetsGo_DAL\bin\Debug\LetsGo_DAL.dll
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\LetsGo\LetsGo_DAL\bin\Debug\LetsGo_DAL.pdb
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\LetsGo\LetsGo_DAL\obj\Debug\LetsGo_DAL.csprojResolveAssemblyReference.cache
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\LetsGo\LetsGo_DAL\obj\Debug\LetsGo_DAL.dll
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\16-4-19\ProyectoFinal_Progra4\LetsGo\LetsGo_DAL\obj\Debug\LetsGo_DAL.pdb

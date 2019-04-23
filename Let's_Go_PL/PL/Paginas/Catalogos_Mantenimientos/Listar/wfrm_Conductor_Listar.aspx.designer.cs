@@ -13,30 +13,12 @@ namespace PL.Paginas.Catalogos_Mantenimientos.Listar {
     public partial class wfrm_Conductor_Listar {
         
         /// <summary>
-        /// txt_Filtro control.
+        /// GV_Cliente_listar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txt_Filtro;
-        
-        /// <summary>
-        /// Vehiculo_Catalogo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm Vehiculo_Catalogo;
-        
-        /// <summary>
-        /// GV_Conductor_listar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GV_Conductor_listar;
+        protected global::System.Web.UI.WebControls.GridView GV_Cliente_listar;
     }
 }

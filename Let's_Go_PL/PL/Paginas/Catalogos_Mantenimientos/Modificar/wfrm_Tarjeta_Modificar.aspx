@@ -16,34 +16,34 @@
                         
                         </div>
                     </div>
-                    <form id="Vehiculo_Catalogo" method="post">
+                    <form id="Vehiculo_Catalogo" method="post" runat="server">
                         <div class="row">
                             <div class="col-md-6">
 
                                     <div>
-                                    <label for="txt_Id_Numero_Tarjeta">Numero de tarjeta: </label><input name="txt_Id_Numero_Tarjeta" type="text" class="form-control" id="txt_Id_Numero_Tarjeta" placeholder="Ingrese el Número de Tarjeta..." required=""/>
+                                    <label for="txt_Id_Numero_Tarjeta">Numero de tarjeta: </label><input runat="server" name="txt_Id_Numero_Tarjeta" type="text" class="form-control" id="txt_Id_Numero_Tarjeta" placeholder="Ingrese el Número de Tarjeta..." required=""/>
                                     </div>
 
                                     <div>
-                                    <label for="txt_Numero_Cuenta">Numero de Cuenta: </label><input name="txt_Numero_Cuenta" type="text" class="form-control" id="txt_Numero_Cuenta" placeholder="Ingrese el Número de Cuenta..." required=""/>
+                                    <label for="txt_Numero_Cuenta">Numero de Cuenta: </label><input runat="server" name="txt_Numero_Cuenta" type="text" class="form-control" id="txt_Numero_Cuenta" placeholder="Ingrese el Número de Cuenta..." required=""/>
                                     </div>
 
                                     <div>
-                                    <label for="txt_Fecha_Vencimiento">Fecha de Vencimiento: </label><input name="txt_Fecha_Vencimiento" type="text" class="form-control" id="txt_Fecha_Vencimiento" placeholder="Ingrese la Fecha de Vencimiento..." required=""/>
+                                    <label for="txt_Fecha_Vencimiento">Fecha de Vencimiento: </label><input runat="server" name="txt_Fecha_Vencimiento" type="text" class="form-control" id="txt_Fecha_Vencimiento" placeholder="Ingrese la Fecha de Vencimiento..." required=""/>
                                     </div>
 
                                     <div>
-                                    <label for="txt_CVV">CVV: </label><input name="txt_CVV" type="text" class="form-control" id="txt_CVV" placeholder="Ingrese el CVV..." required=""/>
+                                    <label for="txt_CVV">CVV: </label><input runat="server" name="txt_CVV" type="text" class="form-control" id="txt_CVV" placeholder="Ingrese el CVV..." required=""/>
                                     </div>
                                     
                                     <div>
-                                    <label for="cbx_Id_Tipo_Tarjeta">ID Tipo de Tarjeta: </label><select id="cbx_Id_Tipo_Tarjeta" >
+                                    <label for="cbx_Id_Tipo_Tarjeta">ID Tipo de Tarjeta: </label><select runat="server" id="cbx_Id_Tipo_Tarjeta" >
                                         <option value="categories" selected="selected">Seleccione el Tipo de Tarjeta...</option>
                                     </select>
                                     </div>
 
                                     <div>
-                                    <label for="cbx_Id_Banco">ID Banco: </label><select id="cbx_Id_Banco" >
+                                    <label for="cbx_Id_Banco">ID Banco: </label><select runat="server" id="cbx_Id_Banco" >
                                         <option value="categories" selected="selected">Seleccione el ID del Banco...</option>
                                     </select>
                                     </div>

@@ -1,0 +1,80 @@
+﻿form{
+    height:100%;
+    width:100%;
+    background-color:transparent;
+    text-align:center;
+}
+
+div{
+    background-color:transparent;
+    padding:10px;
+    border:none;
+    text-align:center;
+    display:block;
+}
+
+div#boton{
+    background-color:#333;
+    opacity:0.85;
+}
+
+div#formulario{
+    margin-top:10px;
+}
+
+label{
+    border:none;
+    text-align:right;
+    font-family:'Century Gothic';
+    font-size:20px;
+    text-anchor:middle;
+    color:white;
+    font-weight:600;
+    width:210px;
+    height:30px;
+    display:inline-block;
+    vertical-align:central;
+}
+
+.txt_Texto{
+    margin:5px;
+    border:none;
+    text-align:left;
+    font-family:'Century Gothic';
+    font-size:20px;
+    font-weight:300;
+    text-anchor:middle;
+    color:black;
+    width:350px;
+    height:25px;
+    display:inline-block;
+    vertical-align:central;
+}
+
+.drd_Drop{
+    margin:5px;
+    border:none;
+    text-align:center;
+    font-family:'Century Gothic';
+    font-size:20px;
+    font-weight:300;
+    text-anchor:middle;
+    width:350px;
+    height:25px;
+    display:inline-block;
+    vertical-align:central;
+}
+
+.btn_Boton {
+    margin: 10px;
+    margin-left:40px;
+    margin-right:40px;
+    border: none;
+    text-align: center;
+    font-family: 'Century Gothic';
+    font-size: 20px;
+    font-weight: 900;
+    text-anchor: middle;
+    width:64px;
+    height:64px;
+}

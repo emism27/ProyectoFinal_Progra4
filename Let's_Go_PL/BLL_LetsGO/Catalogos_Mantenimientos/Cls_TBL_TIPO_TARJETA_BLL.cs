@@ -172,7 +172,9 @@ namespace BLL_LetsGO.Catalogos_Mantenimientos
             svc_Cat_Mat.LetsGo_InterfaceClient Obj_svc_LetsGo = new svc_Cat_Mat.LetsGo_InterfaceClient();
 
             // el nombre del Store procedure
-            string sNombreSP = "[SCH_CUENTA].[sp_filtro_TBL_TIPO_TARJETA]";
+            //string sNombreSP = "[SCH_CUENTA].[sp_filtro_TBL_TIPO_TARJETA]";
+            string sNombreSP = "[SCH_CUENTA].[sp_search_TBL_TIPO_TARJETA]";
+
 
             //DataTable dt_Parametros = new DataTable("PARAMETROS");
 

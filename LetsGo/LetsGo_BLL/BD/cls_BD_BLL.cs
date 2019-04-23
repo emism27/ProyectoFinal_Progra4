@@ -151,6 +151,11 @@ namespace LetsGo_BLL.BD
                                     dbt = SqlDbType.TinyInt;
                                     break;
                                 }
+                            case "9":
+                                {
+                                    dbt = SqlDbType.BigInt;
+                                    break;
+                                }
                             default:
                                 dbt = SqlDbType.VarChar;
                                 break;

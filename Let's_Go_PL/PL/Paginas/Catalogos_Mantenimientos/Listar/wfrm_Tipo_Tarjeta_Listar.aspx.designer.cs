@@ -22,13 +22,40 @@ namespace PL.Paginas.Catalogos_Mantenimientos.Listar {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txt_Filtro;
         
         /// <summary>
-        /// Vehiculo_Catalogo control.
+        /// btn_Buscar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm Vehiculo_Catalogo;
+        protected global::System.Web.UI.WebControls.Button btn_Buscar;
+        
+        /// <summary>
+        /// btn_Agregar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Agregar;
+        
+        /// <summary>
+        /// btn_Modificar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Modificar;
+        
+        /// <summary>
+        /// btn_Eliminar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Eliminar;
         
         /// <summary>
         /// dgvTipoTarjeta control.
