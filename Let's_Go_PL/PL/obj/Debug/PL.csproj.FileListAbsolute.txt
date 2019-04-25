@@ -66,3 +66,13 @@ C:\Users\Kinderson\Desktop\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\DAL_LetsGO.p
 C:\Users\Kinderson\Desktop\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
 C:\Users\Kinderson\Desktop\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.dll
 C:\Users\Kinderson\Desktop\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.pdb
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\24-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\PL.dll.config
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\24-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\PL.dll
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\24-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\PL.pdb
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\24-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\BLL_LetsGO.dll
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\24-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\DAL_LetsGO.dll
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\24-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\BLL_LetsGO.pdb
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\24-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\DAL_LetsGO.pdb
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\24-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\24-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.dll
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\24-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.pdb
