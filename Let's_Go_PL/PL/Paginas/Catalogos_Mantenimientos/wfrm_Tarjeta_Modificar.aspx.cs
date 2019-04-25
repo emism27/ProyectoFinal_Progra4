@@ -28,8 +28,8 @@ namespace PL.Paginas.Catalogos_Mantenimientos
                 Obj_TARJETA_DAL.CAx = Convert.ToChar(Request.QueryString["axi"]);
                 Cargar_Combo_Tipo_Tarjeta();
                 Cargar_Combo_Banco();
-                CargarMes();
-                CargarAnnyo();
+                //CargarMes();
+                //CargarAnnyo();
                 if (Obj_TARJETA_DAL.CAx == 'I')
                 {
                     txt_Id_Tarjeta.Text = string.Empty;
@@ -38,8 +38,8 @@ namespace PL.Paginas.Catalogos_Mantenimientos
                     txt_CVV.Text = string.Empty;
                     cbx_Id_Tipo_Tarjeta.Text = string.Empty;
                     cbx_Id_Banco.Text = string.Empty;
-                    mes.Text = string.Empty;
-                    annyo.Text = string.Empty;
+                    //mes.Text = string.Empty;
+                    //annyo.Text = string.Empty;
                 }
                 else if (Obj_TARJETA_DAL.CAx == 'U')
                 {
@@ -63,171 +63,170 @@ namespace PL.Paginas.Catalogos_Mantenimientos
 
         protected void btn_Guardar_Click(object sender, ImageClickEventArgs e)
         {
-            /*  FALTA LA VALIDACION DE LAS CAJAS DE TEXTO VACIAS  */
-            int iDia, iAnnyo;
-            string sMes, sMes2;
+            ///*  FALTA LA VALIDACION DE LAS CAJAS DE TEXTO VACIAS  */
+            //int iDia, iAnnyo;
+            //string sMes, sMes2;
 
-            sMes = Convert.ToString(mes.SelectedValue);
-            iAnnyo = Convert.ToInt32(annyo.SelectedValue);
+            //sMes = Convert.ToString(mes.SelectedValue);
+            //iAnnyo = Convert.ToInt32(annyo.SelectedValue);
 
-            sMes2 = sMes.PadLeft(2,'0');
+            //sMes2 = sMes.PadLeft(2,'0');
+            //string sMsjError = string.Empty;
+            //string fecha;
+
+            //iDia = System.DateTime.DaysInMonth(iAnnyo, Convert.ToInt32(sMes2));
+
+
+            //if (iAnnyo % 4 == 0 && (iAnnyo % 100 != 0 || iAnnyo % 400 == 0))
+            //{
+            //    Console.WriteLine("El año " + iAnnyo + " Si es bisiesto ");
+
+            //    switch (sMes2)
+            //    {
+            //        case "01":
+            //            {
+            //                iDia = 31;
+            //                break;
+            //            }
+            //        case "02":
+            //            {
+            //                iDia = 29;
+            //                break;
+            //            }
+            //        case "03":
+            //            {
+            //                iDia = 31;
+            //                break;
+            //            }
+            //        case "4":
+            //            {
+            //                iDia = 30;
+            //                break;
+            //            }
+            //        case "5":
+            //            {
+            //                iDia = 31;
+            //                break;
+            //            }
+            //        case "6":
+            //            {
+            //                iDia = 30;
+            //                break;
+            //            }
+            //        case "7":
+            //            {
+            //                iDia = 31;
+            //                break;
+            //            }
+            //        case "8":
+            //            {
+            //                iDia = 31;
+            //                break;
+            //            }
+            //        case "9":
+            //            {
+            //                iDia = 30;
+            //                break;
+            //            }
+            //        case "10":
+            //            {
+            //                iDia = 31;
+            //                break;
+            //            }
+            //        case "11":
+            //            {
+            //                iDia = 30;
+            //                break;
+            //            }
+            //        case "12":
+            //            {
+            //                iDia = 31;
+            //                break;
+            //            }
+            //        default:
+            //            iDia = 31;
+            //            break;
+            //    }
+
+            //}
+            //else
+            //{
+            //    Console.WriteLine("El año " + iAnnyo + " No es bisiesto ");
+            //    switch (mes.ToString())
+            //    {
+            //        case "1":
+            //            {
+            //                iDia = 31;
+            //                break;
+            //            }
+            //        case "2":
+            //            {
+            //                iDia = 28;
+            //                break;
+            //            }
+            //        case "3":
+            //            {
+            //                iDia = 31;
+            //                break;
+            //            }
+            //        case "4":
+            //            {
+            //                iDia = 30;
+            //                break;
+            //            }
+            //        case "5":
+            //            {
+            //                iDia = 31;
+            //                break;
+            //            }
+            //        case "6":
+            //            {
+            //                iDia = 30;
+            //                break;
+            //            }
+            //        case "7":
+            //            {
+            //                iDia = 31;
+            //                break;
+            //            }
+            //        case "8":
+            //            {
+            //                iDia = 31;
+            //                break;
+            //            }
+            //        case "9":
+            //            {
+            //                iDia = 30;
+            //                break;
+            //            }
+            //        case "10":
+            //            {
+            //                iDia = 31;
+            //                break;
+            //            }
+            //        case "11":
+            //            {
+            //                iDia = 30;
+            //                break;
+            //            }
+            //        case "12":
+            //            {
+            //                iDia = 31;
+            //                break;
+            //            }
+            //        default:
+            //            iDia = 31;
+            //            break;
+            //    }
+            //    Console.ReadLine();
+            //}
+            //fecha = (iDia + "-" + iMes + "-" + iAnnyo);
+
+            //Obj_TARJETA_DAL.DTFecha_Vencimiento = Convert.ToDateTime(fecha);
+
+
+
             string sMsjError = string.Empty;
-            string fecha;
-            
-            iDia = System.DateTime.DaysInMonth(iAnnyo, Convert.ToInt32(sMes2));
-
-
-            if (iAnnyo % 4 == 0 && (iAnnyo % 100 != 0 || iAnnyo % 400 == 0))
-            {
-                Console.WriteLine("El año " + iAnnyo + " Si es bisiesto ");
-
-                switch (sMes2)
-                {
-                    case "01":
-                        {
-                            iDia = 31;
-                            break;
-                        }
-                    case "02":
-                        {
-                            iDia = 29;
-                            break;
-                        }
-                    case "03":
-                        {
-                            iDia = 31;
-                            break;
-                        }
-                    case "4":
-                        {
-                            iDia = 30;
-                            break;
-                        }
-                    case "5":
-                        {
-                            iDia = 31;
-                            break;
-                        }
-                    case "6":
-                        {
-                            iDia = 30;
-                            break;
-                        }
-                    case "7":
-                        {
-                            iDia = 31;
-                            break;
-                        }
-                    case "8":
-                        {
-                            iDia = 31;
-                            break;
-                        }
-                    case "9":
-                        {
-                            iDia = 30;
-                            break;
-                        }
-                    case "10":
-                        {
-                            iDia = 31;
-                            break;
-                        }
-                    case "11":
-                        {
-                            iDia = 30;
-                            break;
-                        }
-                    case "12":
-                        {
-                            iDia = 31;
-                            break;
-                        }
-                    default:
-                        iDia = 31;
-                        break;
-                }
-
-            }
-            else
-            {
-                Console.WriteLine("El año " + iAnnyo + " No es bisiesto ");
-                switch (mes.ToString())
-                {
-                    case "1":
-                        {
-                            iDia = 31;
-                            break;
-                        }
-                    case "2":
-                        {
-                            iDia = 28;
-                            break;
-                        }
-                    case "3":
-                        {
-                            iDia = 31;
-                            break;
-                        }
-                    case "4":
-                        {
-                            iDia = 30;
-                            break;
-                        }
-                    case "5":
-                        {
-                            iDia = 31;
-                            break;
-                        }
-                    case "6":
-                        {
-                            iDia = 30;
-                            break;
-                        }
-                    case "7":
-                        {
-                            iDia = 31;
-                            break;
-                        }
-                    case "8":
-                        {
-                            iDia = 31;
-                            break;
-                        }
-                    case "9":
-                        {
-                            iDia = 30;
-                            break;
-                        }
-                    case "10":
-                        {
-                            iDia = 31;
-                            break;
-                        }
-                    case "11":
-                        {
-                            iDia = 30;
-                            break;
-                        }
-                    case "12":
-                        {
-                            iDia = 31;
-                            break;
-                        }
-                    default:
-                        iDia = 31;
-                        break;
-                }
-                Console.ReadLine();
-            }
-            fecha = (iDia + "-" + iMes + "-" + iAnnyo);
-
-            Obj_TARJETA_DAL.DTFecha_Vencimiento = Convert.ToDateTime(fecha);
-
-
-
-
-
 
             // Se obtiene los valores para insert
             Obj_TARJETA_DAL.IID_Numero_Tarjeta = Convert.ToInt64(txt_Id_Tarjeta.Text);
@@ -336,32 +335,32 @@ namespace PL.Paginas.Catalogos_Mantenimientos
             }
         }
 
-        private void CargarMes()
-        {
-            //valor por default           ddlMes.Items.Add("Seleccione mes");
+        //private void CargarMes()
+        //{
+        //    //valor por default           ddlMes.Items.Add("Seleccione mes");
 
-            List<string> nombreMes = DateTimeFormatInfo.CurrentInfo.MonthNames.Take(12).ToList();
-            var listaMesesSeleccionados = nombreMes.Select(m => new
-            {
-                Id = nombreMes.IndexOf(m) + 1,
-                Name = m
-            });
+        //    List<string> nombreMes = DateTimeFormatInfo.CurrentInfo.MonthNames.Take(12).ToList();
+        //    var listaMesesSeleccionados = nombreMes.Select(m => new
+        //    {
+        //        Id = nombreMes.IndexOf(m) + 1,
+        //        Name = m
+        //    });
 
-            foreach (var mes in listaMesesSeleccionados)
-            {
-                this.mes.Items.Add(new ListItem(mes.Name, mes.Id.ToString()));
-            }
-        }
+        //    foreach (var mes in listaMesesSeleccionados)
+        //    {
+        //        this.mes.Items.Add(new ListItem(mes.Name, mes.Id.ToString()));
+        //    }
+        //}
 
-        private void CargarAnnyo()
-        {
-            int x = 2050;
+        //private void CargarAnnyo()
+        //{
+        //    int x = 2050;
 
-            for (int y = 1900; y <= x; y++)
-            {
-                annyo.Items.Add(y.ToString());
-            }
-        }
+        //    for (int y = 1900; y <= x; y++)
+        //    {
+        //        annyo.Items.Add(y.ToString());
+        //    }
+        //}
 
 
 
