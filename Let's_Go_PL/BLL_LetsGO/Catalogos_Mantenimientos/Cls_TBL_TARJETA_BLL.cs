@@ -209,5 +209,24 @@ namespace BLL_LetsGO.Catalogos_Mantenimientos
             }
 
         }
+
+        public int Mes(ref Cls_TBL_TARJETA_DAL Obj_TARJETA_DAL)
+        {
+
+            DateTime dtMes = DateTime.Parse(Obj_TARJETA_DAL.SFecha);
+
+            Obj_TARJETA_DAL.IMes = dtMes.Month;
+
+            return Obj_TARJETA_DAL.IMes;
+        }
+
+        public int Año(ref Cls_TBL_TARJETA_DAL Obj_TARJETA_DAL)
+        {
+            DateTime dtAño = DateTime.Parse(Obj_TARJETA_DAL.SFecha);
+
+            Obj_TARJETA_DAL.IAnio = dtAño.Year;
+
+            return Obj_TARJETA_DAL.IAnio;
+        }
     }
 }

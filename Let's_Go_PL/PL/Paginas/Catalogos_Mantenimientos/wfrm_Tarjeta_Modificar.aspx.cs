@@ -28,27 +28,44 @@ namespace PL.Paginas.Catalogos_Mantenimientos
                 Obj_TARJETA_DAL.CAx = Convert.ToChar(Request.QueryString["axi"]);
                 Cargar_Combo_Tipo_Tarjeta();
                 Cargar_Combo_Banco();
-                //CargarMes();
-                //CargarAnnyo();
+                CargarMes();
+                CargarAnnyo();
                 if (Obj_TARJETA_DAL.CAx == 'I')
                 {
                     txt_Id_Tarjeta.Text = string.Empty;
                     txt_Numero_Cuenta.Text = string.Empty;
-                    txt_Fecha_Vencimiento.Text = string.Empty;
+                    //txt_Fecha_Vencimiento.Text = string.Empty;
                     txt_CVV.Text = string.Empty;
                     cbx_Id_Tipo_Tarjeta.Text = string.Empty;
                     cbx_Id_Banco.Text = string.Empty;
-                    //mes.Text = string.Empty;
-                    //annyo.Text = string.Empty;
+                    cbx_Mes.Text = string.Empty;
+                    cbx_Annyo.Text = string.Empty;
                 }
                 else if (Obj_TARJETA_DAL.CAx == 'U')
                 {
+                    Obj_TARJETA_DAL.SFecha = Request.QueryString["fechaVenc"];
+                    Obj_TARJETA_DAL.IMes = Obj_TARJETA_BLL.Mes(ref Obj_TARJETA_DAL);
+                    Obj_TARJETA_DAL.IAnio = Obj_TARJETA_BLL.Año(ref Obj_TARJETA_DAL);
+
                     txt_Id_Tarjeta.Text = Request.QueryString["idNumeroTarjeta"];
                     txt_Numero_Cuenta.Text = Request.QueryString["NumeroCuenta"];
-                    txt_Fecha_Vencimiento.Text = Request.QueryString["fechaVenc"];
+                    cbx_Mes.SelectedValue = Obj_TARJETA_DAL.IMes.ToString();
+                    cbx_Annyo.SelectedValue = Obj_TARJETA_DAL.IAnio.ToString();
+                    //txt_Fecha_Vencimiento.Text = Request.QueryString["fechaVenc"];
                     txt_CVV.Text = Request.QueryString["CVV"];
                     cbx_Id_Tipo_Tarjeta.SelectedValue = Request.QueryString["idTipoTarjeta"];
                     cbx_Id_Banco.SelectedValue = Request.QueryString["idBanco"];
+
+
+
+                    //obj_Mascara_DAL.iMes = obj_Mascara_BLL.Mes(ref obj_Mascara_DAL);
+                    //txt_Mes.Text = obj_Mascara_DAL.iMes.ToString();
+
+
+                    ////Año
+                    //obj_Mascara_DAL.iAnio = obj_Mascara_BLL.Año(ref obj_Mascara_DAL);
+                    //txt_Año.Text = obj_Mascara_DAL.iAnio.ToString();
+
                 }
                 else
                 {
@@ -65,67 +82,71 @@ namespace PL.Paginas.Catalogos_Mantenimientos
         {
             ///*  FALTA LA VALIDACION DE LAS CAJAS DE TEXTO VACIAS  */
             //int iDia, iAnnyo;
-            //string sMes, sMes2;
+            //string sMes, sMes2 = string.Empty;
 
             //sMes = Convert.ToString(mes.SelectedValue);
             //iAnnyo = Convert.ToInt32(annyo.SelectedValue);
 
-            //sMes2 = sMes.PadLeft(2,'0');
-            //string sMsjError = string.Empty;
             //string fecha;
-
-            //iDia = System.DateTime.DaysInMonth(iAnnyo, Convert.ToInt32(sMes2));
-
 
             //if (iAnnyo % 4 == 0 && (iAnnyo % 100 != 0 || iAnnyo % 400 == 0))
             //{
             //    Console.WriteLine("El año " + iAnnyo + " Si es bisiesto ");
 
-            //    switch (sMes2)
+            //    switch (sMes)
             //    {
-            //        case "01":
+            //        case "1":
             //            {
             //                iDia = 31;
+            //                sMes2 = sMes.PadLeft(2, '0');
             //                break;
             //            }
-            //        case "02":
+            //        case "2":
             //            {
             //                iDia = 29;
+            //                sMes2 = sMes.PadLeft(2, '0');
             //                break;
             //            }
-            //        case "03":
+            //        case "3":
             //            {
             //                iDia = 31;
+            //                sMes2 = sMes.PadLeft(2, '0');
             //                break;
             //            }
             //        case "4":
             //            {
             //                iDia = 30;
+            //                sMes2 = sMes.PadLeft(2, '0');
             //                break;
             //            }
             //        case "5":
             //            {
             //                iDia = 31;
+            //                sMes2 = sMes.PadLeft(2, '0');
             //                break;
             //            }
             //        case "6":
             //            {
             //                iDia = 30;
+            //                sMes2 = sMes.PadLeft(2, '0');
             //                break;
             //            }
             //        case "7":
             //            {
             //                iDia = 31;
+            //                sMes2 = sMes.PadLeft(2, '0');
             //                break;
             //            }
             //        case "8":
             //            {
             //                iDia = 31;
+            //                sMes2 = sMes.PadLeft(2, '0');
             //                break;
             //            }
             //        case "9":
             //            {
             //                iDia = 30;
+            //                sMes2 = sMes.PadLeft(2, '0');
             //                break;
             //            }
             //        case "10":
@@ -152,51 +173,60 @@ namespace PL.Paginas.Catalogos_Mantenimientos
             //else
             //{
             //    Console.WriteLine("El año " + iAnnyo + " No es bisiesto ");
-            //    switch (mes.ToString())
+            //    switch (sMes)
             //    {
             //        case "1":
             //            {
             //                iDia = 31;
+            //                sMes2 = sMes.PadLeft(2, '0');
             //                break;
             //            }
             //        case "2":
             //            {
             //                iDia = 28;
+            //                sMes2 = sMes.PadLeft(2, '0');
             //                break;
             //            }
             //        case "3":
             //            {
             //                iDia = 31;
+            //                sMes2 = sMes.PadLeft(2, '0');
             //                break;
             //            }
             //        case "4":
             //            {
             //                iDia = 30;
+            //                sMes2 = sMes.PadLeft(2, '0');
             //                break;
             //            }
             //        case "5":
             //            {
             //                iDia = 31;
+            //                sMes2 = sMes.PadLeft(2, '0');
             //                break;
             //            }
             //        case "6":
             //            {
             //                iDia = 30;
+            //                sMes2 = sMes.PadLeft(2, '0');
             //                break;
             //            }
             //        case "7":
             //            {
             //                iDia = 31;
+            //                sMes2 = sMes.PadLeft(2, '0');
             //                break;
             //            }
             //        case "8":
             //            {
             //                iDia = 31;
+            //                sMes2 = sMes.PadLeft(2, '0');
             //                break;
             //            }
             //        case "9":
             //            {
             //                iDia = 30;
+            //                sMes2 = sMes.PadLeft(2, '0');
             //                break;
             //            }
             //        case "10":
@@ -220,20 +250,19 @@ namespace PL.Paginas.Catalogos_Mantenimientos
             //    }
             //    Console.ReadLine();
             //}
-            //fecha = (iDia + "-" + iMes + "-" + iAnnyo);
-
-            //Obj_TARJETA_DAL.DTFecha_Vencimiento = Convert.ToDateTime(fecha);
-
-
+            //fecha = (iDia + "-" + sMes2 + "-" + iAnnyo);
 
             string sMsjError = string.Empty;
+
+            FechaCombo();
 
             // Se obtiene los valores para insert
             Obj_TARJETA_DAL.IID_Numero_Tarjeta = Convert.ToInt64(txt_Id_Tarjeta.Text);
             Obj_TARJETA_DAL.BID_Tipo_Tarjeta = Convert.ToByte(cbx_Id_Tipo_Tarjeta.SelectedValue);
             Obj_TARJETA_DAL.BID_Banco = Convert.ToByte(cbx_Id_Banco.SelectedValue);
             Obj_TARJETA_DAL.INumero_Cuenta = Convert.ToInt64(txt_Numero_Cuenta.Text);
-            Obj_TARJETA_DAL.DTFecha_Vencimiento = Convert.ToDateTime(txt_Fecha_Vencimiento.Text);
+            Obj_TARJETA_DAL.DTFecha_Vencimiento = Convert.ToDateTime(Obj_TARJETA_DAL.SFecha);
+            //Obj_TARJETA_DAL.DTFecha_Vencimiento = Convert.ToDateTime(txt_Fecha_Vencimiento.Text);
             Obj_TARJETA_DAL.BCVV = Convert.ToInt16(txt_CVV.Text);
 
 
@@ -335,33 +364,200 @@ namespace PL.Paginas.Catalogos_Mantenimientos
             }
         }
 
-        //private void CargarMes()
-        //{
-        //    //valor por default           ddlMes.Items.Add("Seleccione mes");
+        public void CargarMes()
+        {
+            //valor por default           ddlMes.Items.Add("Seleccione mes");
 
-        //    List<string> nombreMes = DateTimeFormatInfo.CurrentInfo.MonthNames.Take(12).ToList();
-        //    var listaMesesSeleccionados = nombreMes.Select(m => new
-        //    {
-        //        Id = nombreMes.IndexOf(m) + 1,
-        //        Name = m
-        //    });
+            List<string> nombreMes = DateTimeFormatInfo.CurrentInfo.MonthNames.Take(12).ToList();
+            var listaMesesSeleccionados = nombreMes.Select(m => new
+            {
+                Id = nombreMes.IndexOf(m) + 1,
+                Name = m
+            });
 
-        //    foreach (var mes in listaMesesSeleccionados)
-        //    {
-        //        this.mes.Items.Add(new ListItem(mes.Name, mes.Id.ToString()));
-        //    }
-        //}
+            foreach (var mes in listaMesesSeleccionados)
+            {
+                this.cbx_Mes.Items.Add(new ListItem(mes.Name, mes.Id.ToString()));
+            }
+        }
 
-        //private void CargarAnnyo()
-        //{
-        //    int x = 2050;
+        public void CargarAnnyo()
+        {
+            int x = 2050;
 
-        //    for (int y = 1900; y <= x; y++)
-        //    {
-        //        annyo.Items.Add(y.ToString());
-        //    }
-        //}
+            for (int y = 1900; y <= x; y++)
+            {
+                cbx_Annyo.Items.Add(y.ToString());
+            }
+        }
 
+        public void FechaCombo()
+        {
+            int iDia, iAnnyo;
+            string sMes, sMes2 = string.Empty;
+
+            sMes = Convert.ToString(cbx_Mes.SelectedValue);
+            iAnnyo = Convert.ToInt32(cbx_Annyo.SelectedValue);
+
+            if (iAnnyo % 4 == 0 && (iAnnyo % 100 != 0 || iAnnyo % 400 == 0))
+            {
+                switch (sMes)
+                {
+                    case "1":
+                        {
+                            iDia = 31;
+                            sMes2 = sMes.PadLeft(2, '0');
+                            break;
+                        }
+                    case "2":
+                        {
+                            iDia = 29;
+                            sMes2 = sMes.PadLeft(2, '0');
+                            break;
+                        }
+                    case "3":
+                        {
+                            iDia = 31;
+                            sMes2 = sMes.PadLeft(2, '0');
+                            break;
+                        }
+                    case "4":
+                        {
+                            iDia = 30;
+                            sMes2 = sMes.PadLeft(2, '0');
+                            break;
+                        }
+                    case "5":
+                        {
+                            iDia = 31;
+                            sMes2 = sMes.PadLeft(2, '0');
+                            break;
+                        }
+                    case "6":
+                        {
+                            iDia = 30;
+                            sMes2 = sMes.PadLeft(2, '0');
+                            break;
+                        }
+                    case "7":
+                        {
+                            iDia = 31;
+                            sMes2 = sMes.PadLeft(2, '0');
+                            break;
+                        }
+                    case "8":
+                        {
+                            iDia = 31;
+                            sMes2 = sMes.PadLeft(2, '0');
+                            break;
+                        }
+                    case "9":
+                        {
+                            iDia = 30;
+                            sMes2 = sMes.PadLeft(2, '0');
+                            break;
+                        }
+                    case "10":
+                        {
+                            iDia = 31;
+                            break;
+                        }
+                    case "11":
+                        {
+                            iDia = 30;
+                            break;
+                        }
+                    case "12":
+                        {
+                            iDia = 31;
+                            break;
+                        }
+                    default:
+                        iDia = 31;
+                        break;
+                }
+
+            }
+            else
+            {
+                switch (sMes)
+                {
+                    case "1":
+                        {
+                            iDia = 31;
+                            sMes2 = sMes.PadLeft(2, '0');
+                            break;
+                        }
+                    case "2":
+                        {
+                            iDia = 28;
+                            sMes2 = sMes.PadLeft(2, '0');
+                            break;
+                        }
+                    case "3":
+                        {
+                            iDia = 31;
+                            sMes2 = sMes.PadLeft(2, '0');
+                            break;
+                        }
+                    case "4":
+                        {
+                            iDia = 30;
+                            sMes2 = sMes.PadLeft(2, '0');
+                            break;
+                        }
+                    case "5":
+                        {
+                            iDia = 31;
+                            sMes2 = sMes.PadLeft(2, '0');
+                            break;
+                        }
+                    case "6":
+                        {
+                            iDia = 30;
+                            sMes2 = sMes.PadLeft(2, '0');
+                            break;
+                        }
+                    case "7":
+                        {
+                            iDia = 31;
+                            sMes2 = sMes.PadLeft(2, '0');
+                            break;
+                        }
+                    case "8":
+                        {
+                            iDia = 31;
+                            sMes2 = sMes.PadLeft(2, '0');
+                            break;
+                        }
+                    case "9":
+                        {
+                            iDia = 30;
+                            sMes2 = sMes.PadLeft(2, '0');
+                            break;
+                        }
+                    case "10":
+                        {
+                            iDia = 31;
+                            break;
+                        }
+                    case "11":
+                        {
+                            iDia = 30;
+                            break;
+                        }
+                    case "12":
+                        {
+                            iDia = 31;
+                            break;
+                        }
+                    default:
+                        iDia = 31;
+                        break;
+                }
+            }
+            Obj_TARJETA_DAL.SFecha = (iDia + "-" + sMes2 + "-" + iAnnyo);
+        }
 
 
     }

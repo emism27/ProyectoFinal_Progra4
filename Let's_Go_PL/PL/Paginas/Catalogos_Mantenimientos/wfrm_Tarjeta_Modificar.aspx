@@ -26,9 +26,9 @@
 
             <div>
                 <label for="txt_Fecha_Vencimiento">Fecha de Vencimiento: </label>
-                <asp:TextBox ID="txt_Fecha_Vencimiento" runat="server" placeholder="Ingrese la Fecha de Vencimiento..." CssClass="txt_Texto"></asp:TextBox>
-<%--                <asp:DropDownList ID="mes" runat="server" ></asp:DropDownList>
-                <asp:DropDownList ID="annyo" runat="server"></asp:DropDownList>--%>
+<%--                <asp:TextBox ID="txt_Fecha_Vencimiento" runat="server" placeholder="Ingrese la Fecha de Vencimiento..." CssClass="txt_Texto"></asp:TextBox>--%>
+                <asp:DropDownList ID="cbx_Mes" runat="server" CssClass="drd_Drop"></asp:DropDownList>
+                <asp:DropDownList ID="cbx_Annyo" runat="server" CssClass="drd_Drop"></asp:DropDownList>
             </div>
 
             <div>
