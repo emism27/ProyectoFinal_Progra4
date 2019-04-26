@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="wfrm_Encabezado_Modificar.aspx.cs" Inherits="PL.Paginas.Catalogos_Mantenimientos.wfrm_Encabezado_Modificar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script src="../../Scripts_Validaciones/js_General_Validacion.js"></script>
 
     <link href="../../Styles/CSS/Modificar.css" rel="stylesheet" />
 
@@ -16,12 +17,12 @@
         <div id="formulario">
             <div>
                 <label for="txt_Id_Encabezado">ID Encabezado: </label>
-                <asp:TextBox ID="txt_Id_Encabezado" runat="server" placeholder="Ingrese el ID del Encabezado..." CssClass="txt_Texto"></asp:TextBox>
+                <asp:TextBox ID="txt_Id_Encabezado" runat="server" placeholder="Ingrese el ID del Encabezado..." CssClass="txt_Texto" requiried="" onkeypress="return validNumeros(event)"></asp:TextBox>
             </div>
 
             <div>
                 <label for="txt_Fecha">Fecha: </label>
-                <asp:TextBox ID="txt_Fecha" runat="server" placeholder="Fecha..." CssClass="txt_Texto"></asp:TextBox>
+                <asp:TextBox ID="txt_Fecha" runat="server" placeholder="Fecha..." CssClass="txt_Texto" requiried="" onkeypress="return validNumeros(event)"></asp:TextBox>
             </div>
 
             <div>

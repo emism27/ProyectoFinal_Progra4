@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="wfrm_Detalle_Modificar.aspx.cs" Inherits="PL.Paginas.Catalogos_Mantenimientos.wfrm_Detalle_Modificar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
+    <script src="../../Scripts_Validaciones/js_General_Validacion.js"></script>
+
     <link href="../../Styles/CSS/Modificar.css" rel="stylesheet" />
 
 </asp:Content>
@@ -16,7 +18,7 @@
         <div id="formulario">
             <div>
                 <label for="txt_Id_Detalle">ID Detalle: </label>
-                <asp:TextBox ID="txt_Id_Detalle" runat="server" placeholder="Ingrese el ID del Detalle..." CssClass="txt_Texto"></asp:TextBox>
+                <asp:TextBox ID="txt_Id_Detalle" runat="server" placeholder="Ingrese el ID del Detalle..." CssClass="txt_Texto" requiried="" onkeypress="return validNumeros(event)"></asp:TextBox>
             </div>
 
             <div>
@@ -26,7 +28,7 @@
 
             <div>
                 <label for="txt_Subtotal">Subtotal: </label>
-                <asp:TextBox ID="txt_Subtotal" runat="server" placeholder="Subtotal..." CssClass="txt_Texto"></asp:TextBox>
+                <asp:TextBox ID="txt_Subtotal" runat="server" placeholder="Subtotal..." CssClass="txt_Texto" requiried="" onkeypress="return Enteros_Decimales(event)"></asp:TextBox>
             </div>
 
             <div>
@@ -36,7 +38,7 @@
 
             <div>
                 <label for="txt_Total">Total: </label>
-                <asp:TextBox ID="txt_Total" runat="server" placeholder="Total..." CssClass="txt_Texto"></asp:TextBox>
+                <asp:TextBox ID="txt_Total" runat="server" placeholder="Total..." CssClass="txt_Texto" requiried="" onkeypress="return Enteros_Decimales(event)"></asp:TextBox>
             </div>
 
         </div>

@@ -1,6 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="wfrm_Tarjeta_Modificar.aspx.cs" Inherits="PL.Paginas.Catalogos_Mantenimientos.wfrm_Tarjeta_Modificar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
+    
+<script src="../../Scripts_Validaciones/js_General_Validacion.js"></script>
+
     <link href="../../Styles/CSS/Modificar.css" rel="stylesheet" />
 
 </asp:Content>
@@ -16,12 +19,12 @@
         <div id="formulario">
             <div>
                 <label for="txt_Id_Tarjeta">ID Tarjeta: </label>
-                <asp:TextBox ID="txt_Id_Tarjeta" runat="server" placeholder="Ingrese el ID de la Tarjeta..." CssClass="txt_Texto"></asp:TextBox>
+                <asp:TextBox ID="txt_Id_Tarjeta" runat="server" placeholder="Ingrese el ID de la Tarjeta..." CssClass="txt_Texto" requiried="" onkeypress="return validNumeros(event)"></asp:TextBox>
             </div>
 
             <div>
                 <label for="txt_Numero_Cuenta">Número de Tarjeta: </label>
-                <asp:TextBox ID="txt_Numero_Cuenta" runat="server" placeholder="Ingrese el Número de Cuenta..." CssClass="txt_Texto"></asp:TextBox>
+                <asp:TextBox ID="txt_Numero_Cuenta" runat="server" placeholder="Ingrese el Número de Cuenta..." CssClass="txt_Texto" requiried="" onkeypress="return validNumeros(event)"></asp:TextBox>
             </div>
 
             <div>
@@ -33,7 +36,7 @@
 
             <div>
                 <label for="txt_CVV">CVV: </label>
-                <asp:TextBox ID="txt_CVV" runat="server" placeholder="Ingrese el CVV..." CssClass="txt_Texto"></asp:TextBox>
+                <asp:TextBox ID="txt_CVV" runat="server" placeholder="Ingrese el CVV..." CssClass="txt_Texto" requiried="" onkeypress="return validNumeros(event)" MaxLength="3"></asp:TextBox>
             </div>
 
             <div>

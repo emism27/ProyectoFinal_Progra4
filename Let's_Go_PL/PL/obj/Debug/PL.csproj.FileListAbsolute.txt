@@ -76,3 +76,13 @@ C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\24-4-19\ProyectoFinal_Progra4\L
 C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\24-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
 C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\24-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.dll
 C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\24-4-19\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.pdb
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra46\Let's_Go_PL\PL\bin\PL.dll.config
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra46\Let's_Go_PL\PL\bin\PL.dll
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra46\Let's_Go_PL\PL\bin\PL.pdb
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra46\Let's_Go_PL\PL\bin\BLL_LetsGO.dll
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra46\Let's_Go_PL\PL\bin\DAL_LetsGO.dll
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra46\Let's_Go_PL\PL\bin\BLL_LetsGO.pdb
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra46\Let's_Go_PL\PL\bin\DAL_LetsGO.pdb
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra46\Let's_Go_PL\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra46\Let's_Go_PL\PL\obj\Debug\PL.dll
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra46\Let's_Go_PL\PL\obj\Debug\PL.pdb

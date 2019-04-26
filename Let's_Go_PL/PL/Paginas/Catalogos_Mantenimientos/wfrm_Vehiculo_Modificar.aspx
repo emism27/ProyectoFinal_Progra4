@@ -1,6 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="wfrm_Vehiculo_Modificar.aspx.cs" Inherits="PL.Paginas.Catalogos_Mantenimientos.wfrm_Vehiculo_Modificar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
+    
+<script src="../../Scripts_Validaciones/js_General_Validacion.js"></script>
+
     <link href="../../Styles/CSS/Modificar.css" rel="stylesheet" />
 
 </asp:Content>
@@ -16,7 +19,7 @@
         <div id="formulario">
             <div>
                 <label for="txt_Id_Vehiculo">ID Vehículo: </label>
-                <asp:TextBox ID="txt_Id_Vehiculo" runat="server" placeholder="Ingrese el ID del Vehículo..." CssClass="txt_Texto"></asp:TextBox>
+                <asp:TextBox ID="txt_Id_Vehiculo" runat="server" placeholder="Ingrese el ID del Vehículo..." CssClass="txt_Texto" requiried="" onkeypress="return validNumeros(event)"></asp:TextBox>
             </div>
 
             <div>
@@ -26,12 +29,12 @@
 
             <div>
                 <label for="txt_Matricula">Matrícula: </label>
-                <asp:TextBox ID="txt_Matricula" runat="server" placeholder="Ingrese la Matrícula..." CssClass="txt_Texto"></asp:TextBox>
+                <asp:TextBox ID="txt_Matricula" runat="server" placeholder="Ingrese la Matrícula..." MaxLength="20" CssClass="txt_Texto"></asp:TextBox>
             </div>
 
             <div>
                 <label for="txt_Ano">Año: </label>
-                <asp:TextBox ID="txt_Ano" runat="server" placeholder="Ingrese el Año..." CssClass="txt_Texto"></asp:TextBox>
+                <asp:TextBox ID="txt_Ano" runat="server" placeholder="Ingrese el Año..." CssClass="txt_Texto" requiried="" onkeypress="return validNumeros(event)" MaxLength="4"></asp:TextBox>
             </div>
 
         </div>

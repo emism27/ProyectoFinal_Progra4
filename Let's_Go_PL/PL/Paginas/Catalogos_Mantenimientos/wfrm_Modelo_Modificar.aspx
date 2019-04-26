@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="wfrm_Modelo_Modificar.aspx.cs" Inherits="PL.Paginas.Catalogos_Mantenimientos.wfrm_Modelo_Modificar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
+    <script src="../../Scripts_Validaciones/js_General_Validacion.js"></script>
     <link href="../../Styles/CSS/Modificar.css" rel="stylesheet" />
 
 </asp:Content>
@@ -16,12 +16,12 @@
         <div id="formulario">
             <div>
                 <label for="txt_Id_Modelo">ID Modelo: </label>
-                <asp:TextBox ID="txt_Id_Modelo" runat="server" placeholder="Ingrese el ID del Modelo..." CssClass="txt_Texto"></asp:TextBox>
+                <asp:TextBox ID="txt_Id_Modelo" runat="server" placeholder="Ingrese el ID del Modelo..." CssClass="txt_Texto" requiried="" onkeypress="return validNumeros(event)"></asp:TextBox>
             </div>
 
             <div>
                 <label for="txt_Modelo">Modelo: </label>
-                <asp:TextBox ID="txt_Modelo" runat="server" placeholder="Ingrese el Modelo..." CssClass="txt_Texto"></asp:TextBox>
+                <asp:TextBox ID="txt_Modelo" runat="server" maxlength="20" placeholder="Ingrese el Modelo..." CssClass="txt_Texto"  requiried="" onkeypress="return validAlfabeticos(event)"></asp:TextBox>
             </div>
 
             <div>
