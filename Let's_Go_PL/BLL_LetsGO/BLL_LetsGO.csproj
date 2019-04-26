@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_ADMINISTRADOR_BLL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_BANCO_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_CLIENTE_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_COMISION.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_CONDUCTOR_BLL.cs" />
@@ -55,8 +56,6 @@
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_PREGUNTAS_SEGURIDAD_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_TARJETA_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_TIPO_TARJETA_BLL.cs" />
-    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_TIPO_VEHICULO.cs" />
-    <Compile Include="Catalogos_Mantenimientos\Cls_TBL_VEHICULO.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_TBL_VIAJE.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\svc_Cat_Mat\Reference.cs">

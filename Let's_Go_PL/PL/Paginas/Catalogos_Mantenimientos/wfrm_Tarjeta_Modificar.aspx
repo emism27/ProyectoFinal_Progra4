@@ -8,8 +8,8 @@
 
     <form runat="server">
         <div id="boton">
-            <asp:ImageButton ID="btn_Guardar" runat="server" ImageUrl="~/Recursos/Save.png" CssClass="btn_Boton"/>
-            <asp:ImageButton ID="btn_Limpiar" runat="server" ImageUrl="~/Recursos/Refresh.png" CssClass="btn_Boton"/>
+            <asp:ImageButton ID="btn_Guardar" runat="server" ImageUrl="~/Recursos/Save.png" CssClass="btn_Boton" OnClick="btn_Guardar_Click"/>
+            <asp:ImageButton ID="btn_Limpiar" runat="server" ImageUrl="~/Recursos/Refresh.png" CssClass="btn_Boton" OnClick="btn_Limpiar_Click"/>
             <asp:ImageButton ID="btn_Salir" runat="server" ImageUrl="~/Recursos/Exit.png" CssClass="btn_Boton" OnClick="btn_Salir_Click" />
         </div>
 
@@ -26,7 +26,9 @@
 
             <div>
                 <label for="txt_Fecha_Vencimiento">Fecha de Vencimiento: </label>
-                <asp:TextBox ID="txt_Fecha_Vencimiento" runat="server" placeholder="Ingrese la Fecha de Vencimiento..." CssClass="txt_Texto"></asp:TextBox>
+<%--                <asp:TextBox ID="txt_Fecha_Vencimiento" runat="server" placeholder="Ingrese la Fecha de Vencimiento..." CssClass="txt_Texto"></asp:TextBox>--%>
+                <asp:DropDownList ID="cbx_Mes" runat="server" CssClass="drd_Drop"></asp:DropDownList>
+                <asp:DropDownList ID="cbx_Annyo" runat="server" CssClass="drd_Drop"></asp:DropDownList>
             </div>
 
             <div>

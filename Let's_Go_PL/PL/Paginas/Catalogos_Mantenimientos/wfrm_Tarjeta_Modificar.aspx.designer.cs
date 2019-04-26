@@ -58,13 +58,22 @@ namespace PL.Paginas.Catalogos_Mantenimientos {
         protected global::System.Web.UI.WebControls.TextBox txt_Numero_Cuenta;
         
         /// <summary>
-        /// txt_Fecha_Vencimiento control.
+        /// cbx_Mes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Fecha_Vencimiento;
+        protected global::System.Web.UI.WebControls.DropDownList cbx_Mes;
+        
+        /// <summary>
+        /// cbx_Annyo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList cbx_Annyo;
         
         /// <summary>
         /// txt_CVV control.

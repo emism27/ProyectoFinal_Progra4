@@ -4,24 +4,146 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using DAL_LetsGO.Catalogos_Mantenimientos;   // conexion al dal 
+using BLL_LetsGO.Catalogos_Mantenimientos;   // conexion al bll
 
 namespace PL.Paginas.Catalogos_Mantenimientos
 {
     public partial class wfrm_Tarjeta_Listar : System.Web.UI.Page
     {
+        Cls_TBL_TARJETA_BLL Obj_TARJETA_BLL = new Cls_TBL_TARJETA_BLL();
+        Cls_TBL_TARJETA_DAL Obj_TARJETA_DAL = new Cls_TBL_TARJETA_DAL();
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            CargarDatos();  // metodo para listar 
+        }
 
+        public void CargarDatos()  // metodo para listar los datos
+        {
+            if (txt_Palabra.Text == string.Empty)
+            {
+                // el objeto BLL tipo tarjeta llama al metodo de listar que esta en el bll haciendo referencia al objeto DAL de la tabla
+                Obj_TARJETA_BLL.Listar_Tarjeta(ref Obj_TARJETA_DAL);
+
+                // VACIA EL GRID VIEW
+                dgvDatos.DataSource = null;
+
+                // LLENA EL GRIDVIEW UTILIZANDO LA VARIABLE CREADA OBJ_DT que esta en el DAL de la tabla
+                //     public DataTable Obj_DT = new DataTable();
+                dgvDatos.DataSource = Obj_TARJETA_DAL.Obj_DT;
+                dgvDatos.DataBind();
+            }
+            else
+            {
+            }
         }
 
         protected void btn_Agregar_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("../Catalogos_Mantenimientos/wfrm_Tarjeta_Modificar.aspx");
+            Cls_TBL_TARJETA_DAL Obj_TARJETA_DAL = new Cls_TBL_TARJETA_DAL();
+
+            Obj_TARJETA_DAL.CAx = 'I';
+
+            Response.Redirect("../Catalogos_Mantenimientos/wfrm_Tarjeta_Modificar.aspx?axi=" + Obj_TARJETA_DAL.CAx);
         }
 
         protected void btn_Modificar_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("../Catalogos_Mantenimientos/wfrm_Tarjeta_Modificar.aspx");
+            if (dgvDatos.Rows.Count > 0)
+            {
+                // Se obtiene los valores para su modificacion
+                Obj_TARJETA_DAL.IID_Numero_Tarjeta = Convert.ToInt64(dgvDatos.SelectedRow.Cells[1].Text);
+                Obj_TARJETA_DAL.BID_Tipo_Tarjeta = Convert.ToByte(dgvDatos.SelectedRow.Cells[2].Text);
+                Obj_TARJETA_DAL.BID_Banco = Convert.ToByte(dgvDatos.SelectedRow.Cells[3].Text);
+                Obj_TARJETA_DAL.INumero_Cuenta = Convert.ToInt64(dgvDatos.SelectedRow.Cells[4].Text);
+                Obj_TARJETA_DAL.DTFecha_Vencimiento = Convert.ToDateTime(dgvDatos.SelectedRow.Cells[5].Text);
+                Obj_TARJETA_DAL.BCVV = Convert.ToByte(dgvDatos.SelectedRow.Cells[6].Text);
+
+                Obj_TARJETA_DAL.CAx = 'U';
+
+                // se llama la pantalla de modificar y se envian los datos
+                Response.Redirect("../Catalogos_Mantenimientos/wfrm_Tarjeta_Modificar.aspx?idNumeroTarjeta=" + Obj_TARJETA_DAL.IID_Numero_Tarjeta + "&idTipoTarjeta=" + Obj_TARJETA_DAL.BID_Tipo_Tarjeta + "&idBanco=" + Obj_TARJETA_DAL.BID_Banco + "&NumeroCuenta=" + Obj_TARJETA_DAL.INumero_Cuenta + "&fechaVenc=" + Obj_TARJETA_DAL.DTFecha_Vencimiento + "&CVV=" + Obj_TARJETA_DAL.BCVV + "&axi=" + Obj_TARJETA_DAL.CAx);
+
+                CargarDatos();
+            }
+            else
+            {
+                // Mensaje DE QUE SE DEBE DE SELECCIONAR LOS DATOS
+
+                //MessageBox.Show("Debe seleccionar un Empleado", "Alerta",
+                //    MessageBoxButtons.OK, MessageBoxIcon.Hand);
+            }
+        }
+
+        protected void btn_Filtro_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btn_Eliminar_Click(object sender, ImageClickEventArgs e)
+        {
+            string sMsjError = string.Empty;
+
+            /*  Si selecciono algun dato  */
+            //if (dgvEmpleados.Rows.Count > 0)
+            //{
+
+            /*  MENSAJE DE CONFIRMACION  */
+            //if (MessageBox.Show("Desea Eliminar el Registro Seleccionado?",
+            //                    "Confirmación",
+            //                    MessageBoxButtons.YesNo,
+            //                    MessageBoxIcon.Question) == DialogResult.Yes)
+            //{
+            try
+            {
+                // Se obtiene el valor del ID para su eliminacion
+                Obj_TARJETA_DAL.IID_Numero_Tarjeta = Convert.ToByte(dgvDatos.SelectedRow.Cells[1].Text);
+                //Obj_TIPO_TARJETA_DAL.SDescripcion = dgvTipoTarjeta.SelectedRow.Cells[2].Text;
+
+                //  Nombre del SP
+                string sNombreSP = "[SCH_CUENTA].[sp_delete_TBL_TARJETA]";
+
+                //  Se llama el metodo del BLL 
+                Obj_TARJETA_BLL.Eliminar_Tarjeta(ref Obj_TARJETA_DAL);
+
+
+                if ((Obj_TARJETA_DAL.Bln_BEstado == true) &&
+                    (sMsjError == string.Empty))
+                {
+                    /*   MENSAJE DE ELIMINACION EXITOSA  */
+                    //MessageBox.Show("El estado [" + int_IdDepartamento + "], fue eliminado correctamente.",
+                    //                     "Proceso Exitoso",
+                    //                     MessageBoxButtons.OK,
+                    //                     MessageBoxIcon.Information);
+                    CargarDatos();
+                }
+                else
+                {
+                    /*   MENSAJE DE ELIMINACION FALLIDA  */
+
+                    //MessageBox.Show("Se presento un error a la hora de borrar el Estado  [" + int_IdDepartamento + "]. Por el siguiente error: " + ObjSQL.sMsgError,
+                    //                     "Error",
+                    //                     MessageBoxButtons.OK,
+                    //                     MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                sMsjError = ex.Message.ToString();
+                //Obj_CUENTAS_DAL.sMsjError = ex.Message.ToString();
+            }
+            /* }   ELSE DE LA CONFIRMACION DE ELIMINACION
+               else
+               {
+
+               }*/
+            /*   }   else de si selecciono algun dato
+               else
+               {
+                   MessageBox.Show("Debe seleccionar un Empleado", "Alerta",
+                       MessageBoxButtons.OK, MessageBoxIcon.Hand);
+               }*/
         }
     }
 }

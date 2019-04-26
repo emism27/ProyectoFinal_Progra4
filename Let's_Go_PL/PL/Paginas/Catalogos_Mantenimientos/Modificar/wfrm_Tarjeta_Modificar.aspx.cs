@@ -85,7 +85,7 @@ namespace PL.Paginas.Catalogos_Mantenimientos.Modificar
             }
             else
             {
-                Obj_TARJETA_BLL.Modificar_TipoTarjeta(ref Obj_TARJETA_DAL);
+                Obj_TARJETA_BLL.Modificar_Tarjeta(ref Obj_TARJETA_DAL);
 
                 if ((Obj_TARJETA_DAL.Bln_BEstado == true) &&
                         (sMsjError == string.Empty))
