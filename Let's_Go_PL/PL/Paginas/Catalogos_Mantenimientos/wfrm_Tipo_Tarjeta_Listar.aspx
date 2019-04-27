@@ -9,7 +9,7 @@
         <form runat="server">
         <div id="buscar">
             <label for="drd_Filtro">Filtrar Por: </label>
-            <asp:DropDownList ID="drd_Filtro" runat="server" CssClass="drd_Filtro"></asp:DropDownList>
+            <asp:DropDownList ID="drd_Filtro" runat="server" CssClass="drd_Filtro" OnSelectedIndexChanged="drd_Filtro_SelectedIndexChanged"></asp:DropDownList>
             <label for="txt_Palabra">Palabra Clave: </label>
             <asp:TextBox ID="txt_Palabra" runat="server" CssClass="txt_Palabra"></asp:TextBox>
             <asp:Button ID="btn_Filtro" runat="server" Text="Buscar" CssClass="btn_Buscar" OnClick="btn_Filtro_Click"/>

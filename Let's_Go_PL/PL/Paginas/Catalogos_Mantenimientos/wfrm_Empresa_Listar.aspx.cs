@@ -4,24 +4,149 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using DAL_LetsGO.Catalogos_Mantenimientos;   // conexion al dal 
+using BLL_LetsGO.Catalogos_Mantenimientos;   // conexion al bll
 
 namespace PL.Paginas.Catalogos_Mantenimientos
 {
     public partial class wfrm_Empresa_Listar : System.Web.UI.Page
     {
+        Cls_TBL_EMPRESA_BLL Obj_EMPRESA_BLL = new Cls_TBL_EMPRESA_BLL();
+        Cls_TBL_EMPRESA_DAL Obj_EMPRESA_DAL = new Cls_TBL_EMPRESA_DAL();
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            CargarDatos();
         }
 
         protected void btn_Agregar_Click(object sender, ImageClickEventArgs e)
         {
+            Obj_EMPRESA_DAL.CAx = 'I';
             Response.Redirect("../Catalogos_Mantenimientos/wfrm_Empresa_Modificar.aspx");
         }
 
         protected void btn_Modificar_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("../Catalogos_Mantenimientos/wfrm_Empresa_Modificar.aspx");
+            if (dgvDatos.Rows.Count > 0)
+            {
+                //  SE CREAN LOS OBJETOS
+
+                // Se obtiene los valores para su modificacion
+                Obj_EMPRESA_DAL.IID_Cedula_Juridica = Convert.ToInt32(dgvDatos.SelectedRow.Cells[1].Text);
+                Obj_EMPRESA_DAL.SNombre_Empresa = dgvDatos.SelectedRow.Cells[2].Text;
+                Obj_EMPRESA_DAL.SDireccion = dgvDatos.SelectedRow.Cells[3].Text;
+                Obj_EMPRESA_DAL.SSitio_Web = dgvDatos.SelectedRow.Cells[4].Text;
+                Obj_EMPRESA_DAL.ITelefono = Convert.ToInt32(dgvDatos.SelectedRow.Cells[5].Text);
+                Obj_EMPRESA_DAL.SEmail = dgvDatos.SelectedRow.Cells[6].Text;
+
+
+                Obj_EMPRESA_DAL.CAx = 'U';
+
+                // se llama la pantalla de modificar y se envian los datos
+                Response.Redirect("../Catalogos_Mantenimientos/wfrm_Empresa_Modificar.aspx");
+
+                CargarDatos();
+            }
+            else
+            {
+                // Mensaje DE QUE SE DEBE DE SELECCIONAR LOS DATOS
+
+                //MessageBox.Show("Debe seleccionar un Empleado", "Alerta",
+                //    MessageBoxButtons.OK, MessageBoxIcon.Hand);
+            }
+
+        }
+        public void CargarDatos()  // metodo para listar los datos
+        {
+            if (txt_Palabra.Text == string.Empty)
+            {
+                // el objeto BLL tipo tarjeta llama al metodo de listar que esta en el bll haciendo referencia al objeto DAL de la tabla
+                Obj_EMPRESA_BLL.Listar_Empresa(ref Obj_EMPRESA_DAL);
+
+                // VACIA EL GRID VIEW
+                dgvDatos.DataSource = null;
+
+                // LLENA EL GRIDVIEW UTILIZANDO LA VARIABLE CREADA OBJ_DT que esta en el DAL de la tabla
+                //     public DataTable Obj_DT = new DataTable();
+                dgvDatos.DataSource = Obj_EMPRESA_DAL.Obj_DT;
+                dgvDatos.DataBind();
+            }
+            else
+            {
+            }
+        }
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btn_Eliminar_Click(object sender, ImageClickEventArgs e)
+        {
+            string sMsjError = string.Empty;
+
+            /*  Si selecciono algun dato  */
+            //if (dgvEmpleados.Rows.Count > 0)
+            //{
+
+            /*  MENSAJE DE CONFIRMACION  */
+            //if (MessageBox.Show("Desea Eliminar el Registro Seleccionado?",
+            //                    "Confirmación",
+            //                    MessageBoxButtons.YesNo,
+            //                    MessageBoxIcon.Question) == DialogResult.Yes)
+            //{
+            try
+            {
+                // Se obtiene el valor del ID para su eliminacion
+                Obj_EMPRESA_DAL.IID_Cedula_Juridica = Convert.ToInt32(dgvDatos.SelectedRow.Cells[1].Text);
+                //Obj_TIPO_TARJETA_DAL.SDescripcion = dgvTipoTarjeta.SelectedRow.Cells[2].Text;
+
+                //  Nombre del SP
+                string sNombreSP = "[SCH_EMPRESA].[sp_delete_TBL_EMPRESA]";
+
+                //  Se llama el metodo del BLL 
+                Obj_EMPRESA_BLL.Eliminar_Empresa(ref Obj_EMPRESA_DAL);
+
+
+                if ((Obj_EMPRESA_DAL.Bln_BEstado == true) &&
+                    (sMsjError == string.Empty))
+                {
+                    /*   MENSAJE DE ELIMINACION EXITOSA  */
+                    //MessageBox.Show("El estado [" + int_IdDepartamento + "], fue eliminado correctamente.",
+                    //                     "Proceso Exitoso",
+                    //                     MessageBoxButtons.OK,
+                    //                     MessageBoxIcon.Information);
+                    CargarDatos();
+                }
+                else
+                {
+                    /*   MENSAJE DE ELIMINACION FALLIDA  */
+
+                    //MessageBox.Show("Se presento un error a la hora de borrar el Estado  [" + int_IdDepartamento + "]. Por el siguiente error: " + ObjSQL.sMsgError,
+                    //                     "Error",
+                    //                     MessageBoxButtons.OK,
+                    //                     MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                sMsjError = ex.Message.ToString();
+                //Obj_CUENTAS_DAL.sMsjError = ex.Message.ToString();
+            }
+        }
+
+        protected void drd_Filtro_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void txt_Palabra_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+
         }
     }
 }

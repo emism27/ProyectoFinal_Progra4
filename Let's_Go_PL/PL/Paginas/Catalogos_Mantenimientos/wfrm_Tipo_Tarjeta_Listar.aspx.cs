@@ -163,5 +163,10 @@ namespace PL.Paginas.Catalogos_Mantenimientos
                        MessageBoxButtons.OK, MessageBoxIcon.Hand);
                }*/
         }
+
+        protected void drd_Filtro_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
