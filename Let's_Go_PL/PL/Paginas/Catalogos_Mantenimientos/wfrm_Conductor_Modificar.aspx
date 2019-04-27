@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="wfrm_Conductor_Modificar.aspx.cs" Inherits="PL.Paginas.Catalogos_Mantenimientos.wfrm_Conductor_Modificar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
+    <script src="../../Scripts_Validaciones/js_General_Validacion.js"></script>
+
     <link href="../../Styles/CSS/Modificar.css" rel="stylesheet" />
 
 </asp:Content>
@@ -16,7 +18,7 @@
         <div id="formulario">
             <div>
                 <label for="txt_Id_Conductor">ID Conductor: </label>
-                <asp:TextBox ID="txt_Id_Conductor" runat="server" placeholder="Ingrese el ID del Conductor..." CssClass="txt_Texto"></asp:TextBox>
+                <asp:TextBox ID="txt_Id_Conductor" runat="server" placeholder="Ingrese el ID del Conductor..." CssClass="txt_Texto" requiried="" onkeypress="return validNumeros(event)"></asp:TextBox>
             </div>
 
             <div>

@@ -60,46 +60,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Administrador_Listar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Banco_Listar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Cliente_Listar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Comision_Listar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Conductor_Listar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Cuenta_Listar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Detalle_Listar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Empresa_Listar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Encabezado_Listar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Estado_Listar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Marca_Listar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Modelo_Listar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Preguntas_Seguridad_Listar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Rating_Listar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Solicitud_Viaje_Listar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Tarjeta_Listar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Tipo_Tarjeta_Listar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Tipo_Vehiculo_Listar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Vehiculo_Listar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Viaje_Listar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Administrador_Modificar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Banco_Modificar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Cliente_Modificar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Comision_Modificar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Conductor_Modificar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Cuenta_Modificar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Detalle_Modificar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Empresa_Modificar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Encabezado_Modificar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Estado_Modificar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Marca_Modificar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Modelo_Modificar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Preguntas_Seguridad_Modificar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Rating_Modificar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Solicitud_Viaje_Modificar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Tarjeta_Modificar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Tipo_Tarjeta_Modificar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Tipo_Vehiculo_Modificar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Vehiculo_Modificar.aspx" />
-    <Content Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Viaje_Modificar.aspx" />
     <Content Include="Paginas\Catalogos_Mantenimientos\wfrm_Administrador_Listar.aspx" />
     <Content Include="Paginas\Catalogos_Mantenimientos\wfrm_Administrador_Modificar.aspx" />
     <Content Include="Paginas\Catalogos_Mantenimientos\wfrm_Banco_Listar.aspx" />
@@ -148,6 +108,7 @@
     <Content Include="Paginas\Otros\wfrm_Trabajo_Otros.aspx" />
     <Content Include="Paginas\Otros\wfrm_Vehiculo_Otros.aspx" />
     <Content Include="Paginas\Seguridad\wfrm_Login_Seguridad.aspx" />
+    <Content Include="Paginas\Seguridad\wfrm_Registro_Cuenta_Seguridad.aspx" />
     <Content Include="Recursos\Add.png" />
     <Content Include="Recursos\Calificacion.png" />
     <Content Include="Recursos\Delete.png" />
@@ -170,6 +131,7 @@
     <Content Include="Recursos\Search.png" />
     <Content Include="Recursos\Seguridad.png" />
     <Content Include="Recursos\Servicio.png" />
+    <Content Include="Scripts_Validaciones\js_General_Validacion.js" />
     <Content Include="Scripts_Validaciones\js_Validaciones_TBL_Cliente_TBL_Administrador_TBL_Estado.js" />
     <Content Include="Scripts_Validaciones\js_Validaciones_Vehiculo.js" />
     <Content Include="Scripts_Validaciones\js_Validacion_Cuenta.js" />
@@ -208,291 +170,12 @@
     <Content Include="Styles\CSS\Login.css" />
     <Content Include="Styles\CSS\Menu_Catalogos.css" />
     <Content Include="Styles\CSS\Modificar.css" />
+    <Content Include="Styles\CSS\Registro_Cuenta.css" />
     <Content Include="Styles\CSS\site2.css" />
     <Content Include="Styles\JQ\jquery.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Administrador_Listar.aspx.cs">
-      <DependentUpon>wfrm_Administrador_Listar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Administrador_Listar.aspx.designer.cs">
-      <DependentUpon>wfrm_Administrador_Listar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Banco_Listar.aspx.cs">
-      <DependentUpon>wfrm_Banco_Listar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Banco_Listar.aspx.designer.cs">
-      <DependentUpon>wfrm_Banco_Listar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Cliente_Listar.aspx.cs">
-      <DependentUpon>wfrm_Cliente_Listar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Cliente_Listar.aspx.designer.cs">
-      <DependentUpon>wfrm_Cliente_Listar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Comision_Listar.aspx.cs">
-      <DependentUpon>wfrm_Comision_Listar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Comision_Listar.aspx.designer.cs">
-      <DependentUpon>wfrm_Comision_Listar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Conductor_Listar.aspx.cs">
-      <DependentUpon>wfrm_Conductor_Listar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Conductor_Listar.aspx.designer.cs">
-      <DependentUpon>wfrm_Conductor_Listar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Cuenta_Listar.aspx.cs">
-      <DependentUpon>wfrm_Cuenta_Listar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Cuenta_Listar.aspx.designer.cs">
-      <DependentUpon>wfrm_Cuenta_Listar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Detalle_Listar.aspx.cs">
-      <DependentUpon>wfrm_Detalle_Listar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Detalle_Listar.aspx.designer.cs">
-      <DependentUpon>wfrm_Detalle_Listar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Empresa_Listar.aspx.cs">
-      <DependentUpon>wfrm_Empresa_Listar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Empresa_Listar.aspx.designer.cs">
-      <DependentUpon>wfrm_Empresa_Listar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Encabezado_Listar.aspx.cs">
-      <DependentUpon>wfrm_Encabezado_Listar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Encabezado_Listar.aspx.designer.cs">
-      <DependentUpon>wfrm_Encabezado_Listar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Estado_Listar.aspx.cs">
-      <DependentUpon>wfrm_Estado_Listar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Estado_Listar.aspx.designer.cs">
-      <DependentUpon>wfrm_Estado_Listar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Marca_Listar.aspx.cs">
-      <DependentUpon>wfrm_Marca_Listar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Marca_Listar.aspx.designer.cs">
-      <DependentUpon>wfrm_Marca_Listar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Modelo_Listar.aspx.cs">
-      <DependentUpon>wfrm_Modelo_Listar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Modelo_Listar.aspx.designer.cs">
-      <DependentUpon>wfrm_Modelo_Listar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Preguntas_Seguridad_Listar.aspx.cs">
-      <DependentUpon>wfrm_Preguntas_Seguridad_Listar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Preguntas_Seguridad_Listar.aspx.designer.cs">
-      <DependentUpon>wfrm_Preguntas_Seguridad_Listar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Rating_Listar.aspx.cs">
-      <DependentUpon>wfrm_Rating_Listar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Rating_Listar.aspx.designer.cs">
-      <DependentUpon>wfrm_Rating_Listar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Solicitud_Viaje_Listar.aspx.cs">
-      <DependentUpon>wfrm_Solicitud_Viaje_Listar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Solicitud_Viaje_Listar.aspx.designer.cs">
-      <DependentUpon>wfrm_Solicitud_Viaje_Listar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Tarjeta_Listar.aspx.cs">
-      <DependentUpon>wfrm_Tarjeta_Listar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Tarjeta_Listar.aspx.designer.cs">
-      <DependentUpon>wfrm_Tarjeta_Listar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Tipo_Tarjeta_Listar.aspx.cs">
-      <DependentUpon>wfrm_Tipo_Tarjeta_Listar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Tipo_Tarjeta_Listar.aspx.designer.cs">
-      <DependentUpon>wfrm_Tipo_Tarjeta_Listar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Tipo_Vehiculo_Listar.aspx.cs">
-      <DependentUpon>wfrm_Tipo_Vehiculo_Listar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Tipo_Vehiculo_Listar.aspx.designer.cs">
-      <DependentUpon>wfrm_Tipo_Vehiculo_Listar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Vehiculo_Listar.aspx.cs">
-      <DependentUpon>wfrm_Vehiculo_Listar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Vehiculo_Listar.aspx.designer.cs">
-      <DependentUpon>wfrm_Vehiculo_Listar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Viaje_Listar.aspx.cs">
-      <DependentUpon>wfrm_Viaje_Listar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Listar\wfrm_Viaje_Listar.aspx.designer.cs">
-      <DependentUpon>wfrm_Viaje_Listar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Administrador_Modificar.aspx.cs">
-      <DependentUpon>wfrm_Administrador_Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Administrador_Modificar.aspx.designer.cs">
-      <DependentUpon>wfrm_Administrador_Modificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Banco_Modificar.aspx.cs">
-      <DependentUpon>wfrm_Banco_Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Banco_Modificar.aspx.designer.cs">
-      <DependentUpon>wfrm_Banco_Modificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Cliente_Modificar.aspx.cs">
-      <DependentUpon>wfrm_Cliente_Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Cliente_Modificar.aspx.designer.cs">
-      <DependentUpon>wfrm_Cliente_Modificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Comision_Modificar.aspx.cs">
-      <DependentUpon>wfrm_Comision_Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Comision_Modificar.aspx.designer.cs">
-      <DependentUpon>wfrm_Comision_Modificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Conductor_Modificar.aspx.cs">
-      <DependentUpon>wfrm_Conductor_Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Conductor_Modificar.aspx.designer.cs">
-      <DependentUpon>wfrm_Conductor_Modificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Cuenta_Modificar.aspx.cs">
-      <DependentUpon>wfrm_Cuenta_Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Cuenta_Modificar.aspx.designer.cs">
-      <DependentUpon>wfrm_Cuenta_Modificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Detalle_Modificar.aspx.cs">
-      <DependentUpon>wfrm_Detalle_Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Detalle_Modificar.aspx.designer.cs">
-      <DependentUpon>wfrm_Detalle_Modificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Empresa_Modificar.aspx.cs">
-      <DependentUpon>wfrm_Empresa_Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Empresa_Modificar.aspx.designer.cs">
-      <DependentUpon>wfrm_Empresa_Modificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Encabezado_Modificar.aspx.cs">
-      <DependentUpon>wfrm_Encabezado_Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Encabezado_Modificar.aspx.designer.cs">
-      <DependentUpon>wfrm_Encabezado_Modificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Estado_Modificar.aspx.cs">
-      <DependentUpon>wfrm_Estado_Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Estado_Modificar.aspx.designer.cs">
-      <DependentUpon>wfrm_Estado_Modificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Marca_Modificar.aspx.cs">
-      <DependentUpon>wfrm_Marca_Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Marca_Modificar.aspx.designer.cs">
-      <DependentUpon>wfrm_Marca_Modificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Modelo_Modificar.aspx.cs">
-      <DependentUpon>wfrm_Modelo_Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Modelo_Modificar.aspx.designer.cs">
-      <DependentUpon>wfrm_Modelo_Modificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Preguntas_Seguridad_Modificar.aspx.cs">
-      <DependentUpon>wfrm_Preguntas_Seguridad_Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Preguntas_Seguridad_Modificar.aspx.designer.cs">
-      <DependentUpon>wfrm_Preguntas_Seguridad_Modificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Rating_Modificar.aspx.cs">
-      <DependentUpon>wfrm_Rating_Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Rating_Modificar.aspx.designer.cs">
-      <DependentUpon>wfrm_Rating_Modificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Solicitud_Viaje_Modificar.aspx.cs">
-      <DependentUpon>wfrm_Solicitud_Viaje_Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Solicitud_Viaje_Modificar.aspx.designer.cs">
-      <DependentUpon>wfrm_Solicitud_Viaje_Modificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Tarjeta_Modificar.aspx.cs">
-      <DependentUpon>wfrm_Tarjeta_Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Tarjeta_Modificar.aspx.designer.cs">
-      <DependentUpon>wfrm_Tarjeta_Modificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Tipo_Tarjeta_Modificar.aspx.cs">
-      <DependentUpon>wfrm_Tipo_Tarjeta_Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Tipo_Tarjeta_Modificar.aspx.designer.cs">
-      <DependentUpon>wfrm_Tipo_Tarjeta_Modificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Tipo_Vehiculo_Modificar.aspx.cs">
-      <DependentUpon>wfrm_Tipo_Vehiculo_Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Tipo_Vehiculo_Modificar.aspx.designer.cs">
-      <DependentUpon>wfrm_Tipo_Vehiculo_Modificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Vehiculo_Modificar.aspx.cs">
-      <DependentUpon>wfrm_Vehiculo_Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Vehiculo_Modificar.aspx.designer.cs">
-      <DependentUpon>wfrm_Vehiculo_Modificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Viaje_Modificar.aspx.cs">
-      <DependentUpon>wfrm_Viaje_Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Catalogos_Mantenimientos\Modificar\wfrm_Viaje_Modificar.aspx.designer.cs">
-      <DependentUpon>wfrm_Viaje_Modificar.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Paginas\Catalogos_Mantenimientos\wfrm_Administrador_Listar.aspx.cs">
       <DependentUpon>wfrm_Administrador_Listar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -828,6 +511,13 @@
     </Compile>
     <Compile Include="Paginas\Seguridad\wfrm_Login_Seguridad.aspx.designer.cs">
       <DependentUpon>wfrm_Login_Seguridad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Seguridad\wfrm_Registro_Cuenta_Seguridad.aspx.cs">
+      <DependentUpon>wfrm_Registro_Cuenta_Seguridad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Seguridad\wfrm_Registro_Cuenta_Seguridad.aspx.designer.cs">
+      <DependentUpon>wfrm_Registro_Cuenta_Seguridad.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\svc_Cat_Mat\Reference.cs">

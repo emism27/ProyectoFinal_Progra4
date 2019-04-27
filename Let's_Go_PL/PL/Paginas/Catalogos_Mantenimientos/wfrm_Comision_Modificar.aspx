@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="wfrm_Comision_Modificar.aspx.cs" Inherits="PL.Paginas.Catalogos_Mantenimientos.wfrm_Comision_Modificar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
+    <script src="../../Scripts_Validaciones/js_General_Validacion.js"></script>
+
         <link href="../../Styles/CSS/Modificar.css" rel="stylesheet" />
 
 </asp:Content>
@@ -17,17 +19,17 @@
         <div id="formulario">
             <div>
                 <label for="txt_Id_Comision">ID Comisión: </label>
-                <asp:TextBox ID="txt_Id_Comision" runat="server" placeholder="Ingrese el ID de la Comisión..." CssClass="txt_Texto"></asp:TextBox>
+                <asp:TextBox ID="txt_Id_Comision" runat="server" placeholder="Ingrese el ID de la Comisión..." CssClass="txt_Texto" requiried="" onkeypress="return validNumeros(event)"></asp:TextBox>
             </div>
 
             <div>
                 <label for="txt_Comision">Comisión: </label>
-                <asp:TextBox ID="txt_Comision" runat="server" placeholder="Ingrese la Comisión..." CssClass="txt_Texto"></asp:TextBox>
+                <asp:TextBox ID="txt_Comision" runat="server" placeholder="Ingrese la Comisión..." CssClass="txt_Texto" onkeypress="return validNumeros(event)"></asp:TextBox>
             </div>
 
             <div>
                 <label for="txt_Descripcion">Descripción: </label>
-                <asp:TextBox ID="txt_Descripcion" runat="server" placeholder="Ingrese la Descripción..." CssClass="txt_Texto"></asp:TextBox>
+                <asp:TextBox ID="txt_Descripcion" runat="server" placeholder="Ingrese la Descripción..." CssClass="txt_Texto"  requiried="" onkeypress="return validAlfabeticos(event)"></asp:TextBox>
             </div>
 
         </div>

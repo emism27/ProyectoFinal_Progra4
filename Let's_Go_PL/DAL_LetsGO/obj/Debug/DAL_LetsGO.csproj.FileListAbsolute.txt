@@ -32,3 +32,13 @@ C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\24-4-19\ProyectoFinal_Progra4\L
 C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\24-4-19\ProyectoFinal_Progra4\Let's_Go_PL\DAL_LetsGO\obj\Debug\DAL_LetsGO.csprojResolveAssemblyReference.cache
 C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\24-4-19\ProyectoFinal_Progra4\Let's_Go_PL\DAL_LetsGO\obj\Debug\DAL_LetsGO.dll
 C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\24-4-19\ProyectoFinal_Progra4\Let's_Go_PL\DAL_LetsGO\obj\Debug\DAL_LetsGO.pdb
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra46\Let's_Go_PL\DAL_LetsGO\bin\Debug\DAL_LetsGO.dll
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra46\Let's_Go_PL\DAL_LetsGO\bin\Debug\DAL_LetsGO.pdb
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra46\Let's_Go_PL\DAL_LetsGO\obj\Debug\DAL_LetsGO.csprojResolveAssemblyReference.cache
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra46\Let's_Go_PL\DAL_LetsGO\obj\Debug\DAL_LetsGO.dll
+C:\Users\Jer\Source\Repos\ProyectoFinal_Progra46\Let's_Go_PL\DAL_LetsGO\obj\Debug\DAL_LetsGO.pdb
+C:\Users\Kinderson\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\DAL_LetsGO\bin\Debug\DAL_LetsGO.dll
+C:\Users\Kinderson\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\DAL_LetsGO\bin\Debug\DAL_LetsGO.pdb
+C:\Users\Kinderson\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\DAL_LetsGO\obj\Debug\DAL_LetsGO.csprojResolveAssemblyReference.cache
+C:\Users\Kinderson\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\DAL_LetsGO\obj\Debug\DAL_LetsGO.dll
+C:\Users\Kinderson\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\DAL_LetsGO\obj\Debug\DAL_LetsGO.pdb

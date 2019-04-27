@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="wfrm_Administrador_Modificar.aspx.cs" Inherits="PL.Paginas.Catalogos_Mantenimientos.wfrm_Administrador_Modificar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
+    <script src="../../Scripts_Validaciones/js_Validaciones_TBL_Cliente_TBL_Administrador_TBL_Estado.js"></script>
+
     <link href="../../Styles/CSS/Modificar.css" rel="stylesheet" />
 
 </asp:Content>
@@ -16,7 +18,7 @@
         <div id="formulario">
             <div>
                 <label for="txt_Id_Administrador">ID Administrador: </label>
-                <asp:TextBox ID="txt_Id_Administrador" runat="server" placeholder="Ingrese el ID del Administrador..." CssClass="txt_Texto"></asp:TextBox>
+                <asp:TextBox ID="txt_Id_Administrador"  onkeypress="return validNumeros(event)" runat="server" placeholder="Ingrese el ID del Administrador..." CssClass="txt_Texto"></asp:TextBox>
             </div>
 
             <div>
