@@ -28,7 +28,7 @@
         <asp:DropDownList ID="drp_Pregunta" runat="server" CssClass="formulario" ></asp:DropDownList>
         <asp:TextBox ID="txt_Respuesta" runat="server" CssClass="formulario" placeholder="Respuesta de Seguridad"></asp:TextBox>
 
-        <asp:Button ID="btn_Guardar" runat="server" Text="Sign Up" CssClass-="animated"/>
+        <asp:Button ID="btn_Guardar" runat="server" Text="Siguiente" CssClass-="animated" OnClick="btn_Guardar_Click"/>
         <a class='forgot' href='wfrm_Login_Seguridad.aspx'>¿Ya tengo una cuenta?</a>
     </div>
 
