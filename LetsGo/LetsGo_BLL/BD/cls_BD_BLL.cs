@@ -161,6 +161,11 @@ namespace LetsGo_BLL.BD
                                     dbt = SqlDbType.SmallInt;
                                     break;
                                 }
+                            case "11":
+                                {
+                                    dbt = SqlDbType.Money;
+                                    break;
+                                }
                             default:
                                 dbt = SqlDbType.VarChar;
                                 break;

@@ -2,14 +2,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
         <link href="../../Styles/CSS/Formularios.css" rel="stylesheet" />
-
+        <script src="../../Scripts_Validaciones/TipoModificar.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
         <form runat="server">
         <div id="buscar">
             <label for="drd_Filtro">Filtrar Por: </label>
-            <asp:DropDownList ID="drd_Filtro" runat="server" CssClass="drd_Filtro" OnSelectedIndexChanged="drd_Filtro_SelectedIndexChanged"></asp:DropDownList>
+            <asp:DropDownList ID="drd_Filtro" runat="server" CssClass="drd_Filtro"></asp:DropDownList>
             <label for="txt_Palabra">Palabra Clave: </label>
             <asp:TextBox ID="txt_Palabra" runat="server" CssClass="txt_Palabra"></asp:TextBox>
             <asp:Button ID="btn_Filtro" runat="server" Text="Buscar" CssClass="btn_Buscar" OnClick="btn_Filtro_Click"/>
@@ -25,7 +25,7 @@
                 <AlternatingRowStyle BackColor="#DCDCDC" />
                 <Columns>
                     <asp:BoundField DataField="ID_Tipo_Tarjeta" HeaderText="ID TIPO TARJETA" />
-                    <asp:BoundField DataField="Descripcion" HeaderText="Descripción" />
+                    <asp:BoundField DataField="Descripcion" HeaderText="DESCRIPCION" />
                 </Columns>
             </asp:GridView><br />
         </div>

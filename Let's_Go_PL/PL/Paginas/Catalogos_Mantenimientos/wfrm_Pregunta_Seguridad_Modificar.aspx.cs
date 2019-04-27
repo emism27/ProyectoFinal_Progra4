@@ -60,17 +60,11 @@ namespace PL.Paginas.Catalogos_Mantenimientos
                 if ((Obj_PREGUNTAS_DAL.Bln_BEstado == true) &&
                         (sMsjError == string.Empty))
                 {
-                    /*   MENSAJE DE guardado EXITOSo  */
-                    //MessageBox.Show("Se guardo exitosamente el nuevo Horario", "EXITO",
-                    //    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Response.Write("<script>alert('Datos ingresados exitosamente');</script>");
                 }
                 else
                 {
-                    /*   MENSAJE DE guardado FALLIDo  */
-
-                    //MessageBox.Show("Se presento un error a la hora de guardar el nuevo Horario. \n \n Error [ "
-                    //    + Obj_Cuentas_Editar_DAL.sMsjError + " ].", "ERROR",
-                    //    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Response.Write("<script>alert('Hubo un error en el ingreso de los datos: " + sMsjError + "');</script>");
                 }
             }
             else
@@ -80,18 +74,11 @@ namespace PL.Paginas.Catalogos_Mantenimientos
                 if ((Obj_PREGUNTAS_DAL.Bln_BEstado == true) &&
                         (sMsjError == string.Empty))
                 {
-                    /*   MENSAJE DE modificacion EXITOSa  */
-
-                    //MessageBox.Show("Se modifico exitosamente el nuevo Horario", "EXITO",
-                    //    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Response.Write("<script>alert('Datos modificados exitosamente');</script>");
                 }
                 else
                 {
-                    /*   MENSAJE DE modificacion FALLIDa  */
-
-                    //MessageBox.Show("Se presento un error a la hora de modificar el nuevo Horario. \n \n Error [ "
-                    //    + Obj_Cuentas_Editar_DAL.sMsjError + " ].", "ERROR",
-                    //    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Response.Write("<script>alert('Hubo un error en la modificacion de los datos: " + sMsjError + "');</script>");
                 }
             }
         }

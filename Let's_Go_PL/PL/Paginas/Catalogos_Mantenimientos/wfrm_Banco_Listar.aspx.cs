@@ -72,10 +72,7 @@ namespace PL.Paginas.Catalogos_Mantenimientos
             }
             else
             {
-                // Mensaje DE QUE SE DEBE DE SELECCIONAR LOS DATOS
-
-                //MessageBox.Show("Debe seleccionar un Empleado", "Alerta",
-                //    MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                Response.Write("<script>alert('Debe seleccionar datos para la modificacion');</script>");
             }
         }
 
@@ -89,65 +86,43 @@ namespace PL.Paginas.Catalogos_Mantenimientos
             string sMsjError = string.Empty;
 
             /*  Si selecciono algun dato  */
-            //if (dgvEmpleados.Rows.Count > 0)
-            //{
-
-            /*  MENSAJE DE CONFIRMACION  */
-            //if (MessageBox.Show("Desea Eliminar el Registro Seleccionado?",
-            //                    "Confirmación",
-            //                    MessageBoxButtons.YesNo,
-            //                    MessageBoxIcon.Question) == DialogResult.Yes)
-            //{
-            try
+            if (dgvDatos.Rows.Count > 0)
             {
-                // Se obtiene el valor del ID para su eliminacion
-                Obj_BANCO_DAL.BID_Banco = Convert.ToByte(dgvDatos.SelectedRow.Cells[1].Text);
-                //Obj_TIPO_TARJETA_DAL.SDescripcion = dgvTipoTarjeta.SelectedRow.Cells[2].Text;
 
-                //  Nombre del SP
-                string sNombreSP = "[SCH_CUENTA].[sp_delete_TBL_TIPO_TARJETA]";
-
-                //  Se llama el metodo del BLL 
-                Obj_BANCO_BLL.Eliminar_Banco(ref Obj_BANCO_DAL);
-
-
-                if ((Obj_BANCO_DAL.Bln_BEstado == true) &&
-                    (sMsjError == string.Empty))
+                try
                 {
-                    /*   MENSAJE DE ELIMINACION EXITOSA  */
-                    //MessageBox.Show("El estado [" + int_IdDepartamento + "], fue eliminado correctamente.",
-                    //                     "Proceso Exitoso",
-                    //                     MessageBoxButtons.OK,
-                    //                     MessageBoxIcon.Information);
-                    CargarDatos();
+                    // Se obtiene el valor del ID para su eliminacion
+                    Obj_BANCO_DAL.BID_Banco = Convert.ToByte(dgvDatos.SelectedRow.Cells[1].Text);
+                    //Obj_TIPO_TARJETA_DAL.SDescripcion = dgvTipoTarjeta.SelectedRow.Cells[2].Text;
+
+                    //  Nombre del SP
+                    string sNombreSP = "[SCH_CUENTA].[sp_delete_TBL_TIPO_TARJETA]";
+
+                    //  Se llama el metodo del BLL 
+                    Obj_BANCO_BLL.Eliminar_Banco(ref Obj_BANCO_DAL);
+
+
+                    if ((Obj_BANCO_DAL.Bln_BEstado == true) &&
+                        (sMsjError == string.Empty))
+                    {
+                        Response.Write("<script>alert('Dato eliminado exitosamente');</script>");
+                        CargarDatos();
+                    }
+                    else
+                    {
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    /*   MENSAJE DE ELIMINACION FALLIDA  */
-
-                    //MessageBox.Show("Se presento un error a la hora de borrar el Estado  [" + int_IdDepartamento + "]. Por el siguiente error: " + ObjSQL.sMsgError,
-                    //                     "Error",
-                    //                     MessageBoxButtons.OK,
-                    //                     MessageBoxIcon.Error);
+                    sMsjError = ex.Message.ToString();
                 }
             }
-            catch (Exception ex)
+            else
+
             {
-                sMsjError = ex.Message.ToString();
-                //Obj_CUENTAS_DAL.sMsjError = ex.Message.ToString();
+                Response.Write("<script>alert('Debe seleccionar datos para su eliminación');</script>");
             }
-            /* }   ELSE DE LA CONFIRMACION DE ELIMINACION
-               else
-               {
-
-               }*/
-            /*   }   else de si selecciono algun dato
-               else
-               {
-                   MessageBox.Show("Debe seleccionar un Empleado", "Alerta",
-                       MessageBoxButtons.OK, MessageBoxIcon.Hand);
-               }*/
-
+        
         }
     }
 }

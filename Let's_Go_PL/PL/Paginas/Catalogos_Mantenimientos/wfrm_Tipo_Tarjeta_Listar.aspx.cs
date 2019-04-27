@@ -56,7 +56,6 @@ namespace PL.Paginas.Catalogos_Mantenimientos
             }
         }
 
-
         protected void btn_Agregar_Click(object sender, ImageClickEventArgs e)
         {
             Cls_TBL_TIPO_TARJETA_DAL Obj_TIPO_TARJETA_DAL = new Cls_TBL_TIPO_TARJETA_DAL();
@@ -87,10 +86,7 @@ namespace PL.Paginas.Catalogos_Mantenimientos
             }
             else
             {
-                // Mensaje DE QUE SE DEBE DE SELECCIONAR LOS DATOS
-
-                //MessageBox.Show("Debe seleccionar un Empleado", "Alerta",
-                //    MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                Response.Write("<script>alert('Debe seleccionar datos para la modificacion');</script>");
             }
         }
 
@@ -104,23 +100,12 @@ namespace PL.Paginas.Catalogos_Mantenimientos
             string sMsjError = string.Empty;
 
             /*  Si selecciono algun dato  */
-            //if (dgvEmpleados.Rows.Count > 0)
-            //{
-
-            /*  MENSAJE DE CONFIRMACION  */
-            //if (MessageBox.Show("Desea Eliminar el Registro Seleccionado?",
-            //                    "Confirmación",
-            //                    MessageBoxButtons.YesNo,
-            //                    MessageBoxIcon.Question) == DialogResult.Yes)
-            //{
-            try
+            if (dgvDatos.Rows.Count > 0)
             {
+                    try
+                 {
                 // Se obtiene el valor del ID para su eliminacion
                 Obj_TIPO_TARJETA_DAL.BID_Tipo_Tarjeta = Convert.ToByte(dgvDatos.SelectedRow.Cells[1].Text);
-                //Obj_TIPO_TARJETA_DAL.SDescripcion = dgvTipoTarjeta.SelectedRow.Cells[2].Text;
-
-                //  Nombre del SP
-                string sNombreSP = "[SCH_CUENTA].[sp_delete_TBL_TIPO_TARJETA]";
 
                 //  Se llama el metodo del BLL 
                 Obj_TIPO_TARJETA_BLL.Eliminar_TipoTarjeta(ref Obj_TIPO_TARJETA_DAL);
@@ -129,44 +114,23 @@ namespace PL.Paginas.Catalogos_Mantenimientos
                 if ((Obj_TIPO_TARJETA_DAL.Bln_BEstado == true) &&
                     (sMsjError == string.Empty))
                 {
-                    /*   MENSAJE DE ELIMINACION EXITOSA  */
-                    //MessageBox.Show("El estado [" + int_IdDepartamento + "], fue eliminado correctamente.",
-                    //                     "Proceso Exitoso",
-                    //                     MessageBoxButtons.OK,
-                    //                     MessageBoxIcon.Information);
+                    Response.Write("<script>alert('Dato eliminado exitosamente');</script>");
                     CargarDatos();
                 }
                 else
                 {
-                    /*   MENSAJE DE ELIMINACION FALLIDA  */
-
-                    //MessageBox.Show("Se presento un error a la hora de borrar el Estado  [" + int_IdDepartamento + "]. Por el siguiente error: " + ObjSQL.sMsgError,
-                    //                     "Error",
-                    //                     MessageBoxButtons.OK,
-                    //                     MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
                 sMsjError = ex.Message.ToString();
-                //Obj_CUENTAS_DAL.sMsjError = ex.Message.ToString();
             }
-            /* }   ELSE DE LA CONFIRMACION DE ELIMINACION
-               else
+            }
+            else 
+              
                {
-
-               }*/
-            /*   }   else de si selecciono algun dato
-               else
-               {
-                   MessageBox.Show("Debe seleccionar un Empleado", "Alerta",
-                       MessageBoxButtons.OK, MessageBoxIcon.Hand);
-               }*/
-        }
-
-        protected void drd_Filtro_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+                Response.Write("<script>alert('Debe seleccionar datos para su eliminación');</script>");
+                }
         }
     }
 }

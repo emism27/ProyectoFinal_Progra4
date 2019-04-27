@@ -40,7 +40,7 @@ namespace PL.Paginas.Catalogos_Mantenimientos
         protected void btn_Agregar_Click(object sender, ImageClickEventArgs e)
         {
             Obj_PREGUNTA_DAL.CAx = 'I';
-            Response.Redirect("../Catalogos_Mantenimientos/wfrm_Pregunta_Seguridad_Modificar.aspx");
+            Response.Redirect("../Catalogos_Mantenimientos/wfrm_Pregunta_Seguridad_Modificar.aspx?axi=" + Obj_PREGUNTA_DAL.CAx);
         }
 
         protected void btn_Modificar_Click(object sender, ImageClickEventArgs e)
@@ -57,17 +57,14 @@ namespace PL.Paginas.Catalogos_Mantenimientos
                 Obj_PREGUNTA_DAL.CAx = 'U';
 
                 // se llama la pantalla de modificar y se envian los datos
-                Response.Redirect("../Catalogos_Mantenimientos/wfrm_Pregunta_Seguridad_Modificar.aspx");
+                Response.Redirect("../Catalogos_Mantenimientos/wfrm_Pregunta_Seguridad_Modificar.aspx?axi=" + Obj_PREGUNTA_DAL.CAx);
                 //Response.Redirect("../Catalogos_Mantenimientos/wfrm_Tipo_Tarjeta_Modificar.aspx?id=" + Obj_TIPO_TARJETA_DAL.BID_Tipo_Tarjeta + "&descripcion=" + Obj_TIPO_TARJETA_DAL.SDescripcion + "&axi=" + Obj_TIPO_TARJETA_DAL.CAx);
 
                 CargarDatos();
             }
             else
             {
-                // Mensaje DE QUE SE DEBE DE SELECCIONAR LOS DATOS
-
-                //MessageBox.Show("Debe seleccionar un Empleado", "Alerta",
-                //    MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                Response.Write("<script>alert('Debe seleccionar datos para la modificacion');</script>");
             }
 
         }
@@ -75,10 +72,15 @@ namespace PL.Paginas.Catalogos_Mantenimientos
         protected void btn_Eliminar_Click(object sender, ImageClickEventArgs e)
         {
             string sMsjError = string.Empty;
-            try
+
+            /*  Si selecciono algun dato  */
+            if (dgvDatos.Rows.Count > 0)
             {
-                // Se obtiene el valor del ID para su eliminacion
-                Obj_PREGUNTA_DAL.BID_Pregunta_Seguridad = Convert.ToByte(dgvDatos.SelectedRow.Cells[1].Text);
+
+                try
+                {
+                    // Se obtiene el valor del ID para su eliminacion
+                    Obj_PREGUNTA_DAL.BID_Pregunta_Seguridad = Convert.ToByte(dgvDatos.SelectedRow.Cells[1].Text);
                 //Obj_TIPO_TARJETA_DAL.SDescripcion = dgvTipoTarjeta.SelectedRow.Cells[2].Text;
 
                 //  Nombre del SP
@@ -91,27 +93,22 @@ namespace PL.Paginas.Catalogos_Mantenimientos
                 if ((Obj_PREGUNTA_DAL.Bln_BEstado == true) &&
                     (sMsjError == string.Empty))
                 {
-                    /*   MENSAJE DE ELIMINACION EXITOSA  */
-                    //MessageBox.Show("El estado [" + int_IdDepartamento + "], fue eliminado correctamente.",
-                    //                     "Proceso Exitoso",
-                    //                     MessageBoxButtons.OK,
-                    //                     MessageBoxIcon.Information);
-                    CargarDatos();
+                        Response.Write("<script>alert('Dato eliminado exitosamente');</script>");
+                        CargarDatos();
+                    }
+                    else
+                    {
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    /*   MENSAJE DE ELIMINACION FALLIDA  */
-
-                    //MessageBox.Show("Se presento un error a la hora de borrar el Estado  [" + int_IdDepartamento + "]. Por el siguiente error: " + ObjSQL.sMsgError,
-                    //                     "Error",
-                    //                     MessageBoxButtons.OK,
-                    //                     MessageBoxIcon.Error);
+                    sMsjError = ex.Message.ToString();
                 }
             }
-            catch (Exception ex)
+            else
+
             {
-                sMsjError = ex.Message.ToString();
-                //Obj_CUENTAS_DAL.sMsjError = ex.Message.ToString();
+                Response.Write("<script>alert('Debe seleccionar datos para su eliminación');</script>");
             }
         }
 

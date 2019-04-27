@@ -24,8 +24,12 @@
                 PageSize="10">
                 <AlternatingRowStyle BackColor="#DCDCDC" />
                 <Columns>
-                    <asp:BoundField DataField="ID_Tipo_Tarjeta" HeaderText="ID TIPO TARJETA" />
-                    <asp:BoundField DataField="Descripcion" HeaderText="Descripción" />
+                    <asp:BoundField DataField="ID_Cedula_Juridica" HeaderText="ID CEDULA JURIDICA" />
+                    <asp:BoundField DataField="Nombre_Empresa" HeaderText="NOMBRE EMPRESA" />
+                    <asp:BoundField DataField="Telefono" HeaderText="TELEFONO" />
+                    <asp:BoundField DataField="Sitio_Web" HeaderText="SITIO WEB" />
+                    <asp:BoundField DataField="Email" HeaderText="EMAIL" />
+                    <asp:BoundField DataField="Direccion" HeaderText="DIRECCION" />
                 </Columns>
             </asp:GridView><br />
         </div>

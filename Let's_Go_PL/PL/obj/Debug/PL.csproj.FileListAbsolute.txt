@@ -96,3 +96,13 @@ C:\Users\Kinderson\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\DAL_Let
 C:\Users\Kinderson\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
 C:\Users\Kinderson\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.dll
 C:\Users\Kinderson\Source\Repos\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.pdb
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\original\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\PL.dll.config
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\original\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\PL.dll
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\original\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\PL.pdb
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\original\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\BLL_LetsGO.dll
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\original\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\DAL_LetsGO.dll
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\original\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\BLL_LetsGO.pdb
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\original\ProyectoFinal_Progra4\Let's_Go_PL\PL\bin\DAL_LetsGO.pdb
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\original\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\original\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.dll
+C:\Users\Alexander\Desktop\VERSIONES DE PROYECTO\original\ProyectoFinal_Progra4\Let's_Go_PL\PL\obj\Debug\PL.pdb

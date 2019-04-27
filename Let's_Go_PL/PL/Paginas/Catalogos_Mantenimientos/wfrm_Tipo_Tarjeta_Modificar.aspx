@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
     <script src="../../Scripts_Validaciones/js_General_Validacion.js"></script>
-
+    <script src="../../Scripts_Validaciones/TipoModificar.js"></script>
     <link href="../../Styles/CSS/Modificar.css" rel="stylesheet" />
 
 </asp:Content>

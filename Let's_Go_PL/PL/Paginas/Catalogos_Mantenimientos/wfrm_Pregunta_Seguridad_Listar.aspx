@@ -24,8 +24,8 @@
                 PageSize="10">
                 <AlternatingRowStyle BackColor="#DCDCDC" />
                 <Columns>
-                    <asp:BoundField DataField="ID_Tipo_Tarjeta" HeaderText="ID TIPO TARJETA" />
-                    <asp:BoundField DataField="Descripcion" HeaderText="Descripción" />
+                    <asp:BoundField DataField="ID_Pregunta_Seguridad" HeaderText="ID PREGUNTA SEGURIDAD" />
+                    <asp:BoundField DataField="Detalle_Preguntas" HeaderText="DETALLE PREGUNTAS" />
                 </Columns>
             </asp:GridView><br />
         </div>
