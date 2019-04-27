@@ -108,6 +108,7 @@
     <Content Include="Paginas\Otros\wfrm_Trabajo_Otros.aspx" />
     <Content Include="Paginas\Otros\wfrm_Vehiculo_Otros.aspx" />
     <Content Include="Paginas\Seguridad\wfrm_Login_Seguridad.aspx" />
+    <Content Include="Paginas\Seguridad\wfrm_Registro_Cuenta_Seguridad.aspx" />
     <Content Include="Recursos\Add.png" />
     <Content Include="Recursos\Calificacion.png" />
     <Content Include="Recursos\Delete.png" />
@@ -169,6 +170,7 @@
     <Content Include="Styles\CSS\Login.css" />
     <Content Include="Styles\CSS\Menu_Catalogos.css" />
     <Content Include="Styles\CSS\Modificar.css" />
+    <Content Include="Styles\CSS\Registro_Cuenta.css" />
     <Content Include="Styles\CSS\site2.css" />
     <Content Include="Styles\JQ\jquery.min.js" />
     <Content Include="Web.config" />
@@ -509,6 +511,13 @@
     </Compile>
     <Compile Include="Paginas\Seguridad\wfrm_Login_Seguridad.aspx.designer.cs">
       <DependentUpon>wfrm_Login_Seguridad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Seguridad\wfrm_Registro_Cuenta_Seguridad.aspx.cs">
+      <DependentUpon>wfrm_Registro_Cuenta_Seguridad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Seguridad\wfrm_Registro_Cuenta_Seguridad.aspx.designer.cs">
+      <DependentUpon>wfrm_Registro_Cuenta_Seguridad.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\svc_Cat_Mat\Reference.cs">

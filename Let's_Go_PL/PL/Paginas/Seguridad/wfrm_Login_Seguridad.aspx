@@ -59,7 +59,7 @@
 							<button type="button" class="btn btn-primary btn-lg btn-block login-button"  onclick="location.href='../Otros/wfrm_Trabajo_Otros.aspx';">Iniciar Sesión</button>
 						</div>
 						<div class="login-register">
-				            <a href="create_account.php">Registrarse</a> o <a href="reset_password.php">Cambiar contraseña</a>
+				            <a href="wfrm_Registro_Cuenta_Seguridad.aspx">Registrarse</a> o <a href="reset_password.php">Cambiar contraseña</a>
 				         </div>
 					</form>
 				</div>
